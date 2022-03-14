@@ -90,9 +90,10 @@
 - \# passwd name
 - \# vim /etc/sudoers
   - Remove comment in wheel 
+
 # Enable sddm and nm
-systemctl enable sddm
-systemctl enable NetworkManager
+- \# systemctl enable sddm
+- \# systemctl enable NetworkManager
 
 # Reboot into the system
 pacman -S nvidia (for nvidia gpu)
