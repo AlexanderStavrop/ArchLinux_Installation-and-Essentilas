@@ -34,27 +34,25 @@ exit with
 w
 
 # Format the partitions
-mkfs.fat -F 32 /dev/[efi partition] (if you created it)
-mkfs.ext4 /dev/[linux filesystem]
-mkswap /dev/[swap partition]
+- mkfs.fat -F 32 /dev/[efi partition] (if you created it)
+- mkfs.ext4 /dev/[linux filesystem]
+- mkswap /dev/[swap partition]
 
 # Mount the file systems
-mount /dev/[linux filesystem] /mnt
-mkdir /mnt/efi
-mount /dev/[efi filesystem] /mnt/efi
-swapon /dev/[swap]
+- mount /dev/[linux filesystem] /mnt
+-mkdir /mnt/efi
+  -mount /dev/[efi filesystem] /mnt/efi
+- swapon /dev/[swap]
 
 # Install base system and some extras
-pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
+- pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 
 # Configure the system
-genfstab -U /mnt >> /mnt/fstab
+- genfstab -U /mnt >> /mnt/fstab
+- arch-chroot /mnt
 
-arch-chroot /mnt
-
-ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
-
-hwclock --systohc
+- ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+- hwclock --systohc
 
 # Edit locale
 vim /etc/locale.conf
