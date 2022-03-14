@@ -1,12 +1,19 @@
 # Installation
 
 ## Verify you are in efi
-- ls /sys/firmware/efi/efivars
+- \# ls /sys/firmware/efi/efivars
   - If the command is executed without errors continue.
 
 # Connect to the internet
-iwctl
-station [station] connect [wifiname]
+- \# iwctl
+  - List stations (Probably wlan0)
+    - \# device list
+  - Find network ssid
+    - \# station [station] get-networks
+  - Connect to wifi
+    - \# station [station] connect [ssid]
+  - Check is connected
+    - \# ping archlinux.org
 
 check with ping
 
