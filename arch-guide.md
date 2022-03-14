@@ -20,11 +20,9 @@
 - \# timedatectl set-ntp true
 
 # Partition the disks
-- list disks and choose the correct drive
+- List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
-
-verify you are in the correct and check the existing partition
 
 crate your efi partition if does not exist 1G
 create your main partition for the linux system and leave 1G for the swap
