@@ -24,10 +24,10 @@
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
   - Create partition table (g)
-  - Create your efi partition of 1G, if does not exist (1)
-  - Create your main partition for the "Linux system and leave 1Gb for the swap
+  - Create your efi partition of 1G, if does not exist (n)(1)
+  - Create your main partition for the "Linux system and leave 1Gb for the swap (n)
     - Set partition types to Linux root x86-64 (23)
-  - Create the swap partition in the end of 1G size
+  - Create the swap partition in the end of 1G size (n)
     - Set partition type Linux swap respectively
  - Verify all your partitions are ok
  - Exit
@@ -40,12 +40,12 @@
 
 # Mount the file systems
 - mount /dev/[linux filesystem] /mnt
--mkdir /mnt/efi
-  -mount /dev/[efi filesystem] /mnt/efi
+- mkdir /mnt/efi
+  - mount /dev/[efi filesystem] /mnt/efi
 - swapon /dev/[swap]
 
-# Install base system and some extras
-- pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
+# Install base system and some extras ???
+- \# pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 
 # Configure the system
 - genfstab -U /mnt >> /mnt/fstab
