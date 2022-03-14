@@ -63,7 +63,7 @@
       - LC_TIME=el_GR.UTF-8
   - Network configuration	
     - \# vim /etc/hostname
-      - myhostname
+      - "myhostname"
     - \# vim /etc/hosts
        - 127.0.0.1 localhost
        - ::1       localhost
