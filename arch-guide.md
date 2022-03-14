@@ -12,8 +12,8 @@
     - \# station [station] get-networks
   - Connect to wifi
     - \# station [station] connect [ssid]
-  - Check is connected
-    - \# ping archlinux.org
+- Check is connected
+  - \# ping archlinux.org
 
 
 # Update the system clock
