@@ -50,31 +50,28 @@
 # Configure the system
 - genfstab -U /mnt >> /mnt/fstab
 - arch-chroot /mnt
-
-- ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
-- hwclock --systohc
-
-# Edit locale
-vim /etc/locale.conf
-LANG=en_US.UTF-8
-LC_TIME=el_GR.UTF-8
-
-# Uncomment your wanted locales
-vim /etc/locale.gen
-
-locale-gen
-
-vim /etc/hostname
-myhostname
-
-vim /etc/hosts
-127.0.0.1        localhost
-::1              localhost
-127.0.1.1        myhostname
-ff02::1			 ip6-allnodes
-ff02::2          ip6-allrouters
-
-passwd
+  - ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+  - hwclock --systohc
+  - Edit locale
+    - \# vim /etc/locale.gen 
+    	- Uncommnent wanted locales
+    	  - el_GR.UTF-8 UTF-8
+    	  - en_US.UTF-8 UTF-8	
+    	- \# locale-gen
+    - \# vim /etc/locale.conf 
+      - LANG=en_US.UTF-8
+      - LC_TIME=el_GR.UTF-8
+  - Network configuration	
+    - \# vim /etc/hostname
+      - myhostname
+    - \# vim /etc/hosts
+       - 127.0.0.1 localhost
+       - ::1       localhost
+       - 127.0.1.1 myhostname
+       - ff02::1   ip6-allnodes
+       - ff02::2   ip6-allrouters
+   - Create a password
+     - \# passwd
 
 # Install bootloader
 add line in /etc/default/grub
