@@ -77,8 +77,8 @@
 - \# vim /etc/default/grub
   - Add lines/uncomment
     - GRUB_DISABLE_OS_PROBER=false
-    - grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-    - grub-mkconfig -o /boot/grub/grub.cfg
+- \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+- \# grub-mkconfig -o /boot/grub/grub.cfg
 
 # Install extras ???
 - \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa alsa-utils alsa-firmware 
