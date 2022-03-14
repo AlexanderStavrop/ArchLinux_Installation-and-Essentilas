@@ -74,20 +74,22 @@
      - \# passwd
 
 # Install bootloader
-add line in /etc/default/grub
-GRUB_DISABLE_OS_PROBER=false
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-grub-mkconfig -o /boot/grub/grub.cfg
+- \# vim /etc/default/grub
+  - Add lines/uncomment
+    - GRUB_DISABLE_OS_PROBER=false
+    - grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+    - grub-mkconfig -o /boot/grub/grub.cfg
 
-# Install extras
-pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa alsa-utils alsa-firmware 
-pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm (bluez bluedevil for bluetooth) kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
-pacman -S --needed base git 
+# Install extras ???
+- \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa alsa-utils alsa-firmware 
+- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm (bluez bluedevil for bluetooth) kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
+- \# pacman -S --needed base git 
 
 # Create new user
-useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name] 
-passwd name
-edit /etc/sudoers and remove comment in wheel
+- \# useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name] 
+- \# passwd name
+- \# vim /etc/sudoers
+  - Remove comment in wheel 
 # Enable sddm and nm
 systemctl enable sddm
 systemctl enable NetworkManager
