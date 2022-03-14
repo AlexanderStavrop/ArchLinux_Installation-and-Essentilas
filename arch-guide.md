@@ -1,7 +1,7 @@
+# Installation
 
-# Verify you are in efi
-
-ls /sys/firmware/efi/efivars
+## Verify you are in efi
+- ls /sys/firmware/efi/efivars
 
 # Connect to the internet
 iwctl
