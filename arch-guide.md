@@ -1,8 +1,8 @@
 # Installation
 
 ## Verify you are in efi
-- \# ls /sys/firmware/efi/efivars
-  - If the command is executed without errors continue.
+\# ls /sys/firmware/efi/efivars
+- If the command is executed without errors continue.
 
 # Connect to the internet
 - \# iwctl
