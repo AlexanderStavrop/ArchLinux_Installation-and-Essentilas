@@ -20,9 +20,9 @@
 - \# timedatectl set-ntp true
 
 # Partition the disks
-list disks with
-fdisk -l
-fdisk /dev/[yourdrive]
+- list disks and choose the correct drive
+  - \# fdisk -l
+- \# fdisk /dev/[yourname]
 
 verify you are in the correct and check the existing partition
 
