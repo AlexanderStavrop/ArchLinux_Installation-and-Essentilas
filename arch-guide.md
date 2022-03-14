@@ -123,3 +123,6 @@ fi
 
 # Extras
 paru net-tools
+
+
+asdfas
