@@ -15,10 +15,9 @@
   - Check is connected
     - \# ping archlinux.org
 
-check with ping
 
 # Update the system clock
-timedatectl set-ntp true
+- \# timedatectl set-ntp true
 
 # Partition the disks
 list disks with
