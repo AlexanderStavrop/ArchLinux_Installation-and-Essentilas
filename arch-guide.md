@@ -30,9 +30,8 @@
   - Create the swap partition in the end of 1G size
     - Set partition type Linux swap respectively
  - Verify all your partitions are ok
-
-exit with 
-w
+ - Exit
+   - \# w
 
 # Format the partitions
 - mkfs.fat -F 32 /dev/[efi partition] (if you created it)
