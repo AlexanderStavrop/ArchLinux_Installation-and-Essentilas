@@ -80,7 +80,7 @@
 - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 - \# grub-mkconfig -o /boot/grub/grub.cfg
 
-## Install extras ???
+## Install extras
 - \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
 - \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil  kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
 - \# pacman -S --needed base git 
@@ -108,8 +108,8 @@
 - Google drive ???
 - Flameshot
   - paru flameshot
-  - Change extension to .conf [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256884/flameshot.txt)
-nge 
+  - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
+
 ## Programming / Editors
 ## Others
 
