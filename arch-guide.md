@@ -95,20 +95,21 @@
 - \# systemctl enable sddm
 - \# systemctl enable NetworkManager
 
+<br></br>
 # Reboot into the system
-pacman -S nvidia (for nvidia gpu)
+- \# sudo pacman -S nvidia
 edit /etc/pacman.conf to enable color and parallel downloads
 
 
 # Install paru
-pacman -S rustup base-devel
-rustup install stable
-rustup default stable
+- \# sudo pacman -S rustup base-devel
+- \# rustup install stable
+- \# rustup default stable
 
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-vim /etc/paru.conf and enable BottomUp
+- \# git clone https://aur.archlinux.org/paru.git
+- \# cd paru
+- \# makepkg -si
+- \# sudo vim /etc/paru.conf and enable BottomUp
 
 # Aliases
 Create an aliases file and connect with bashrc
