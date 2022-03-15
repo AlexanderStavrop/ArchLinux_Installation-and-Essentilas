@@ -102,6 +102,14 @@
 <br></br>
 # Setup
 
+## Tools
+- CopyQ
+  - paru copyq
+- Google drive ???
+- 
+## Programming / Editors
+## Others
+
 ## Install Nvidia drivers
 - \# sudo pacman -S nvidia
 
