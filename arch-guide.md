@@ -81,8 +81,8 @@
 - \# grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Install extras ???
-- \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa alsa-utils alsa-firmware 
-- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm (bluez bluedevil for bluetooth) kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
+- \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
+- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil  kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
 - \# pacman -S --needed base git 
 
 ## Create new user
@@ -115,6 +115,12 @@
 - \# makepkg -si
 - \# sudo vim /etc/paru.conf 
   - Enable BottomUp
+
+## Bluetooth
+- \# sudo systemctl start bluetooth.service
+- \# sudo systemctl enable bluetooth.service
+
+
 
 edit /etc/pacman.conf to enable color and parallel downloads
 
