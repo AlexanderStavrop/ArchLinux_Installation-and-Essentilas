@@ -4,7 +4,7 @@
 \# ls /sys/firmware/efi/efivars
 - If the command is executed without errors continue.
 
-# Connect to the internet
+## Connect to the internet
 - \# iwctl
   - List stations (Probably wlan0)
     - \# device list
@@ -16,10 +16,10 @@
   - \# ping archlinux.org
 
 
-# Update the system clock
+## Update the system clock
 - \# timedatectl set-ntp true
 
-# Partition the disks
+## Partition the disks
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
@@ -33,21 +33,21 @@
  - Exit
    - \# w
 
-# Format the partitions
+## Format the partitions
 - mkfs.fat -F 32 /dev/[efi partition] (if you created it)
 - mkfs.ext4 /dev/[linux filesystem]
 - mkswap /dev/[swap partition]
 
-# Mount the file systems
+## Mount the file systems
 - mount /dev/[linux filesystem] /mnt
 - mkdir /mnt/efi
   - mount /dev/[efi filesystem] /mnt/efi
 - swapon /dev/[swap]
 
-# Install base system and some extras ???
+## Install base system and some extras ???
 - \# pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 
-# Configure the system
+## Configure the system
 - genfstab -U /mnt >> /mnt/fstab
 - arch-chroot /mnt
   - ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
@@ -73,35 +73,35 @@
    - Create a password
      - \# passwd
 
-# Install bootloader
+## Install bootloader
 - \# vim /etc/default/grub
   - Add lines/uncomment
     - GRUB_DISABLE_OS_PROBER=false
 - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 - \# grub-mkconfig -o /boot/grub/grub.cfg
 
-# Install extras ???
+## Install extras ???
 - \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa alsa-utils alsa-firmware 
 - \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm (bluez bluedevil for bluetooth) kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
 - \# pacman -S --needed base git 
 
-# Create new user
+## Create new user
 - \# useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name] 
 - \# passwd name
 - \# vim /etc/sudoers
   - Remove comment in wheel 
 
-# Enable sddm and nm
+## Enable sddm and nm
 - \# systemctl enable sddm
 - \# systemctl enable NetworkManager
 
 <br></br>
-# Reboot into the system
+## Reboot into the system
 - \# sudo pacman -S nvidia
 edit /etc/pacman.conf to enable color and parallel downloads
 
 
-# Install paru
+## Install paru
 - \# sudo pacman -S rustup base-devel
 - \# rustup install stable
 - \# rustup default stable
@@ -111,7 +111,7 @@ edit /etc/pacman.conf to enable color and parallel downloads
 - \# makepkg -si
 - \# sudo vim /etc/paru.conf and enable BottomUp
 
-# Aliases
+## Aliases
 Create an aliases file and connect with bashrc
 vim ~/.bash_aliases
 alias command='command'
@@ -122,8 +122,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
-# Extras
+## Extras
 paru net-tools
-
-
-asdfas
