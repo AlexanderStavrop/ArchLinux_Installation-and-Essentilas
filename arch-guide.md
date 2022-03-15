@@ -34,24 +34,24 @@
    - \# w
 
 ## Format the partitions
-- mkfs.fat -F 32 /dev/[efi partition] (if you created it)
-- mkfs.ext4 /dev/[linux filesystem]
-- mkswap /dev/[swap partition]
+- \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)
+- \# mkfs.ext4 /dev/[linux filesystem partition]
+- \# mkswap /dev/[swap partition]
 
 ## Mount the file systems
-- mount /dev/[linux filesystem] /mnt
-- mkdir /mnt/efi
-  - mount /dev/[efi filesystem] /mnt/efi
-- swapon /dev/[swap]
+- \# mount /dev/[linux filesystem partition] /mnt
+- \# mkdir /mnt/efi
+  - \# mount /dev/[efi filesystem] /mnt/efi
+- \# swapon /dev/[swap]
 
 ## Install base system and some extras ???
 - \# pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 
 ## Configure the system
-- genfstab -U /mnt >> /mnt/fstab
-- arch-chroot /mnt
-  - ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
-  - hwclock --systohc
+- \# genfstab -U /mnt >> /mnt/fstab
+- \# arch-chroot /mnt
+  - \# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+  - \# hwclock --systohc
   - Edit locale
     - \# vim /etc/locale.gen 
     	- Uncommnent wanted locales
@@ -67,7 +67,7 @@
     - \# vim /etc/hosts
        - 127.0.0.1 localhost
        - ::1       localhost
-       - 127.0.1.1 myhostname
+       - 127.0.1.1 "myhostname"
        - ff02::1   ip6-allnodes
        - ff02::2   ip6-allrouters
    - Create a password
@@ -95,11 +95,15 @@
 - \# systemctl enable sddm
 - \# systemctl enable NetworkManager
 
-<br></br>
-## Reboot into the system
-- \# sudo pacman -S nvidia
-edit /etc/pacman.conf to enable color and parallel downloads
+## Finish up
+- Reboot into the system
+  - \# reboot
 
+<br></br>
+# Setup
+
+## Install Nvidia drivers
+- \# sudo pacman -S nvidia
 
 ## Install paru
 - \# sudo pacman -S rustup base-devel
@@ -109,7 +113,11 @@ edit /etc/pacman.conf to enable color and parallel downloads
 - \# git clone https://aur.archlinux.org/paru.git
 - \# cd paru
 - \# makepkg -si
-- \# sudo vim /etc/paru.conf and enable BottomUp
+- \# sudo vim /etc/paru.conf 
+  - Enable BottomUp
+
+edit /etc/pacman.conf to enable color and parallel downloads
+
 
 ## Aliases
 Create an aliases file and connect with bashrc
