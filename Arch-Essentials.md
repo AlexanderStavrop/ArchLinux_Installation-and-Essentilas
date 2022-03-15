@@ -106,7 +106,10 @@
 - CopyQ
   - paru copyq
 - Google drive ???
-- 
+- Flameshot
+  - paru flameshot
+  - Change extension to .conf [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256884/flameshot.txt)
+nge 
 ## Programming / Editors
 ## Others
 
