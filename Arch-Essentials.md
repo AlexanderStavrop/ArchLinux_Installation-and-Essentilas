@@ -104,11 +104,14 @@
 
 ## Tools
 - Flameshot
-  - paru flameshot
+  - \# paru flameshot
   - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
 - CopyQ
-  - paru copyq
+  - \# paru copyq
 - Google drive ???
+- Yt-dlp ??
+  - \# paru yt-dlp
+  - .\yt-dlp.exe -o "~/Documents/%(title)s.%(ext)s" 'link'
 
 ## Programming / Editors
 ## Others
