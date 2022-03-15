@@ -103,6 +103,15 @@
 # Setup
 
 ## Tools
+- Paru
+  - \# sudo pacman -S rustup base-devel
+  - \# rustup install stable
+  - \# rustup default stable
+  - \# git clone https://aur.archlinux.org/paru.git
+  - \# cd paru
+  - \# makepkg -si
+  - \# sudo vim /etc/paru.conf 
+    - Enable BottomUp
 - Flameshot
   - \# paru flameshot
   - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
@@ -119,16 +128,6 @@
 ## Install Nvidia drivers
 - \# sudo pacman -S nvidia
 
-## Install paru
-- \# sudo pacman -S rustup base-devel
-- \# rustup install stable
-- \# rustup default stable
-
-- \# git clone https://aur.archlinux.org/paru.git
-- \# cd paru
-- \# makepkg -si
-- \# sudo vim /etc/paru.conf 
-  - Enable BottomUp
 
 ## Bluetooth
 - \# sudo systemctl start bluetooth.service
