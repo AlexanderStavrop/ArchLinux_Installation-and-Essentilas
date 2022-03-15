@@ -103,12 +103,12 @@
 # Setup
 
 ## Tools
-- CopyQ
-  - paru copyq
-- Google drive ???
 - Flameshot
   - paru flameshot
   - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
+- CopyQ
+  - paru copyq
+- Google drive ???
 
 ## Programming / Editors
 ## Others
