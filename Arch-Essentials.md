@@ -146,6 +146,8 @@
 
 
 ## Others
+- Anydesk
+  - \# paru anydesk
 - Chrome
   - \# paru google-chrome 	
 
