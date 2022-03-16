@@ -124,6 +124,8 @@
 
 ## Programming / Editors
 ## Others
+- Chrome
+  - \# paru google-chrome 	
 
 ## Install Nvidia drivers
 - \# sudo pacman -S nvidia
