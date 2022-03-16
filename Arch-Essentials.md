@@ -128,12 +128,18 @@
 - Clion
   - \# paru clion
   - \# paru clion-jre 
+- Intellij 
+  - \# paru intellij-idea-ultimate
+  - \# paru intellij-idea-ultimate-jre
 - Joplin
 - Matlab
 - Notepadqq
   - \# paru notepadqq
 - Pycharm
   - \# paru pycharm
+- Rider
+  - \# paru rider
+  - 
  
 
 
