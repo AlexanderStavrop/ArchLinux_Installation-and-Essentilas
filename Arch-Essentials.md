@@ -123,6 +123,11 @@
   - .\yt-dlp.exe -o "~/Documents/%(title)s.%(ext)s" 'link'
 
 ## Programming / Editors
+- Arduino
+  - \# paru arduino
+- Clion
+  - \# paru clion
+-  
 ## Others
 - Chrome
   - \# paru google-chrome 	
