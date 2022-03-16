@@ -127,6 +127,7 @@
   - \# paru arduino
 - Clion
   - \# paru clion
+  - \# paru clion-jre
 -  
 ## Others
 - Chrome
