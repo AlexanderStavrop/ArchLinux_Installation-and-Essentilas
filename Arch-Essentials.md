@@ -139,7 +139,9 @@
   - \# paru pycharm
 - Rider
   - \# paru rider
-  - 
+- Texstudio
+  - \# paru texstudio
+  - miktex ???
  
 
 
