@@ -127,8 +127,16 @@
   - \# paru arduino
 - Clion
   - \# paru clion
-  - \# paru clion-jre
--  
+  - \# paru clion-jre 
+- Joplin
+- Matlab
+- Notepadqq
+  - \# paru notepadqq
+- Pycharm
+  - \# paru pycharm
+ 
+
+
 ## Others
 - Chrome
   - \# paru google-chrome 	
