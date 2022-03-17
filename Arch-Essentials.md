@@ -102,7 +102,7 @@
 <br></br>
 # Setup
 
-## Tools
+## Core
 - Paru
   - \# sudo pacman -S rustup base-devel
   - \# rustup install stable
@@ -112,6 +112,11 @@
   - \# makepkg -si
   - \# sudo vim /etc/paru.conf 
     - Enable BottomUp
+- Bluetooth
+  - \# sudo systemctl start bluetooth.service
+  - \# sudo systemctl enable bluetooth.service
+
+## Tools
 - Flameshot
   - \# paru flameshot
   - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
@@ -155,9 +160,6 @@
 - \# sudo pacman -S nvidia
 
 
-## Bluetooth
-- \# sudo systemctl start bluetooth.service
-- \# sudo systemctl enable bluetooth.service
 
 
 
