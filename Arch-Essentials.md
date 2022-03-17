@@ -146,18 +146,18 @@
   - \# paru rider
 - Texstudio
   - \# paru texstudio
-  - miktex ???
- 
-
+  - TexLive
+    - paru texlive
 
 ## Others
 - Anydesk
   - \# paru anydesk
 - Chrome
-  - \# paru google-chrome 	
-
-## Install Nvidia drivers
-- \# sudo pacman -S nvidia
+  - \# paru google-chrome
+- Discord 
+  - \# paru discord
+- Nvidia drivers
+  - \# sudo pacman -S nvidia
 
 
 
