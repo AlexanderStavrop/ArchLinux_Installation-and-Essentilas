@@ -180,3 +180,6 @@ add this to ~/.bashrc
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases	
 fi
+
+
+paru qt5-tools
