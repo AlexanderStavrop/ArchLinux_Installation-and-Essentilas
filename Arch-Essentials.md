@@ -169,7 +169,20 @@
   - \# paru discord
 - Nvidia drivers
   - \# sudo pacman -S nvidia
-
+- Obs
+  - \# paru obs-studio= 
+- qbittorrent
+  - \# paru qbittorrent
+- Signal
+ - \# paru signal-desktop
+- Spotify
+  - \# paru spotify 
+- Vlc
+  - \# paru vlc
+- winrar ???
+- wiztree???
+- Zoom  
+  - \# paru zoom
 
 <!-- - Create partition table (g)
      - Create your efi partition of +1G, if does not exist (n)(1)
