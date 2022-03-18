@@ -66,7 +66,7 @@
       - "myhostname"
     - \# vim /etc/hosts
        - 127.0.0.1 localhost
-       - ::1       localhost
+       - :::1       localhost
        - 127.0.1.1 "myhostname"
        - ff02::1   ip6-allnodes
        - ff02::2   ip6-allrouters
