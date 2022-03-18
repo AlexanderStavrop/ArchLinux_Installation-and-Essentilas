@@ -126,21 +126,23 @@
     - Uncomment colors
 
 ## Tools
-- CopyQ
-  - \# paru copyq
-  - config file ?????
-- Droidcam ????
-- Flameshot
-  - \# paru flameshot
-  - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
-- Google drive ???
-- Yt-dlp ??
-  - \# paru yt-dlp
-  - .\yt-dlp.exe -o "~/Documents/%(title)s.%(ext)s" 'link'
+|  App Name    | Paru Command      | .conf file |
+|   :-:        |       :-:         |     :-:    |  
+| CopyQ        | \# paru copyq     |      -     | 
+| Droidcam     |      ????         |      -     |
+| Flameshot    | \# paru flameshot | [flameshot.conf](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) |
+| Google drive |      ????         |      -     |
+| Yt-dlp       | # paru yt-dlp     | - .\yt-dlp.exe -o "~/Documents/%(title)s.%(ext)s" 'link' |
 
 ## Programming / Editors
-- Arduino
-  - \# paru arduino
+|  App Name    | Paru Command      | .conf file |
+|   :-:        |       :-:         |     :-:    |  
+| Arduino      | \# paru arduino   |      -     | 
+| Clion        | \# paru clion 
+                 \# paru clion-jre |      -     |
+| Flameshot    | \# paru flameshot | [flameshot.conf](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) |
+| Google drive |      ????         |      -     |
+| Yt-dlp       | # paru yt-dlp     | - .\yt-dlp.exe -o "~/Documents/%(title)s.%(ext)s" 'link' |
 - Clion
   - \# paru clion
   - \# paru clion-jre 
