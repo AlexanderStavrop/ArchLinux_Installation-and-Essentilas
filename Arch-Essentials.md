@@ -23,18 +23,16 @@
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
-  - | Key |       Type 	          | Size |
-    | :-: |       :-:  	          | :-:  |
-    |  g  | Partition table       |  -   | 
-    |  n  | Efi partition         | +1G  |
-    |  t  | Efi partition(1)      |  -   |
-    |  n  | Root partition        | -1G  |
-    |  t  | Linux root x86-64 (23)|  -   |
-    |  n  | Swap partition        | +1G  |
-    |  t  | Linux swap (19)       |  -   |
- - Verify all your partitions are ok
- - Exit
-   - \# w
+  | Key |       Type 	          | Size |
+  | :-: |       :-:  	          | :-:  |
+  |  g  | Partition table       |  -   | 
+  |  n  | Efi partition         | +1G  |
+  |  t  | Efi partition(1)      |  -   |
+  |  n  | Root partition        | -1G  |
+  |  t  | Linux root x86-64 (23)|  -   |
+  |  n  | Swap partition        | +1G  |
+  |  t  | Linux swap (19)       |  -   |
+ - Verify all your partitions are ok and exit (w)
 
 ## Format the partitions
 - \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)
