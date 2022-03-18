@@ -120,72 +120,46 @@
     - Enable BottomUp
 - Network Tools
   - \# paru net-tools
+- Nvidia drivers
+  - \# sudo pacman -S nvidia
 - Pacman configuration
   - \# vim /etc/pacman.conf
     - Uncomment ParallelDownloads = 5
     - Uncomment colors
 
-## Tools
-<!-- 
-|  App Name    | Paru Command      | .conf file |
-|   :-:        |       :-:         |     :-:    |  
-| CopyQ        | \# paru copyq     |      -     | 
-| Droidcam     |      ????         |      -     |
-| Flameshot    | \# paru flameshot | [flameshot.conf](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) |
-| Google drive |      ????         |      -     |
-| Yt-dlp       | # paru yt-dlp     | - .\yt-dlp.exe -o "~/Documents/%(title)s.%(ext)s" 'link' | -->
-
-## Programming / Editors
-|  App Name    | Paru Command      | .conf file |
-|   :-:        |       :-:         |     :-:    |  
-| Arduino      | \# paru arduino   |      -     | 
-| Clion        | \# paru clion 
-                 \# paru clion-jre |      -     |
-- Clion
-  - \# paru clion
-  - \# paru clion-jre 
-- Intellij 
-  - \# paru intellij-idea-ultimate
-  - \# paru intellij-idea-ultimate-jre
-- Joplin ?????
-- <a href="https://matlab.mathworks.com/">Matlab</a>
-- Notepadqq
-  - \# paru notepadqq
-- Pycharm
-  - \# paru pycharm
-- Rider
-  - \# paru rider
-- Texstudio
-  - \# paru texstudio
-  - TexLive
-    - \# paru texlive
-
-## Others
-- Anydesk
-  - \# paru anydesk
-- Chrome
-  - \# paru google-chrome
-- Discord 
-  - \# paru discord
-- Nvidia drivers
-  - \# sudo pacman -S nvidia
-- Obs
-  - \# paru obs-studio= 
-- qbittorrent
-  - \# paru qbittorrent
-- Signal
- - \# paru signal-desktop
-- Spotify
-  - \# paru spotify 
-- Vlc
-  - \# paru vlc
-- <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
-- winrar ???
-- wiztree???
-- Zoom  
-  - \# paru zoom
+## Programms
+|    App Name   |                                Command                               | .conf file |
+|:-------------:|:--------------------------------------------------------------------:|:----------:|
+|    Anydesk    | \# paru anydesk                                                      |      -     |
+|    Arduino    | \# paru arduino                                                      |      -     |
+|     Chrome    | \# paru Chrome                                                       |            |
+|     Clion     | \# paru clion &&  \# paru clion-jre                                  |      -     |
+|     CopyQ     | \# paru copyq                                                        |      -     |
+|    Discord    | \# paru discord                                                      |            |
+|    Droidcam   | ????                                                                 |      -     |
+|   Flameshot   | \# paru flameshot                                                    |    file    |
+| Google  Drive | ????                                                                 |      -     |
+|    Intellij   | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
+|     Joplin    | ????                                                                 |      -     |
+|     Matlab    | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
+|   Notepadqq   | \# paru notepadqq                                                    |      -     |
+|      Obs      | \# paru obs-studio                                                   |      -     |
+|    Pycharm    | \# paru pycharm                                                      |      -     |
+|  qbittorrent  | \# paru qbittorrent                                                  |            |
+|     Rider     | \# paru rider                                                        |      -     |
+|     Signal    | \# paru signal-desktop                                               |      -     |
+|    Spotify    | \# paru Spotify                                                      |      -     |
+|   TexStudio   | \# paru texstudio                                                    |      -     |
+|    TexLive    | \# paru texlive                                                      |      -     |
+|      Vlc      | \# paru vlc                                                          |      -     |
+|     Winrar    |                                                                      |            |
+|    WizTree    |                                                                      |            |
+|     Yt-dlp    | \# paru yt-dlp                                                       |    file    |
+|      Zoom     | \# paru zoom                                                         |      -     |
 
 ## General Configuration
+- <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
+
 <!-- - Create partition table (g)
      - Create your efi partition of +1G, if does not exist (n)(1)
        - Set partition types to "Efi Partition" (1) 
