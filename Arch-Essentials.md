@@ -117,6 +117,10 @@
     - Enable BottomUp
 - Network Tools
   - \# paru net-tools
+- Pacman configuration
+  - # vim /etc/pacman.conf
+    - Uncomment ParallelDownloads = 5
+    - Uncomment colors
 
 ## Tools
 - Flameshot
@@ -163,9 +167,6 @@
 
 
 
-
-
-edit /etc/pacman.conf to enable color and parallel downloads
 
 
 ## Aliases
