@@ -128,34 +128,35 @@
     - Uncomment colors
 
 ## Programms
-|    App Name   |                                Command                               | .conf file |
-|:-------------:|:--------------------------------------------------------------------:|:----------:|
-|    Anydesk    | \# paru anydesk                                                      |      -     |
-|    Arduino    | \# paru arduino                                                      |      -     |
-|     Chrome    | \# paru Chrome                                                       |            |
-|     Clion     | \# paru clion &&  \# paru clion-jre                                  |      -     |
-|     CopyQ     | \# paru copyq                                                        |      -     |
-|    Discord    | \# paru discord                                                      |            |
-|    Droidcam   | ????                                                                 |      -     |
-|   Flameshot   | \# paru flameshot                                                    |    file    |
-| Google  Drive | ????                                                                 |      -     |
-|    Intellij   | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
-|     Joplin    | ????                                                                 |      -     |
-|     Matlab    | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
-|   Notepadqq   | \# paru notepadqq                                                    |      -     |
-|      Obs      | \# paru obs-studio                                                   |      -     |
-|    Pycharm    | \# paru pycharm                                                      |      -     |
-|  qbittorrent  | \# paru qbittorrent                                                  |            |
-|     Rider     | \# paru rider                                                        |      -     |
-|     Signal    | \# paru signal-desktop                                               |      -     |
-|    Spotify    | \# paru Spotify                                                      |      -     |
-|   TexStudio   | \# paru texstudio                                                    |      -     |
-|    TexLive    | \# paru texlive                                                      |      -     |
-|      Vlc      | \# paru vlc                                                          |      -     |
-|     Winrar    |                                                                      |            |
-|    WizTree    |                                                                      |            |
-|     Yt-dlp    | \# paru yt-dlp                                                       |    file    |
-|      Zoom     | \# paru zoom                                                         |      -     |
+|     App Name    |                                Command                               | .conf file |
+|:----------------:|:--------------------------------------------------------------------:|:----------:|
+| Anydesk         | \# paru anydesk                                                      |      -     |
+| Arduino         | \# paru arduino                                                      |      -     |
+| Chrome          | \# paru Chrome                                                       |            |
+| Clion           | \# paru clion &&  \# paru clion-jre                                  |      -     |
+| CopyQ           | \# paru copyq                                                        |      -     |
+| Discord         | \# paru discord                                                      |            |
+| Droidcam        | ????                                                                 |      -     |
+| Flameshot       | \# paru flameshot                                                    |    file    |
+| Google  Drive   | ????                                                                 |      -     |
+| Grub Customizer | \# paru grub-customizer                                              | -          |
+| Intellij        | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
+| Joplin          | ????                                                                 |      -     |
+| Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
+| Notepadqq       | \# paru notepadqq                                                    |      -     |
+| Obs             | \# paru obs-studio                                                   |      -     |
+| Pycharm         | \# paru pycharm                                                      |      -     |
+| qbittorrent     | \# paru qbittorrent                                                  |            |
+| Rider           | \# paru rider                                                        |      -     |
+| Signal          | \# paru signal-desktop                                               |      -     |
+| Spotify         | \# paru Spotify                                                      |      -     |
+| TexStudio       | \# paru texstudio                                                    |      -     |
+| TexLive         | \# paru texlive                                                      |      -     |
+| Vlc             | \# paru vlc                                                          |      -     |
+| Winrar          |                                                                      |            |
+| WizTree         |                                                                      |            |
+| Yt-dlp          | \# paru yt-dlp                                                       |    file    |
+| Zoom            | \# paru zoom                                                         |      -     |
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
