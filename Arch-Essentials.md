@@ -23,12 +23,22 @@
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
-  - Create partition table (g)
+  - | Key |       Type 	          | Size |
+    | :-: |       :-:  	          | :-:  |
+    |  g  | Partition table       |  -   | 
+    |  n  | Efi partition         | +1G  |
+    |  t  | Efi partition(1)      |  -   |
+    |  n  | Root partition        | -1G  |
+    |  t  | Linux root x86-64 (23)|  -   |
+    |  n  | Swap partition        | +1G  |
+    |  t  | Linux swap (19)       |  -   |
+      - Create partition table (g)
   - Create your efi partition of 1G, if does not exist (n)(1)
+    - Set partition types to "Efi Partition" (1) 
   - Create your main partition for the "Linux system" and leave 1Gb for the swap (n)
     - Set partition types to Linux root x86-64 (23)
   - Create the swap partition in the end of 1G size (n)
-    - Set partition type Linux swap respectively (19)
+    - Set partition type "Linux swap" (19)
  - Verify all your partitions are ok
  - Exit
    - \# w
