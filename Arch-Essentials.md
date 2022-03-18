@@ -63,17 +63,16 @@
       - LANG=en_US.UTF-8
       - LC_TIME=el_GR.UTF-8
   - Network configuration
-    |  		|		 |
-    |    :-: 	|       :-: 	 |
-    | 127.0.0.1 | localhost      | 
-    | :::1      | "myhostname"   | 
-    | 127.0.1.1 | "myhostname"   | 
-    | ff02::1   | ip6-allnodes   | 
-    | ff02::2   | ip6-allrouters | 	
     - \# vim /etc/hostname
       - "myhostname"
-    - \# vim /etc/hosts
-      - 
+    - \# vim /etc/hosts 
+      |  	  |		   |
+      |    :-: 	  |       :-: 	   |
+      | 127.0.0.1 | localhost      | 
+      | :::1      | "myhostname"   | 
+      | 127.0.1.1 | "myhostname"   | 
+      | ff02::1   | ip6-allnodes   | 
+      | ff02::2   | ip6-allrouters | 	 
    - Create a password
      - \# passwd
 
@@ -122,16 +121,18 @@
 - Network Tools
   - \# paru net-tools
 - Pacman configuration
-  - # vim /etc/pacman.conf
+  - \# vim /etc/pacman.conf
     - Uncomment ParallelDownloads = 5
     - Uncomment colors
 
 ## Tools
+- CopyQ
+  - \# paru copyq
+  - config file ?????
+- Droidcam ????
 - Flameshot
   - \# paru flameshot
   - [flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8256899/flameshot.txt) (Change extension to .conf)
-- CopyQ
-  - \# paru copyq
 - Google drive ???
 - Yt-dlp ??
   - \# paru yt-dlp
@@ -146,8 +147,8 @@
 - Intellij 
   - \# paru intellij-idea-ultimate
   - \# paru intellij-idea-ultimate-jre
-- Joplin
-- Matlab
+- Joplin ?????
+- <a href="https://matlab.mathworks.com/">Matlab</a>
 - Notepadqq
   - \# paru notepadqq
 - Pycharm
@@ -157,7 +158,7 @@
 - Texstudio
   - \# paru texstudio
   - TexLive
-    - paru texlive
+    - \# paru texlive
 
 ## Others
 - Anydesk
