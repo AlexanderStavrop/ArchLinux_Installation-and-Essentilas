@@ -85,7 +85,7 @@
 
 ## Install extras
 - \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
-- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil  kscreen kinfocenter plasma-systemmonitor ffmpegthumbs firefox gedit sudo
+- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil  kscreen kinfocenter plasma-systemmonitor ffmpegthumbs gedit sudo
 - \# pacman -S --needed base git 
 
 ## Create new user
