@@ -180,21 +180,3 @@ add this to ~/.bashrc
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases	
 fi
-
-|    App Name   |                                Command                               | .conf file |
-|:-------------:|:--------------------------------------------------------------------:|:----------:|
-|    Arduino    |                            \# paru arduino                           |      -     |
-|     Clion     |                  \# paru clion &&  \# paru clion-jre                 |      -     |
-|     CopyQ     |                             \# paru copyq                            |      -     |
-|    Droidcam   |                                 ????                                 |      -     |
-|   Flameshot   |                           \# paru flameshot                          |    file    |
-| Google  Drive |                                 ????                                 |      -     |
-|    Intellij   | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
-|     Joplin    |                                 ????                                 |      -     |
-|     Matlab    |         <a href="https://matlab.mathworks.com/">Download</a>         |      -     |
-|   Notepadqq   |                           \# paru notepadqq                          |      -     |
-|    Pycharm    |                            \# paru pycharm                           |      -     |
-|     Rider     |                             \# paru rider                            |      -     |
-|   TexStudio   |                           \# paru texstudio                          |      -     |
-|    TexLive    |                            \# paru texlive                           |      -     |
-|     Yt-dlp    |                            \# paru yt-dlp                            |    file    |
