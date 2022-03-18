@@ -49,7 +49,7 @@
 
 ## Configure the system
 - \# genfstab -U /mnt >> /mnt/fstab
-- \# arch-chroot /mnt
+- \# arch-chroot /mnt	
   - \# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
   - \# hwclock --systohc
   - Edit locale
@@ -61,15 +61,18 @@
     - \# vim /etc/locale.conf 
       - LANG=en_US.UTF-8
       - LC_TIME=el_GR.UTF-8
-  - Network configuration	
+  - Network configuration
+    |  		|		 |
+    |    :-: 	|       :-: 	 |
+    | 127.0.0.1 | localhost      | 
+    | :::1      | "myhostname"   | 
+    | 127.0.1.1 | "myhostname"   | 
+    | ff02::1   | ip6-allnodes   | 
+    | ff02::2   | ip6-allrouters | 	
     - \# vim /etc/hostname
       - "myhostname"
     - \# vim /etc/hosts
-       - 127.0.0.1 localhost
-       - :::1       localhost
-       - 127.0.1.1 "myhostname"
-       - ff02::1   ip6-allnodes
-       - ff02::2   ip6-allrouters
+      - 
    - Create a password
      - \# passwd
 
@@ -176,5 +179,5 @@ alias command='command'
 
 add this to ~/.bashrc
 if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+	. ~/.bash_aliases	
 fi
