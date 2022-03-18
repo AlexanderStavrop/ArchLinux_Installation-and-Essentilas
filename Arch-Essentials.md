@@ -103,6 +103,9 @@
 # Setup
 
 ## Core
+- Bluetooth
+  - \# sudo systemctl start bluetooth.service
+  - \# sudo systemctl enable bluetooth.service
 - Paru
   - \# sudo pacman -S rustup base-devel
   - \# rustup install stable
@@ -112,9 +115,8 @@
   - \# makepkg -si
   - \# sudo vim /etc/paru.conf 
     - Enable BottomUp
-- Bluetooth
-  - \# sudo systemctl start bluetooth.service
-  - \# sudo systemctl enable bluetooth.service
+- Network Tools
+  - \# paru net-tools
 
 ## Tools
 - Flameshot
@@ -175,7 +177,3 @@ add this to ~/.bashrc
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
-
-
-## Extras
-paru net-tools
