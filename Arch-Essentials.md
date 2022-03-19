@@ -23,8 +23,8 @@
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
-  | Key |       Type 	          | Size |
-  | :-: |       :-:  	          | :-:  |
+  | Key |       Type 	        | Size |
+  | :-: |       :-:  	        | :-:  |
   |  g  | Partition table       |  -   | 
   |  n  | Efi partition         | +1G  |
   |  t  | Efi partition(1)      |  -   |
@@ -106,6 +106,11 @@
 # Setup
 
 ## Core
+- Aliases
+  - \# vim ~/.bash_aliases
+    - Add "command='command'"
+  - \# vim ~/.bashrc
+    - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
 - Bluetooth
   - \# sudo systemctl start bluetooth.service
   - \# sudo systemctl enable bluetooth.service
@@ -132,17 +137,17 @@
 |:----------------|:---------------------------------------------------------------------|:----------:|
 | Anydesk         | \# paru anydesk                                                      |      -     |
 | Arduino         | \# paru arduino                                                      |      -     |
-| Chrome          | \# paru Chrome                                                       |            |
+| Chrome          | \# paru Chrome                                                       |      ?     |
 | Clion           | \# paru clion &&  \# paru clion-jre                                  |      -     |
 | CopyQ           | \# paru copyq                                                        |      -     |
-| Discord         | \# paru discord                                                      |            |
-| Droidcam        | ????                                                                 |      -     |
-| Flameshot       | \# paru flameshot                                                    |    file    |
-| Google  Drive   | ????                                                                 |      -     |
+| Discord         | \# paru discord                                                      |      -     |
+| Droidcam        | ????????????????????                                                 |      -     |
+| Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
+| Google  Drive   | ???????????????????                                                  |      -     |
 | Gestures        | \# paru gestures & \# paru libinput-gestures                         |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
 | Intellij        | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
-| Joplin          | ????                                                                 |      -     |
+| Joplin          | ???????????????????                                                  |      -     |
 | Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
@@ -154,8 +159,8 @@
 | TexStudio       | \# paru texstudio                                                    |      -     |
 | TexLive         | \# paru texlive                                                      |      -     |
 | Vlc             | \# paru vlc                                                          |      -     |
-| Winrar          |                                                                      |            |
-| WizTree         |                                                                      |            |
+| Winrar          | ???????????????????                                                  |            |
+| WizTree         | ???????????????????                                                  |            |
 | Yt-dlp          | \# paru yt-dlp                                                       |    file    |
 | Zoom            | \# paru zoom                                                         |      -     |
 
@@ -170,17 +175,3 @@
      - Create the swap partition in the end of +1G size (n)(3)
        - Set partition type "Linux swap" (19) 
 -->
-
-
-## Aliases
-Create an aliases file and connect with bashrc
-vim ~/.bash_aliases
-alias command='command'
-
-add this to ~/.bashrc
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases	
-fi
-
-
-paru qt5-tools
