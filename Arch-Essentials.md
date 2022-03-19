@@ -45,7 +45,7 @@
   - \# mount /dev/[efi filesystem] /mnt/efi
 - \# swapon /dev/[swap]
 
-## Install base system and some extras ???
+## Install base system and some extras
 - \# pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 
 ## Configure the system
