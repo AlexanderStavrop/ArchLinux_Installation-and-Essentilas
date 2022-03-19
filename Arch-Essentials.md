@@ -139,7 +139,8 @@
 | Droidcam        | ????                                                                 |      -     |
 | Flameshot       | \# paru flameshot                                                    |    file    |
 | Google  Drive   | ????                                                                 |      -     |
-| Grub Customizer | \# paru grub-customizer                                              | -          |
+| Gestures        | \# paru gestures & \# paru libinput-gestures                         |      ?     |
+| Grub Customizer | \# paru grub-customizer                                              |      -     |
 | Intellij        | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
 | Joplin          | ????                                                                 |      -     |
 | Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
