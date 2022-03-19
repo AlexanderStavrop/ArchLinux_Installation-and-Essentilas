@@ -131,6 +131,7 @@
   - \# vim /etc/pacman.conf
     - Uncomment ParallelDownloads = 5
     - Uncomment colors
+- Set timezone for clock to work
 
 ## Programms
 |     App Name    |                                Command                               | .conf file |
