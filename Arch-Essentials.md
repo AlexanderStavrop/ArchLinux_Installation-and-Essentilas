@@ -166,6 +166,7 @@
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
+- Desktop Entyties.
 
 <!-- - Create partition table (g)
      - Create your efi partition of +1G, if does not exist (n)(1)
