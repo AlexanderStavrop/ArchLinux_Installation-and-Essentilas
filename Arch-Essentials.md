@@ -132,6 +132,14 @@
     - Uncomment ParallelDownloads = 5
     - Uncomment colors
 - Set timezone for clock to work
+- Find windows in grub
+  - \# paru ntfs-3g
+  - Create mount point 
+    - \# sudo mkdir /mnt/windows
+  - Mount the windows drive
+    - \# sudo mount /dev/sda3 /mnt/windows/
+  - \# os-prober
+  - Edit grub-customizer
 
 ## Programms
 |     App Name    |                                Command                               | .conf file |
