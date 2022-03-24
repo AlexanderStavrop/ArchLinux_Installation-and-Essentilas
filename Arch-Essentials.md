@@ -140,6 +140,8 @@
     - \# sudo mount /dev/sda3 /mnt/windows/
   - \# os-prober
   - Edit grub-customizer
+- Emoji
+  - \# paru emoji 
 
 ## Programms
 |     App Name    |                                Command                               | .conf file |
