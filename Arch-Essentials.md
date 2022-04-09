@@ -148,11 +148,11 @@
 |:----------------|:---------------------------------------------------------------------|:----------:|
 | Anydesk         | \# paru anydesk                                                      |      -     |
 | Arduino         | \# paru arduino                                                      |      -     |
-| Chrome          | \# paru Chrome                                                       |      ?     |
+| Chrome          | \# paru Chrome                                                       |      -     |
 | Clion           | \# paru clion &&  \# paru clion-jre                                  |      -     |
 | CopyQ           | \# paru copyq                                                        |      -     |
 | Discord         | \# paru discord                                                      |      -     |
-| Droidcam        | ????????????????????                                                 |      -     |
+| Droidcam        | ????????????????????                                                 |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
 | Google  Drive   | ???????????????????                                                  |      -     |
 | Gestures        | \# paru gestures & \# paru libinput-gestures                         |      ?     |
