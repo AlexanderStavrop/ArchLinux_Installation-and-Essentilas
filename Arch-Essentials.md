@@ -150,9 +150,9 @@
 | Arduino         | \# paru arduino                                                      |      -     |
 | Chrome          | \# paru Chrome                                                       |      -     |
 | Clion           | \# paru clion &&  \# paru clion-jre                                  |      -     |
-| CopyQ           | \# paru copyq                                                        |      -     |
+| CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
-| Droidcam        | ????????????????????                                                 |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
+| Droidcam        | ????????????????????                                                 |      -     |
 | Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
 | Google  Drive   | ???????????????????                                                  |      -     |
 | Gestures        | \# paru gestures & \# paru libinput-gestures                         |      ?     |
