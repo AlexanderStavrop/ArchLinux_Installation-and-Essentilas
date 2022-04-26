@@ -141,9 +141,7 @@
   - \# os-prober
   - Edit grub-customizer
 - Emoji
-  - \# paru emoji 
-- .rar files
-  - \# paru unrar   
+  - \# paru emoji   
 
 ## Programms
 |     App Name    |                                Command                               | .conf file |
@@ -172,8 +170,8 @@
 | TexStudio       | \# paru texstudio                                                    |      -     |
 | TexLive         | \# paru texlive                                                      |      -     |
 | Vlc             | \# paru vlc                                                          |      -     |
-| Winrar          | ???????????????????                                                  |            |
-| WizTree         | ???????????????????                                                  |            |
+| Winrar          | \# paru unrar                                                        |            |
+| WizTree         | \# paru filelight                                                    |            |
 | Yt-dlp          | \# paru yt-dlp                                                       |    file    |
 | Zoom            | \# paru zoom                                                         |      -     |
 
