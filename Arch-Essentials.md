@@ -23,8 +23,8 @@
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
-  | Key |       Type 	        | Size |
-  | :-: |       :-:  	        | :-:  |
+  | Key |       Type 	          | Size |
+  | :-: |       :-:  	          | :-:  |
   |  g  | Partition table       |  -   | 
   |  n  | Efi partition         | +1G  |
   |  t  | Efi partition(1)      |  -   |
@@ -170,8 +170,8 @@
 | TexStudio       | \# paru texstudio                                                    |      -     |
 | TexLive         | \# paru texlive                                                      |      -     |
 | Vlc             | \# paru vlc                                                          |      -     |
-| Winrar          | \# paru unrar                                                        |            |
-| WizTree         | \# paru filelight                                                    |            |
+| Winrar          | \# paru unrar                                                        |      -     |
+| WizTree         | \# paru filelight                                                    |      -     |
 | Yt-dlp          | \# paru yt-dlp                                                       |    file    |
 | Zoom            | \# paru zoom                                                         |      -     |
 
