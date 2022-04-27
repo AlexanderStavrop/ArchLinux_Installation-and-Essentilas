@@ -1,4 +1,4 @@
-# Arch-Essentials
+# ArchLinux - Installation
 
 A guide for installing arch linux and the programs in need most.
 
@@ -111,9 +111,9 @@ A guide for installing arch linux and the programs in need most.
   - \# reboot
 
 <br></br>
-## Setup
+# ArchLinux - Essentials
 
-### Core
+## Core
 - Aliases
   - \# vim ~/.bash_aliases
     - Add "command='command'"
@@ -151,7 +151,7 @@ A guide for installing arch linux and the programs in need most.
 - Emoji
   - \# paru emoji   
 
-### Programms
+## Programms
 |     App Name    |                                Command                               | .conf file |
 |:----------------|:---------------------------------------------------------------------|:----------:|
 | Anydesk         | \# paru anydesk                                                      |      -     |
@@ -183,7 +183,7 @@ A guide for installing arch linux and the programs in need most.
 | Yt-dlp          | \# paru yt-dlp                                                       |    file    |
 | Zoom            | \# paru zoom                                                         |      -     |
 
-### General Configuration
+## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 - Desktop Entyties.
 
