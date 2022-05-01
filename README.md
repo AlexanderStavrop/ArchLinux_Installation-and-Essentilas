@@ -148,6 +148,8 @@ A guide for installing arch linux and the programs in need most.
     - \# sudo mount /dev/sda3 /mnt/windows/
   - \# os-prober
   - Edit grub-customizer
+- Chinese characters
+  - \# paru noto-fonts-cjkD
 - Emoji
   - \# paru emoji   
 
