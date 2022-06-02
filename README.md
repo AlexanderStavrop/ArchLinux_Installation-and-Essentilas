@@ -159,14 +159,14 @@ A guide for installing arch linux and the programs in need most.
 | Anydesk         | \# paru anydesk                                                      |      -     |
 | Arduino         | \# paru arduino                                                      |      -     |
 | Chrome          | \# paru Chrome                                                       |      -     |
-| Clion           | \# paru clion &&  \# paru clion-jre                                  |      -     |
+| Clion           | \# paru clion <br />\# paru clion-jre                                  |      -     |
 | CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
 | Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
 | Google  Drive   | ???????????????????                                                  |      -     |
-| Gestures        | \# paru gestures & <br /><br /><br />   \# paru libinput-gestures                         |      ?     |
+| Gestures        | \# paru gestures <br />\# paru libinput-gestures                         |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
-| Intellij        | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
+| Intellij        | \# paru intellij-idea-ultimate <br />\# paru intellij-idea-ultimate-jre |      -     |
 | Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
