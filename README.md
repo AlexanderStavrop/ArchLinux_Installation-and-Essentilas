@@ -162,13 +162,11 @@ A guide for installing arch linux and the programs in need most.
 | Clion           | \# paru clion &&  \# paru clion-jre                                  |      -     |
 | CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
-| Droidcam        | ????????????????????                                                 |      -     |
 | Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
 | Google  Drive   | ???????????????????                                                  |      -     |
-| Gestures        | \# paru gestures & \# paru libinput-gestures                         |      ?     |
+| Gestures        | \# paru gestures & <br /><br /><br />   \# paru libinput-gestures                         |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
 | Intellij        | \# paru intellij-idea-ultimate && \# paru intellij-idea-ultimate-jre |      -     |
-| Joplin          | ???????????????????                                                  |      -     |
 | Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
@@ -188,12 +186,3 @@ A guide for installing arch linux and the programs in need most.
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 - Desktop Entyties.
-
-<!-- - Create partition table (g)
-     - Create your efi partition of +1G, if does not exist (n)(1)
-       - Set partition types to "Efi Partition" (1) 
-     - Create your main partition for the "Linux system" and leave -1Gb for the swap (n)(2)
-       - Set partition types to Linux root x86-64 (23)
-     - Create the swap partition in the end of +1G size (n)(3)
-       - Set partition type "Linux swap" (19) 
--->
