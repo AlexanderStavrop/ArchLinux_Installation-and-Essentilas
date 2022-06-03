@@ -6,6 +6,8 @@ A guide for installing arch linux and the programs in need most.
 - Donwload the latest version of arch linux from <a href="https://archlinux.org/download/">this</a> link
 - Create a bootable usb (recomend using <a href="https://rufus.ie/en/">rufus</a>)
 - Boot into the usb and follow the guide
+  - MBR for desktop
+  - GTP for laptop  
 ## Installation
 
 ### Verify you are in efi
@@ -31,6 +33,16 @@ A guide for installing arch linux and the programs in need most.
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
+  - For Pc: 
+  | Key |       Type 	             | Size |
+  | :-: |       :-:  	             | :-:  |
+  |  o  | Create a Dos table?!     |  -   | 
+  |  n  | (p)Root partition        | -1G  |
+  |  t  | (p)Linux root x86-64 (83)|  -   |
+  |  n  | (p)Swap partition        | +1G  |
+  |  t  | (p)Linux swap (82)       |  -   |
+
+  - For Laptop: 
   | Key |       Type 	          | Size |
   | :-: |       :-:  	          | :-:  |
   |  g  | Partition table       |  -   | 
@@ -43,13 +55,13 @@ A guide for installing arch linux and the programs in need most.
  - Verify all your partitions are ok and exit (w)
 
 ### Format the partitions
-- \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)
+- \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)(**Only GTP**)
 - \# mkfs.ext4 /dev/[linux filesystem partition]
 - \# mkswap /dev/[swap partition]
 
 ### Mount the file systems
-- \# mount /dev/[linux filesystem partition] /mnt
-- \# mkdir /mnt/efi
+- \# mount /dev/[linux filesystem partition] /mnt (**Only GTP**)
+- \# mkdir /mnt/efi(**Only GTP**)
   - \# mount /dev/[efi filesystem] /mnt/efi
 - \# swapon /dev/[swap]
 
@@ -88,11 +100,14 @@ A guide for installing arch linux and the programs in need most.
 - \# vim /etc/default/grub
   - Add lines/uncomment
     - GRUB_DISABLE_OS_PROBER=false
-- \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+- GTP
+  - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+- MBR
+  - \# grub-install --target=i386-pc /dev/"root_partition" 
 - \# grub-mkconfig -o /boot/grub/grub.cfg
 
 ### Install extras
-- \# pacman -S xf86-video-amdgpu/intel(for laptop) pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
+- \# pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
 - \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs gedit sudo
 - \# pacman -S --needed base git 
 
