@@ -149,7 +149,7 @@ A guide for installing arch linux and the programs in need most.
   - \# os-prober
   - Edit grub-customizer
 - Chinese characters
-  - \# paru noto-fonts-cjkD
+  - \# paru noto-fonts-cjk
 - Emoji
   - \# paru emoji   
 
