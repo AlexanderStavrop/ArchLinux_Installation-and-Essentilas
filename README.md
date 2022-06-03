@@ -136,7 +136,7 @@ A guide for installing arch linux and the programs in need most.
 - Nvidia drivers
   - \# sudo pacman -S nvidia
 - Pacman configuration
-  - \# vim /etc/pacman.conf
+  - \# sudo vim /etc/pacman.conf
     - Uncomment ParallelDownloads = 5
     - Uncomment colors
 - Set timezone for clock to work
