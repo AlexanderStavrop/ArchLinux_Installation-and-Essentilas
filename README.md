@@ -182,8 +182,7 @@ A guide for installing arch linux and the programs in need most.
 | Google  Drive   | ???????????????????                                                  |      -     |
 | Gestures        | ???????????????????                                                  |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
-| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> 
-                    Tools -> Create Desktop Entity                                       |      -     |
+| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> Tools -> Create Desktop Entity |      -     |
 | Ise             | <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> | - |
                                                                                          |      -     |
 | Matlab          | ???????????????????                                                  |      -     |
