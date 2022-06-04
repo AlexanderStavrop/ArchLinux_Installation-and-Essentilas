@@ -129,14 +129,10 @@ A guide for installing arch linux and the programs in need most.
 # ArchLinux - Essentials
 
 ## Core
-- Aliases
-  - \# vim ~/.bash_aliases
-    - Add "command='command'"
-  - \# vim ~/.bashrc
-    - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
-- Bluetooth
-  - \# sudo systemctl start bluetooth.service
-  - \# sudo systemctl enable bluetooth.service
+- Pacman configuration
+  - \# sudo vim /etc/pacman.conf
+    - Uncomment ParallelDownloads = 5
+    - Uncomment colors
 - Paru
   - \# sudo pacman -S rustup base-devel
   - \# rustup install stable
@@ -146,15 +142,16 @@ A guide for installing arch linux and the programs in need most.
   - \# makepkg -si
   - \# sudo vim /etc/paru.conf 
     - Enable BottomUp
+- Set timezone for clock to work
+- Bluetooth
+  - \# sudo systemctl start bluetooth.service
+  - \# sudo systemctl enable bluetooth.service
 - Network Tools
   - \# paru net-tools
-- Nvidia drivers
-  - \# sudo pacman -S nvidia
-- Pacman configuration
-  - \# sudo vim /etc/pacman.conf
-    - Uncomment ParallelDownloads = 5
-    - Uncomment colors
-- Set timezone for clock to work
+- Emoji
+  - \# paru emoji   
+- Chinese characters
+  - \# paru noto-fonts-cjk
 - Find windows in grub
   - \# paru ntfs-3g
   - Create mount point 
@@ -163,25 +160,28 @@ A guide for installing arch linux and the programs in need most.
     - \# sudo mount /dev/sda3 /mnt/windows/
   - \# os-prober
   - Edit grub-customizer
-- Chinese characters
-  - \# paru noto-fonts-cjk
-- Emoji
-  - \# paru emoji   
+- Aliases
+  - \# vim ~/.bash_aliases
+    - Add "command='command'"
+  - \# vim ~/.bashrc
+    - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
+
 
 ## Programms
 |     App Name    |                                Command                               | .conf file |
 |:----------------|:---------------------------------------------------------------------|:----------:|
 | Anydesk         | \# paru anydesk                                                      |      -     |
 | Arduino         | \# paru arduino                                                      |      -     |
-| Chrome          | \# paru Chrome                                                       |      -     |
-| Clion           | \# paru clion <br />\# paru clion-jre                                  |      -     |
+| Clion           | \# paru clion <br />\# paru clion-jre                                |      -     |
 | CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
+| Firefox         | \# paru firefox                                                      |      -     |
 | Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
 | Google  Drive   | ???????????????????                                                  |      -     |
-| Gestures        | \# paru gestures <br />\# paru libinput-gestures                         |      ?     |
+| Gestures        | ???????????????????                                                  |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
-| Intellij        | \# paru intellij-idea-ultimate <br />\# paru intellij-idea-ultimate-jre |      -     |
+| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> 
+                    Tools -> Create Desktop Entity                                       |      -     |
 | Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
