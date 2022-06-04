@@ -174,8 +174,7 @@ A guide for installing arch linux and the programs in need most.
 |:----------------|:---------------------------------------------------------------------|:----------:|
 | Anydesk         | \# paru anydesk                                                      |      -     |
 | Arduino         | \# paru arduino                                                      |      -     |
-| Clion           | <a href="https://www.jetbrains.com/clion/download/#section=linux">Download</a> <br /> 
-                    Tools -> Create Desktop Entity                                       |      -     |
+| Clion           | <a href="https://www.jetbrains.com/clion/download/#section=linux">Download</a> <br />  Tools -> Create Desktop Entity |      -     |
 | CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
 | Firefox         | \# paru firefox                                                      |      -     |
@@ -200,7 +199,7 @@ A guide for installing arch linux and the programs in need most.
 | Winrar          | \# paru unrar                                                        |      -     |
 | WizTree         | \# paru filelight                                                    |      -     |
 | Yt-dlp          | \# paru yt-dlp                                                       |    file    |
-| Zoom            | \# paru zoom                                                         |      -     |
+| Zoom            | \# paru zoom                                                         |      -     | -->
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
