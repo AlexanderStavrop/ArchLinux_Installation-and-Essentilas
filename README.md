@@ -183,8 +183,7 @@ A guide for installing arch linux and the programs in need most.
 | Gestures        | ???????????????????                                                  |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
 | Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> Tools -> Create Desktop Entity |      -     |
-| Ise             | <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> | - |
-                                                                                         |      -     |
+| Ise             | <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> <br /> <a href="https://youtu.be/yzEIQLQZYpk?t=203">Installation Video</a> |  -     |
 | Matlab          | ???????????????????                                                  |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
