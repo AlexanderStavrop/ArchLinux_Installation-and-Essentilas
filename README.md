@@ -34,6 +34,7 @@ A guide for installing arch linux and the programs in need most.
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
   - For Pc: 
+   
   | Key |       Type 	             | Size |
   | :-: |       :-:  	             | :-:  |
   |  o  | Create a Dos table?!     |  -   | 
@@ -43,6 +44,7 @@ A guide for installing arch linux and the programs in need most.
   |  t  | (p)Linux swap (82)       |  -   |
 
   - For Laptop: 
+  
   | Key |       Type 	          | Size |
   | :-: |       :-:  	          | :-:  |
   |  g  | Partition table       |  -   | 
@@ -172,7 +174,8 @@ A guide for installing arch linux and the programs in need most.
 |:----------------|:---------------------------------------------------------------------|:----------:|
 | Anydesk         | \# paru anydesk                                                      |      -     |
 | Arduino         | \# paru arduino                                                      |      -     |
-| Clion           | \# paru clion <br />\# paru clion-jre                                |      -     |
+| Clion           | <a href="https://www.jetbrains.com/clion/download/#section=linux">Download</a> <br /> 
+                    Tools -> Create Desktop Entity                                       |      -     |
 | CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
 | Firefox         | \# paru firefox                                                      |      -     |
@@ -182,10 +185,11 @@ A guide for installing arch linux and the programs in need most.
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
 | Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> 
                     Tools -> Create Desktop Entity                                       |      -     |
-| Matlab          | <a href="https://matlab.mathworks.com/">Download</a>                 |      -     |
+| Ise             | <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> | - |
+                                                                                         |      -     |
+| Matlab          | ???????????????????                                                  |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
-| Pycharm         | \# paru pycharm                                                      |      -     |
 | qbittorrent     | \# paru qbittorrent                                                  |            |
 | Rider           | \# paru rider                                                        |      -     |
 | Signal          | \# paru signal-desktop                                               |      -     |
