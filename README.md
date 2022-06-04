@@ -177,12 +177,13 @@ A guide for installing arch linux and the programs in need most.
 | Clion           | <a href="https://www.jetbrains.com/clion/download/#section=linux">Download</a> <br />  Tools -> Create Desktop Entity |      -     |
 | CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
 | Discord         | \# paru discord                                                      |      -     |
+| filelight       | \# paru filelight                                                    |      -     |
 | Firefox         | \# paru firefox                                                      |      -     |
 | Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
 | Google  Drive   | ???????????????????                                                  |      -     |
 | Gestures        | ???????????????????                                                  |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
-| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> Tools -> Create Desktop Entity |      -     |
+| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> Tools -> Create Desktop Entity <br /> Download latest jdk |      -     |
 | Ise             | \# paru ncurses5-compat-libs <br /> <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> <br /> <a href="https://youtu.be/yzEIQLQZYpk?t=203">Installation Video</a> <br /> \# sudo chmod +rwx settings64.sh <br /> \# cd /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ <br /> \# ./ise  <br /> \# Create Desktop Entity  <br /> \# paru jetbrains-mono <br /> Edit -> Preferences -> Ise Text Editor -> Change font/tab width                                 |      -     |
 | Matlab          | ???????????????????                                                  |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
@@ -190,13 +191,10 @@ A guide for installing arch linux and the programs in need most.
 | qbittorrent     | \# paru qbittorrent                                                  |            |
 | Signal          | \# paru signal-desktop                                               |      -     |
 | Spotify         | \# paru Spotify                                                      |      -     |
-| TexStudio       | \# paru texstudio                                                    |      -     |
-| TexLive         | \# paru texlive                                                      |      -     |
+| TexStudio       | \# paru texlive <br /> \# paru texstudio                             |      -     |
 | Vlc             | \# paru vlc                                                          |      -     |
-| Winrar          | \# paru unrar                                                        |      -     |
-| WizTree         | \# paru filelight                                                    |      -     |
+| Winrar          | \# paru unrar ??????                                                 |      -     |
 | Yt-dlp          | \# paru yt-dlp                                                       |    file    |
-| Zoom            | \# paru zoom                                                         |      -     | -->
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
