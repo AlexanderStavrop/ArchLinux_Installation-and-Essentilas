@@ -183,12 +183,11 @@ A guide for installing arch linux and the programs in need most.
 | Gestures        | ???????????????????                                                  |      ?     |
 | Grub Customizer | \# paru grub-customizer                                              |      -     |
 | Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br /> Tools -> Create Desktop Entity |      -     |
-| Ise             | \# paru ncurses5-compat-libs <br /> <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> <br /> <a href="https://youtu.be/yzEIQLQZYpk?t=203">Installation Video</a> <br /> \# sudo chmod +rwx settings64.sh <br /> \# cd /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ <br /> \# ./ise  <br /> \# Create Desktop Entity                                 |      -     |
+| Ise             | \# paru ncurses5-compat-libs <br /> <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> <br /> <a href="https://youtu.be/yzEIQLQZYpk?t=203">Installation Video</a> <br /> \# sudo chmod +rwx settings64.sh <br /> \# cd /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ <br /> \# ./ise  <br /> \# Create Desktop Entity  <br /> \# paru jetbrains-mono <br /> Edit -> Preferences -> Ise Text Editor -> Change font/tab width                                 |      -     |
 | Matlab          | ???????????????????                                                  |      -     |
 | Notepadqq       | \# paru notepadqq                                                    |      -     |
 | Obs             | \# paru obs-studio                                                   |      -     |
 | qbittorrent     | \# paru qbittorrent                                                  |            |
-| Rider           | \# paru rider                                                        |      -     |
 | Signal          | \# paru signal-desktop                                               |      -     |
 | Spotify         | \# paru Spotify                                                      |      -     |
 | TexStudio       | \# paru texstudio                                                    |      -     |
