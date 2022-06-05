@@ -195,7 +195,6 @@ A guide for installing arch linux and the programs in need most.
 | Vlc             | \# paru vlc                                                          |      -     |
 | Winrar          | \# paru unrar ??????                                                 |      -     |
 | Yt-dlp          | \# paru yt-dlp  <br />Add configuration file at /home/alex/.config/yt-dlp/                                                      |[config.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8839111/config.txt)
-   |
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
