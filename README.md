@@ -150,14 +150,13 @@ A guide for installing arch linux and the programs in need most.
   - \# sudo systemctl enable bluetooth.service
 - Network Tools
   - \# paru net-tools
-- Ntfs 
+- Ntfs file system
   \# paru ntfs
 - Emoji
   - \# paru emoji   
 - Chinese characters
   - \# paru noto-fonts-cjk
 - Find windows in grub
-  - \# paru ntfs-3g
   - Create mount point 
     - \# sudo mkdir /mnt/windows
   - Mount the windows drive
