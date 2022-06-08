@@ -205,6 +205,7 @@ A guide for installing arch linux and the programs in need most.
 | Microsoft Edge  | \# paru microsoft-edge                                                                                        |
 | Notepadqq       | \# paru notepadqq                                                                                             |
 | Obs             | \# paru obs-studio                                                                                            |
+| Psensor         | \# paru psensor                                                                                               |
 | qbittorrent     | \# paru qbittorrent                                                                                           |
 | Signal          | \# paru signal-desktop                                                                                        |
 | Spotify         | \# paru Spotify                                                                                               |
