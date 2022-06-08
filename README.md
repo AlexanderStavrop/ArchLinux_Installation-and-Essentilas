@@ -176,14 +176,15 @@ A guide for installing arch linux and the programs in need most.
 ## Programms
 
 ### Tools
-|     App Name    |                                Command                               | .conf file |
-|:----------------|:---------------------------------------------------------------------|:----------:|
-| CopyQ           | \# paru copyq                                                        |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)|
-| filelight       | \# paru filelight                                                    |      -     |
-| Flameshot       | \# paru flameshot                                                    |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)|
-| Grub Customizer | \# paru grub-customizer                                              |      -     |
-| Winrar          | \# paru unrar ??????                                                 |      -     |
-| Yt-dlp          | \# paru yt-dlp  <br />Add configuration file at /home/alex/.config/yt-dlp/ |[config.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8839111/config.txt)
+|     App Name    |                                                  Command                                                      | .conf file |
+|:----------------|:--------------------------------------------------------------------------------------------------------------|:----------:|
+| CopyQ           | \# paru copyq                                                                                                 |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)                                                                  |
+| filelight       | \# paru filelight                                                                                             |      -     |
+| Flameshot       | \# paru flameshot                                                                                             |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)                                                              |
+| Grub Customizer | \# paru grub-customizer                                                                                       |      -     |
+| Winrar          | \# paru unrar                                                                                                 |      -     |
+| Xow             | \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                   |      -     |       
+| Yt-dlp          | \# paru yt-dlp  <br /> Add configuration file at /home/alex/.config/yt-dlp/                                   |[config.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8839111/config.txt)                                           |
 
 ### Programming / Editors
 |     App Name    |                                                  Command                                                      |
@@ -207,9 +208,8 @@ A guide for installing arch linux and the programs in need most.
 | qbittorrent     | \# paru qbittorrent                                                                                           |
 | Signal          | \# paru signal-desktop                                                                                        |
 | Spotify         | \# paru Spotify                                                                                               |
-| Steam           | \# sudo vim /etc/pacman.conf <br /> Uncomment multilib and Include <br /> \# paru steam <br /> \# paru arial  |
-| Vlc             | \# paru vlc                                                          |      -     |
-
+| Steam           | \# sudo vim /etc/pacman.conf <br />                                                                                                                         Uncomment multilib and Include <br />                                                                                                                       \# paru steam <br />                                                                                                                                       \# paru arial <br />                                                                                                                                       steam -> settings -> steam play -> Enable steam play, select latest proton <br />                                                                           \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                   |
+| Vlc             | \# paru vlc                                                                                                   |
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
