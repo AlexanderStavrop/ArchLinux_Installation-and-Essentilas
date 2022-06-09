@@ -147,14 +147,13 @@ A guide for installing arch linux and the programs in need most.
   - \# makepkg -si
   - \# sudo vim /etc/paru.conf 
     - Enable BottomUp
-- Set timezone for clock to work
 - Bluetooth
   - \# sudo systemctl start bluetooth.service
   - \# sudo systemctl enable bluetooth.service
 - Network Tools
   - \# paru net-tools
 - Ntfs file system
-  \# paru ntfs
+  - \# paru ntfs
 - Emoji
   - \# paru emoji   
 - Chinese characters
@@ -176,41 +175,42 @@ A guide for installing arch linux and the programs in need most.
 ## Programms
 
 ### Tools
-|     App Name    |                                                  Command                                                      | .conf file |
-|:----------------|:--------------------------------------------------------------------------------------------------------------|:----------:|
-| CopyQ           | \# paru copyq                                                                                                 |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)                                                                  |
-| filelight       | \# paru filelight                                                                                             |      -     |
-| Flameshot       | \# paru flameshot                                                                                             |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)                                                              |
-| Grub Customizer | \# paru grub-customizer                                                                                       |      -     |
-| Winrar          | \# paru unrar                                                                                                 |      -     |
-| Xow             | \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                   |      -     |       
-| Yt-dlp          | \# paru yt-dlp  <br /> Add configuration file at /home/alex/.config/yt-dlp/                                   |[config.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8839111/config.txt)                                           |
+|     App Name    |                                                  Command                                                          | .conf file |
+|:----------------|:------------------------------------------------------------------------------------------------------------------|:----------:|
+| CopyQ           | \# paru copyq                                                                                                     |[copyq.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)                                                                      |
+| Filelight       | \# paru filelight                                                                                                 |      -     |
+| Flameshot       | \# paru flameshot                                                                                                 |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)                                                                  |
+| Grub Customizer | \# paru grub-customizer                                                                                           |      -     |
+| Winrar          | \# paru unrar                                                                                                     |      -     |
+| Xow             | \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                       |      -     |       
+| Yt-dlp          | \# paru yt-dlp  <br /> Add configuration file at /home/alex/.config/yt-dlp/                                       |[config.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8839111/config.txt)                                               |
 
 ### Programming / Editors
-|     App Name    |                                                  Command                                                      |
-|:----------------|:--------------------------------------------------------------------------------------------------------------|
-| Arduino         | \# paru arduino                                                                                               |
-| Clion           | <a href="https://www.jetbrains.com/clion/download/#section=linux">Download</a> <br />                                                                       Tools -> Create Desktop Entity                                                                                |
-| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br />                                                                       Tools -> Create Desktop Entity <br />                                                                                                                       Download latest jdk                                                                                           |
-| Ise             | \# paru ncurses5-compat-libs <br />                                                                                                                         <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> <br />                             <a href="https://youtu.be/yzEIQLQZYpk?t=203">Installation Video</a> <br />                                                                                 \# sudo chmod +rwx settings64.sh <br />                                                                                                                     \# cd /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ <br />                                                                                                         \# ./ise  <br />                                                                                                                                           \# Create Desktop Entity  <br />                                                                                                                           \# paru jetbrains-mono <br />                                                                                                                               Edit -> Preferences -> Ise Text Editor -> Change font/tab width                                               |
-| Matlab          | ???????????????????                                                                                           |
-| TexStudio       | \# paru texlive <br /> \# paru texstudio                                                                      |  
+|     App Name    |                                                  Command                                                          |
+|:----------------|:------------------------------------------------------------------------------------------------------------------|
+| Arduino         | \# paru arduino                                                                                                   |
+| Clion           | <a href="https://www.jetbrains.com/clion/download/#section=linux">Download</a> <br />                                                                       Tools -> Create Desktop Entity                                                                                    |
+| Diligence Adept | \# paru digilent.adept.runtime <br />                                                                                                                       \# paru digilent.adept.utilities <br />                                                                                                                     [example.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8865697/example.txt)|
+| Intellij        | <a href="https://www.jetbrains.com/idea/download/#section=linux">Download</a> <br />                                                                       Tools -> Create Desktop Entity <br />                                                                                                                       Download latest jdk                                                                                               |
+| Ise             | \# paru ncurses5-compat-libs <br />                                                                                                                         <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_ISE_DS_Lin_14.7_1015_1.tar">Download</a> <br />                             <a href="https://youtu.be/yzEIQLQZYpk?t=203">Installation Video</a> <br />                                                                                 \# sudo chmod +rwx settings64.sh <br />                                                                                                                     \# cd /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/ <br />                                                                                                         \# ./ise  <br />                                                                                                                                           \# Create Desktop Entity  <br />                                                                                                                           \# paru jetbrains-mono <br />                                                                                                                               Edit -> Preferences -> Ise Text Editor -> Change font/tab width                                                   |
+| Matlab          | ???????????????????                                                                                               |
+| TexStudio       | \# paru texlive <br /> \# paru texstudio                                                                          |  
 
 ### Other
-|     App Name    |                                                  Command                                                      |
-|:----------------|:--------------------------------------------------------------------------------------------------------------|
-| Anydesk         | \# paru anydesk                                                                                               |
-| Discord         | \# paru discord                                                                                               |
-| Firefox         | \# paru firefox                                                                                               |
-| Microsoft Edge  | \# paru microsoft-edge                                                                                        |
-| Notepadqq       | \# paru notepadqq                                                                                             |
-| Obs             | \# paru obs-studio                                                                                            |
-| Psensor         | \# paru psensor                                                                                               |
-| qbittorrent     | \# paru qbittorrent                                                                                           |
-| Signal          | \# paru signal-desktop                                                                                        |
-| Spotify         | \# paru Spotify                                                                                               |
-| Steam           | \# sudo vim /etc/pacman.conf <br />                                                                                                                         Uncomment multilib and Include <br />                                                                                                                       \# paru steam <br />                                                                                                                                       \# paru arial <br />                                                                                                                                       steam -> settings -> steam play -> Enable steam play, select latest proton <br />                                                                           \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                   |
-| Vlc             | \# paru vlc                                                                                                   |
+|     App Name    |                                                  Command                                                          |
+|:----------------|:------------------------------------------------------------------------------------------------------------------|
+| Anydesk         | \# paru anydesk                                                                                                   |
+| Discord         | \# paru discord                                                                                                   |
+| Firefox         | \# paru firefox                                                                                                   |
+| Microsoft Edge  | \# paru microsoft-edge                                                                                            |
+| Notepadqq       | \# paru notepadqq                                                                                                 |
+| Obs             | \# paru obs-studio                                                                                                |
+| Psensor         | \# paru psensor                                                                                                   |
+| qbittorrent     | \# paru qbittorrent                                                                                               |
+| Signal          | \# paru signal-desktop                                                                                            |
+| Spotify         | \# paru Spotify                                                                                                   |
+| Steam           | \# sudo vim /etc/pacman.conf <br />                                                                                                                         Uncomment multilib and Include <br />                                                                                                                       \# paru steam <br />                                                                                                                                       \# paru arial <br />                                                                                                                                       steam -> settings -> steam play -> Enable steam play, select latest proton                                        |
+| Vlc             | \# paru vlc                                                                                                       |
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
