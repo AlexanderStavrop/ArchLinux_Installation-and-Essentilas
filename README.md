@@ -11,8 +11,8 @@ A guide for installing arch linux and the programs in need most.
 ## Installation
 
 ### Verify you are in efi
-\# ls /sys/firmware/efi/efivars
-- If the command is executed without errors continue.
+- \# ls /sys/firmware/efi/efivars
+  - If the command is executed without errors continue.
 
 ### Connect to the internet
 - \# iwctl
@@ -25,7 +25,6 @@ A guide for installing arch linux and the programs in need most.
 - Check is connected
   - \# ping archlinux.org
 
-
 ### Update the system clock
 - \# timedatectl set-ntp true
 
@@ -33,27 +32,53 @@ A guide for installing arch linux and the programs in need most.
 - List disks and choose the correct drive
   - \# fdisk -l
 - \# fdisk /dev/[yourname]
-  - For Pc: 
-   
-  | Key |       Type 	             | Size |
-  | :-: |       :-:  	             | :-:  |
-  |  o  | Create a Dos table?!     |  -   | 
-  |  n  | (p)Root partition        | -1G  |
-  |  t  | (p)Linux root x86-64 (83)|  -   |
-  |  n  | (p)Swap partition        | +1G  |
-  |  t  | (p)Linux swap (82)       |  -   |
-
-  - For Laptop: 
   
-  | Key |       Type 	          | Size |
-  | :-: |       :-:  	          | :-:  |
-  |  g  | Partition table       |  -   | 
-  |  n  | Efi partition         | +1G  |
-  |  t  | Efi partition(1)      |  -   |
-  |  n  | Root partition        | -1G  |
-  |  t  | Linux root x86-64 (23)|  -   |
-  |  n  | Swap partition        | +1G  |
-  |  t  | Linux swap (19)       |  -   |
+  
+  <table>
+    <tr>
+        <th colspan=3 align="center"> For MBR (My PC) </th> <th> </th> <th colspan=3 align="center"> For GTP (My Laptop) </th>
+    </tr>
+    <tr>
+      <td align="center"> Key </td> <td align="center"> Type </td> <td align="center"> Size 
+      </td> <td>
+      <td align="center"> Key </td> <td align="center"> Type </td> <td align="center"> Size     
+    </tr>
+    <tr>
+      <td align="center"> o </td> <td> Create a Dos table?!   </td> <td align="center"> - </td> 
+      <td> </td>
+      <td align="center"> g </td> <td> Create Partition table </td> <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center"> - </td> <td align="center"> - </td> <td align="center">  -  </td>
+      <td> </td>
+      <td align="center"> n </td> <td> Efi partition    </td> <td align="center"> +1G </td>
+    </tr>
+    <tr>
+      <td align="center"> - </td> <td align="center">   -   </td> <td align="center"> - </td>
+      <td> </td>
+      <td align="center"> t </td> <td> Efi partition - (1) </td> <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center"> n </td> <td> (p) - Root partition </td> <td align="center"> -1G </td>
+      <td> </td>
+      <td align="center"> n </td> <td> Root partition       </td> <td align="center"> -1G </td>
+    </tr>  
+    <tr>
+      <td align="center"> t </td> <td> (p) - Linux root x86-64 - (83) </td> <td align="center"> - </td>
+      <td> </td>
+      <td align="center"> t </td> <td> Linux root x86-64 - (23)       </td> <td align="center"> - </td>
+    </tr>
+    <tr>
+      <td align="center"> n </td> <td> (p) - Swap partition </td> <td align="center"> +1G </td>
+      <td> </td>
+      <td align="center"> n </td> <td> Swap partition       </td> <td align="center"> +1G </td>
+    </tr>  
+    <tr>
+      <td align="center"> t </td> <td> (p) - Linux swap - (82) </td> <td align="center"> - </td>
+      <td> </td>
+      <td align="center"> t </td> <td> Linux swap - (19)       </td> <td align="center"> - </td>
+    </tr>
+</table>
  - Verify all your partitions are ok and exit (w)
 
 ### Format the partitions
@@ -124,6 +149,8 @@ A guide for installing arch linux and the programs in need most.
 - \# systemctl enable NetworkManager
 
 ### Finish up
+- Exit Chroot
+  - \# exit   
 - Reboot into the system
   - \# reboot
 
@@ -158,7 +185,7 @@ A guide for installing arch linux and the programs in need most.
   - \# paru emoji   
 - Chinese characters
   - \# paru noto-fonts-cjk
-- Find windows in grub
+- Find windows on different disk in grub
   - Create mount point 
     - \# sudo mkdir /mnt/windows
   - Mount the windows drive
