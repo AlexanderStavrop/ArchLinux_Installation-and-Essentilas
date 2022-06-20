@@ -208,6 +208,7 @@ A guide for installing arch linux and the programs in need most.
 | Filelight       | \# paru filelight                                                                                                 |      -     |
 | Flameshot       | \# paru flameshot                                                                                                 |[flameshot.txt](https://github.com/AlexanderStavrop/Arch-Essentials/files/8308980/flameshot.txt)                                                                  |
 | Grub Customizer | \# paru grub-customizer                                                                                           |      -     |
+| Libre office    | \# paru libreoffice-fresh                                                                                         |      -     |
 | Winrar          | \# paru unrar                                                                                                     |      -     |
 | Xow             | \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                       |      -     |       
 | Yt-dlp          | \# paru yt-dlp  <br /> Add configuration file at /home/alex/.config/yt-dlp/                                       |[config.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8839111/config.txt)                                               |
