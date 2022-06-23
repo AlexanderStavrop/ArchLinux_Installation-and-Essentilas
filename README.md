@@ -96,7 +96,7 @@ A guide for installing arch linux and the programs in need most.
 - \# pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 
 ### Configure the system
-- \# genfstab -U /mnt >> /mnt/fstab
+- \# genfstab -U /mnt >> /mnt/etc/fstab
 - \# arch-chroot /mnt	
   - \# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
   - \# hwclock --systohc
@@ -130,7 +130,7 @@ A guide for installing arch linux and the programs in need most.
 - GTP
   - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 - MBR
-  - \# grub-install --target=i386-pc /dev/"root_partition" 
+  - \# grub-install --target=i386-pc /dev/"root_partition" (if error try /dev/sda or your drive)
 - \# grub-mkconfig -o /boot/grub/grub.cfg
 
 ### Install extras
