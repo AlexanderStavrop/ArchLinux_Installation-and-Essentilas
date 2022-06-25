@@ -209,7 +209,7 @@ A guide for installing arch linux and the programs in need most.
   - Create the filesystem
     - \# sudo mkfs.ext4 /dev/sdXY
   - Copy the UUID
-    - \# sudo fdisk -l  
+    - \# blkid /dev/sdXY  
   - Edit the fstab file !!!
     - \# sudo vim /etc/fstab
       - Add entry UUID="UUID" \t "mount path" \t ext4 \t defaults \t 0 \t 0
