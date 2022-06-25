@@ -198,21 +198,29 @@ A guide for installing arch linux and the programs in need most.
   - \# vim ~/.bashrc
     - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
 
-## Formating disks
+## Formating and automounting disks
+### Formating 
   - List the available disks
     - \# sudo fdisk -l
-  - Format the disk
+  - Format the disk (if needed)
     - \# sudo fdisk /dev/sdX
       - Delete old partition (d)
       - Create new partition (n)
       - Write the partition  (w)
   - Create the filesystem
     - \# sudo mkfs.ext4 /dev/sdXY
+  - Add disk label
+    - \# sudo e2label /dev/sdXY "label"    
+
+### Automounting
+  - Make mount directoty
+    - \# sudo mkdir /media/"dir name"
+    - \# sudo chown -R "usr" /media/"dir name" 
   - Copy the UUID
     - \# blkid /dev/sdXY  
   - Edit the fstab file !!!
     - \# sudo vim /etc/fstab
-      - Add entry UUID="UUID" \t "mount path" \t ext4 \t defaults \t 0 \t 0
+      - Add entry UUID="UUID" \t /media/"dir name" \t ext4 \t defaults \t 0 \t 0
 
 ## Programms
 
