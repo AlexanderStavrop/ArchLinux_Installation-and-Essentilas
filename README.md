@@ -162,9 +162,6 @@ A guide for installing arch linux and the programs in need most.
   - \# sudo vim /etc/pacman.conf
     - Uncomment ParallelDownloads = 5
     - Uncomment colors
-- Make kitty pretty
-  - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
-  - \# notepadqq .bashrc
 - Paru
   - \# sudo pacman -S rustup base-devel
   - \# rustup install stable
@@ -267,3 +264,7 @@ A guide for installing arch linux and the programs in need most.
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 - Desktop Entyties.
+
+- Make kitty pretty
+  - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
+  - \# notepadqq .bashrc
