@@ -82,7 +82,7 @@ A guide for installing arch linux and the programs in need most.
  - Verify all your partitions are ok and exit (w)
 
 ### Format the partitions
-- \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)(**Only GTP**)
+- \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)
 - \# mkfs.ext4 /dev/[linux filesystem partition]
 - \# mkswap /dev/[swap partition]
 
@@ -135,7 +135,7 @@ A guide for installing arch linux and the programs in need most.
 
 ### Install extras
 - \# pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
-- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs gedit sudo
+- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty obsidian okular gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs gedit sudo
 - \# pacman -S --needed base git 
 
 ### Create new user
@@ -233,7 +233,6 @@ A guide for installing arch linux and the programs in need most.
 | Github          | \# git config --global credential.helper store <br />                                                                                                       \# git pull "a private repository" <br />                                                                                                                   Enter the username and password <br />                                                                                                                     \# git config --global user.email "you@example.com" <br />                                                                                                 \# git config --global user.name "Your Name"                                                                      |      -     |
 | Grub Customizer | \# paru grub-customizer                                                                                           |      -     |
 | Libre office    | \# paru libreoffice-fresh                                                                                         |      -     |
-| Okular          | \# paru okular                                                                                                    |      -     |
 | Virtual mic     | \# paru pulseaudio-virtualmic <br />                                                                                                                       install Lanmic on your android phone <br />                                                                                                                 Open the app, select RTSP and press the on button <br />                                                                                                   \# virtualmic rtsp//"ip"                                                                                          |      -     |
 | Winrar          | \# paru unrar                                                                                                     |      -     |
 | Xow             | \# paru xow <br />                                                                                                                                         \# sudo xow-get-firmware.sh                                                                                       |      -     |       
