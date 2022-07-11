@@ -135,7 +135,7 @@ A guide for installing arch linux and the programs in need most.
 
 ### Install extras
 - \# pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
-- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty obsidian okular gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs gedit sudo
+- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark kitty obsidian okular gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs ntfs gedit sudo
 - \# pacman -S --needed base git 
 
 ### Create new user
