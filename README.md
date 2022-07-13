@@ -142,7 +142,7 @@ A guide for installing arch linux and the programs in need most.
 - \# useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name] 
 - \# passwd name
 - \# vim /etc/sudoers
-  - Remove comment in wheel 
+  - Remove comment in the first wheel 
 
 ### Enable sddm and nm
 - \# systemctl enable sddm
