@@ -1,3 +1,9 @@
+<!---
+kate
+reflector
+vulkan shit
+-->
+
 # ArchLinux - Installation
 
 A guide for installing arch linux and the programs in need most.
