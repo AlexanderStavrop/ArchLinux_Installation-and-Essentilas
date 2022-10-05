@@ -257,7 +257,7 @@ A guide for installing arch linux and the programs in need most.
 |:----------------|:------------------------------------------------------------------------------------------------------------------|
 | Anydesk         | \# paru anydesk                                                                                                   |
 | Discord         | \# paru discord                                                                                                   |
-| Firefox         | \# paru firefox                                                                                                   |
+| Firefox         | \# paru firefox                                                                                                                                              Inside Firefox search for about:config -> accept the risk -> Change ui.key.menuAccessKeyFocuses -> false         |
 | Notepadqq       | \# paru notepadqq                                                                                                 |
 | Obs             | \# paru obs-studio                                                                                                |
 | Psensor         | \# paru psensor                                                                                                   |
