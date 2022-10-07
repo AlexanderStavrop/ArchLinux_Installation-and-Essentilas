@@ -256,7 +256,7 @@ A guide for installing arch linux and the programs in need most.
 | Anydesk         | \# paru anydesk                                                                                                   |
 | Discord         | \# paru discord                                                                                                   |
 | Firefox         | \# paru firefox <br />                                                                                                                                     Inside Firefox search for **about:config** -> Accept the risk -> Change **ui.key.menuAccessKeyFocuses** to false  |
-| Kata            | \# paru kate                                                                                                      |
+| Kate            | \# paru kate                                                                                                      |
 | Obs             | \# paru obs-studio                                                                                                |
 | Psensor         | \# paru psensor                                                                                                   |
 | qbittorrent     | \# paru qbittorrent                                                                                               |
