@@ -1,7 +1,4 @@
 <!---
-kate
-reflector
-vulkan shit
 -->
 
 # ArchLinux - Installation
@@ -177,6 +174,7 @@ A guide for installing arch linux and the programs in need most.
   - \# makepkg -si
   - \# sudo vim /etc/paru.conf 
     - Enable BottomUp
+  - \# paru reflector
 - Bluetooth
   - \# sudo systemctl start bluetooth.service
   - \# sudo systemctl enable bluetooth.service
@@ -258,13 +256,13 @@ A guide for installing arch linux and the programs in need most.
 | Anydesk         | \# paru anydesk                                                                                                   |
 | Discord         | \# paru discord                                                                                                   |
 | Firefox         | \# paru firefox <br />                                                                                                                                     Inside Firefox search for **about:config** -> Accept the risk -> Change **ui.key.menuAccessKeyFocuses** to false  |
-| Notepadqq       | \# paru notepadqq                                                                                                 |
+| Kata            | \# paru kate                                                                                                      |
 | Obs             | \# paru obs-studio                                                                                                |
 | Psensor         | \# paru psensor                                                                                                   |
 | qbittorrent     | \# paru qbittorrent                                                                                               |
 | Signal          | \# paru signal-desktop                                                                                            |
 | Spotify         | \# paru Spotify                                                                                                   |
-| Steam           | \# sudo vim /etc/pacman.conf <br />                                                                                                                         Uncomment multilib and Include <br />                                                                                                                       \# paru steam <br />                                                                                                                                       \# paru arial <br />                                                                                                                                       steam -> settings -> steam play -> Enable steam play, select latest proton                                        |
+| Steam           | \# sudo vim /etc/pacman.conf <br />                                                                                                                         Uncomment multilib and Include <br />                                                                                                                       \# paru steam <br />                                                                                                                                       \# paru arial <br />                                                                                                                                       steam -> settings -> steam play -> Enable steam play, select latest proton  <br />                                                                         If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                          |
 | Vlc             | \# paru vlc                                                                                                       |
 
 ## General Configuration
