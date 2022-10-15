@@ -90,7 +90,7 @@ A guide for installing arch linux and the programs in need most.
 - \# mkswap /dev/[swap partition]
 
 ### Mount the file systems
-- \# mount /dev/[linux filesystem partition] /mnt (**Only GTP**)
+- \# mount /dev/[linux filesystem partition] /mnt <!--(**Only GTP**)-->
 - \# mkdir /mnt/efi(**Only GTP**)
   - \# mount /dev/[efi filesystem] /mnt/efi
 - \# swapon /dev/[swap]
