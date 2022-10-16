@@ -1,4 +1,5 @@
-<!---
+<!--- neofetch
+      cmatrix
 -->
 
 # ArchLinux - Installation
