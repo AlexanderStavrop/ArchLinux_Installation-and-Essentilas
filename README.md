@@ -217,7 +217,7 @@ A guide for installing arch linux and the programs in need most.
     - \# sudo mkdir /media/"dir name"
     - \# sudo chown -R "usr" /media/"dir name" 
   - Copy the UUID
-    - \# blkid /dev/sdXY  
+    - \# sudo blkid /dev/sdXY  
   - Edit the fstab file !!!
     - \# sudo vim /etc/fstab
       - Add entry UUID="UUID" \t /media/"dir name" \t ext4 \t defaults \t 0 \t 0
