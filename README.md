@@ -127,9 +127,9 @@ A guide for installing arch linux and the programs in need most.
    - Create a password
      - \# passwd
 
-### Install bootloader
-- \# vim /etc/default/grub
-  - Add lines/uncomment
+    ### Install bootloader
+        - \# vim /etc/default/grub
+            - Add lines/uncomment
     - GRUB_DISABLE_OS_PROBER=false
 - GTP
   - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
@@ -160,6 +160,8 @@ A guide for installing arch linux and the programs in need most.
 
 <br></br>
 # ArchLinux - Essentials
+
+## Fix the damn navigation
 
 ## Core
 - Pacman configuration
