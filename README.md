@@ -144,10 +144,18 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 ```
 
 ### Configure the system
-- \# genfstab -U /mnt >> /mnt/etc/fstab
-- \# arch-chroot /mnt	
-    - ### Time and time-zone configuration
-        - \# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+- Generate the fstab file
+    ```
+    genfstab -U /mnt >> /mnt/etc/fstab
+    ```
+- Enter root 
+    ```
+    arch-chroot /mnt
+    ```
+    - #### Time and time-zone configuration
+        ```
+        ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+        ```
         - \# hwclock --systohc
     - ### Locale configuration
         - \# vim /etc/locale.gen 
