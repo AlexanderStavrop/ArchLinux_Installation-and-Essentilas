@@ -15,28 +15,51 @@ A guide for installing arch linux and the programs in need most.
 ## Installation
 
 ### Verify you are in efi
-- \# ls /sys/firmware/efi/efivars
+```
+ls /sys/firmware/efi/efivars
+```
   - If the command is executed without errors continue.
 
 ### Connect to the internet
-- \# iwctl
-  - List stations (Probably wlan0)
-    - \# device list
-  - Find network ssid
-    - \# station [station] get-networks
-  - Connect to wifi
-    - \# station [station] connect [ssid]
+- Establish connection
+    ```
+    iwctl
+    ```
+    - List stations (Probably wlan0)
+        ```
+        device list
+        ```
+    - Find network ssid
+        ```
+        station [station] get-networks
+        ```
+    - Connect to wifi
+        ```
+        station [station] connect [ssid]
+        ```
+    - Exit
+        ```
+        exit
+        ```
 - Check is connected
-  - \# ping archlinux.org
+    ```
+    ping archlinux.org
+    ```
 
 ### Update the system clock
-- \# timedatectl set-ntp true
+```
+timedatectl set-ntp true
+```
 
 ### Partition the disks
 - List disks and choose the correct drive
-  - \# fdisk -l
-- \# fdisk /dev/[yourname]
-  
+    ```
+    fdisk -l
+    ```
+- Edit the target drive
+    ```
+    fdisk /dev/[Targe Drive]
+    ```  
   
   <table>
     <tr>
@@ -86,120 +109,231 @@ A guide for installing arch linux and the programs in need most.
  - Verify all your partitions are ok and exit (w)
 
 ### Format the partitions
-- \# mkfs.fat -F 32 /dev/[efi partition] (if you created it)
-- \# mkfs.ext4 /dev/[linux filesystem partition]
-- \# mkswap /dev/[swap partition]
+- If an Efi Partition has been created
+    ```
+    mkfs.fat -F 32 /dev/[efi Partition] 
+    ```
+```
+mkfs.ext4 /dev/[linux filesystem partition]
+```
+```
+mkswap /dev/[swap partition]
+```
 
 ### Mount the file systems
-- \# mount /dev/[linux filesystem partition] /mnt <!--(**Only GTP**)-->
-- \# mkdir /mnt/efi(**Only GTP**)
-  - \# mount /dev/[efi filesystem] /mnt/efi
-- \# swapon /dev/[swap]
+- Create a mounting point for Efi Partition (**Only GTP**)
+    ```
+    mkdir /mnt/efi 
+    ```
+    - Mount the Efi Partition
+        ```
+        mount /dev/[efi filesystem Partition] /mnt/efi
+        ```
+- Mount the Root Partition
+    ```
+    mount /dev/[linux filesystem Partition] /mnt
+    ```
+- Set the Swapon Partition
+    ```
+    swapon /dev/[Swap Partition]
+    ```
 
 ### Install base system and some extras
-- \# pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
+```
+pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
+```
 
 ### Configure the system
 - \# genfstab -U /mnt >> /mnt/etc/fstab
 - \# arch-chroot /mnt	
-  - \# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
-  - \# hwclock --systohc
-  - Edit locale
-    - \# vim /etc/locale.gen 
-    	- Uncommnent wanted locales
-    	  - el_GR.UTF-8 UTF-8
-    	  - en_US.UTF-8 UTF-8	
+    - ### Time and time-zone configuration
+        - \# ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+        - \# hwclock --systohc
+    - ### Locale configuration
+        - \# vim /etc/locale.gen 
+    	    - Uncommnent wanted locales
+    	        - el_GR.UTF-8 UTF-8
+    	        - en_US.UTF-8 UTF-8	
     	- \# locale-gen
-    - \# vim /etc/locale.conf 
-      - LANG=en_US.UTF-8
-      - LC_TIME=el_GR.UTF-8
-  - Network configuration
-    - \# vim /etc/hostname
-      - "myhostname"
-    - \# vim /etc/hosts 
-      |  	  |		   |
-      |    :-: 	  |       :-: 	   |
-      | 127.0.0.1 | localhost      | 
-      | :::1      | "myhostname"   | 
-      | 127.0.1.1 | "myhostname"   | 
-      | ff02::1   | ip6-allnodes   | 
-      | ff02::2   | ip6-allrouters | 	 
-   - Create a password
-     - \# passwd
+        - \# vim /etc/locale.conf 
+            - LANG=en_US.UTF-8
+            - LC_TIME=el_GR.UTF-8
+    - ### Network configuration
+        - \# vim /etc/hostname
+            - **[myhostname]**
+        - \# vim /etc/hosts 
+            |  	  |		   |
+            |    :-: 	  |       :-: 	   |
+            | 127.0.0.1 | localhost        | 
+            | :::1      | **[myhostname]** | 
+            | 127.0.1.1 | **[myhostname]** | 
+            | ff02::1   | ip6-allnodes     | 
+            | ff02::2   | ip6-allrouters   | 	 
+    - ### Create a password
+        - \# passwd
 
-    ### Install bootloader
+    - ### Install bootloader
         - \# vim /etc/default/grub
             - Add lines/uncomment
-    - GRUB_DISABLE_OS_PROBER=false
-- GTP
-  - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-- MBR
-  - \# grub-install --target=i386-pc /dev/"root_partition" (if error try /dev/sda or your drive)
-- \# grub-mkconfig -o /boot/grub/grub.cfg
+                - GRUB_DISABLE_OS_PROBER=false
+        - Grub Install
+            - GTP
+                - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+            - MBR
+                - \# grub-install --target=i386-pc /dev/**[root_partition]** (if error try /dev/sda or your drive)
+        - \# grub-mkconfig -o /boot/grub/grub.cfg
 
-### Install extras
-- \# pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
-- \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark konsole kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs ntfs gedit sudo
-- \# pacman -S --needed base git 
+    - ### Install extras
+        - \# pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
+        - \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark konsole kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs ntfs gedit sudo
+        - \# pacman -S --needed base git 
 
-### Create new user
-- \# useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name] 
-- \# passwd name
-- \# vim /etc/sudoers
-  - Remove comment in the first wheel 
+    - ### Create new user
+        - \# useradd -m -u 1000 -G wheel,audio,kvm,input,storage **[name]**
+        - \# passwd **[name]**
+        - \# vim /etc/sudoers
+            - Remove comment in the **first** wheel 
 
-### Enable sddm and nm
-- \# systemctl enable sddm
-- \# systemctl enable NetworkManager
+    - ### Enable sddm and nm
+        - \# systemctl enable sddm
+        - \# systemctl enable NetworkManager
 
-### Finish up
-- Exit Chroot
-  - \# exit   
+    - ### Finish up
+        - Exit Chroot
+            - \# exit   
 - Reboot into the system
   - \# reboot
 
 <br></br>
 # ArchLinux - Essentials
 
-## Fix the damn navigation
+## Fix the damn mouse navigation and keyboard layouts
+- Touchpad
+    - Navigate to **System Settings -> Input Devices** and Enable
+        - Tapping
+            - **Tap-to-click**
+            - **Tap-and-drag**      
+        - Scrolling
+            - **Invert scroll direction (Natural scrolling)**
+        - Right-click           
+           - **Press anywhere with two fingers**
+- Keyboard
+    - Navigate to **Layouts**
+        - Enable **Configure Layouts**
+        - Add layout **Greek**
+    - Navigate to **Advanced**
+        - Expand **Switching to another layout**
+        - Select **Alt + Shift**
+
+
 
 ## Core
-- Pacman configuration
-  - \# sudo vim /etc/pacman.conf
-    - Uncomment ParallelDownloads = 5
-    - Uncomment colors
-- Paru
-  - \# sudo pacman -S rustup base-devel
-  - \# rustup install stable
-  - \# rustup default stable
-  - \# git clone https://aur.archlinux.org/paru.git
-  - \# cd paru
-  - \# makepkg -si
-  - \# sudo vim /etc/paru.conf 
-    - Enable BottomUp
-  - \# paru reflector
-- Bluetooth
-  - \# sudo systemctl start bluetooth.service
-  - \# sudo systemctl enable bluetooth.service
-- Network Tools
-  - \# paru net-tools
-- Emoji
-  - \# paru emoji   
-- Chinese characters
-  - \# paru noto-fonts-cjk
-- Find windows on different disk in grub
-  - Create mount point 
-    - \# sudo mkdir /mnt/windows
-  - Mount the windows drive
-    - \# sudo mount /dev/sda3 /mnt/windows/
-  - \# os-prober
-  - Edit grub-customizer
+- ### Pacman configuration
+  ```
+  sudo vim /etc/pacman.conf
+  ```
+    - Uncomment 
+        - **ParallelDownloads=5**
+        - **colors**
+- ### Paru
+    ```
+    sudo pacman -S rustup base-devel
+    ```
+    ```
+    rustup install stable & rustup default stable
+    ```
+    ```
+    git clone https://aur.archlinux.org/paru.git
+    ```
+    ```
+    cd paru
+    ```
+    ```
+    makepkg -si
+    ```
+    ```
+    sudo vim /etc/paru.conf 
+    ```
+    - Enable **BottomUp**
+    ```
+    paru reflector
+    ```
+- ### Bluetooth
+    ```
+    sudo systemctl start bluetooth.service & sudo systemctl enable bluetooth.service
+    ```
+- ### Network Tools
+    ```
+    paru net-tools
+    ```
+- ### Find windows on different disk in grub
+    - Create mount point 
+        ```
+        sudo mkdir /mnt/windows
+        ```
+    - Mount the windows drive
+        ```
+        sudo mount /dev/[Windows Partition] /mnt/windows/
+        ```
+    - Find windows
+        ```
+        os-prober
+        ```      
+    - Edit Grub menu entries
+        ``` 
+        Grub-Customizer !?
+        ```
+- ### Formating and automounting disks
+    - #### Formating 
+        - List the available disks
+            ```
+            sudo fdisk -l
+            ```
+        - Format the disk (if needed)
+            ```
+            sudo fdisk /dev/[Target Disk]
+            ```
+            - Delete old partition (d)
+            - Create new partition (n)
+            - Write the partition  (w)
+        - Create the filesystem
+            ```
+            sudo mkfs.ext4 /dev/[Target Partition]
+            ```
+        - Add disk label
+            ```
+            sudo e2label /dev/[Target Partition] [label]
+            ```
+
+### Automounting
+  - Make mount directoty
+    - \# sudo mkdir /media/"dir name"
+    - \# sudo chown -R "usr" /media/"dir name" 
+  - Copy the UUID
+    - \# sudo blkid /dev/sdXY  
+  - Edit the fstab file !!!
+    - \# sudo vim /etc/fstab
+      - Add entry UUID="UUID" \t /media/"dir name" \t ext4 \t defaults \t 0 \t 0
+ 
+ 
+ 
+
+- ### Special characters
+    - Emoji
+        ```
+        paru noto-fonts-emoji
+        ```
+    - Chinese characters
+        ```
+        paru noto-fonts-cjk
+        ```
+<!--- 
 - Aliases
   - \# vim ~/.bash_aliases
     - Add "command='command'"
   - \# vim ~/.bashrc
     - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
-
+-->
 ## Formating and automounting disks
 ### Formating 
   - List the available disks
