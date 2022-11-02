@@ -265,12 +265,16 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         ```
         systemctl enable NetworkManager
         ```
-        
-    - ### Finish up
-        - Exit Chroot
-            - \# exit   
-- Reboot into the system
-  - \# reboot
+              
+   - #### Exit Chroot    
+      ```
+      exit
+      ```
+      
+- Reboot and remove the usb
+  ```
+  reboot
+  ```
 
 <br></br>
 # ArchLinux - Essentials
@@ -373,16 +377,26 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             sudo e2label /dev/[Target Partition] [label]
             ```
 
-### Automounting
-  - Make mount directoty
-    - \# sudo mkdir /media/"dir name"
-    - \# sudo chown -R "usr" /media/"dir name" 
-  - Copy the UUID
-    - \# sudo blkid /dev/sdXY  
-  - Edit the fstab file !!!
-    - \# sudo vim /etc/fstab
-      - Add entry UUID="UUID" \t /media/"dir name" \t ext4 \t defaults \t 0 \t 0
- 
+    - #### Automounting
+        - Make mount directoty
+            ```
+            sudo mkdir /media/[dir name]
+            ```
+            ```
+            sudo chown -R [usr] /media/[dir name]
+            ```
+        - Copy the UUID
+            ```
+            sudo blkid /dev/[Target Partition]  
+            ```
+        - Edit the fstab file !!!
+             ```
+            sudo vim /etc/fstab
+            ```
+            - Add line
+                ```
+                UUID=[UUID] \t /media/[dir name] \t ext4 \t defaults \t 0 \t 0
+                ```
  
  
 
@@ -402,30 +416,6 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
   - \# vim ~/.bashrc
     - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
 -->
-## Formating and automounting disks
-### Formating 
-  - List the available disks
-    - \# sudo fdisk -l
-  - Format the disk (if needed)
-    - \# sudo fdisk /dev/sdX
-      - Delete old partition (d)
-      - Create new partition (n)
-      - Write the partition  (w)
-  - Create the filesystem
-    - \# sudo mkfs.ext4 /dev/sdXY
-  - Add disk label
-    - \# sudo e2label /dev/sdXY "label"    
-
-### Automounting
-  - Make mount directoty
-    - \# sudo mkdir /media/"dir name"
-    - \# sudo chown -R "usr" /media/"dir name" 
-  - Copy the UUID
-    - \# sudo blkid /dev/sdXY  
-  - Edit the fstab file !!!
-    - \# sudo vim /etc/fstab
-      - Add entry UUID="UUID" \t /media/"dir name" \t ext4 \t defaults \t 0 \t 0
-
 ## Programms
 
 ### Tools
