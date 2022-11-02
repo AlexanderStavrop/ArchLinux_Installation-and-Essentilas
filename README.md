@@ -154,12 +154,16 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
     - #### Time and time-zone configuration
         ```
-        ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+        ln -sf /usr/share/zoneinfo/Europe/Athens /etc/localtime
         ```
-        - \# hwclock --systohc
+        ```
+        hwclock --systohc
+        ```
     - ### Locale configuration
-        - \# vim /etc/locale.gen 
-    	    - Uncommnent wanted locales
+        ```
+        vim /etc/locale.gen 
+    	```
+        - Uncommnent wanted locales
     	        - el_GR.UTF-8 UTF-8
     	        - en_US.UTF-8 UTF-8	
     	- \# locale-gen
