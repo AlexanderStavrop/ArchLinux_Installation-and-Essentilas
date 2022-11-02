@@ -159,57 +159,113 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         ```
         hwclock --systohc
         ```
-    - ### Locale configuration
-        ```
-        vim /etc/locale.gen 
-    	```
-        - Uncommnent wanted locales
-    	        - el_GR.UTF-8 UTF-8
-    	        - en_US.UTF-8 UTF-8	
-    	- \# locale-gen
-        - \# vim /etc/locale.conf 
-            - LANG=en_US.UTF-8
-            - LC_TIME=el_GR.UTF-8
-    - ### Network configuration
-        - \# vim /etc/hostname
-            - **[myhostname]**
-        - \# vim /etc/hosts 
-            |  	  |		   |
-            |    :-: 	  |       :-: 	   |
+    
+    - #### Locale configuration
+        - Edit the locale.gen file
+            ```
+            vim /etc/locale.gen 
+            ```
+            - Uncommnent wanted locales
+                - el_GR.UTF-8 UTF-8
+                - en_US.UTF-8 UTF-8	
+        - Generate the locale file
+            ```
+            locale-gen
+            ```
+        - Edit the locale.conf file
+            ```
+            vim /etc/locale.conf 
+            ```
+            - Add lines
+                ```
+                LANG=en_US.UTF-8
+                LC_TIME=el_GR.UTF-8
+                ```
+   
+    - #### Network configuration
+        - Edit the hostname 
+            ```
+            vim /etc/hostname
+            ```
+            - Add line
+                ```
+                [myhostname]
+                ```
+        - Edit the hosts
+            ```
+            vim /etc/hosts 
+            ```
+            |  	  |		|
+            |    :-: 	|       :-: 	   |
             | 127.0.0.1 | localhost        | 
             | :::1      | **[myhostname]** | 
             | 127.0.1.1 | **[myhostname]** | 
             | ff02::1   | ip6-allnodes     | 
             | ff02::2   | ip6-allrouters   | 	 
-    - ### Create a password
-        - \# passwd
-
-    - ### Install bootloader
-        - \# vim /etc/default/grub
+    
+    - #### Create a password
+        ```
+        passwd
+        ```
+        
+    - #### Install bootloader
+        - Edit the grub file
+            ```
+            vim /etc/default/grub
+            ```
             - Add lines/uncomment
-                - GRUB_DISABLE_OS_PROBER=false
-        - Grub Install
+                ```
+                GRUB_DISABLE_OS_PROBER=false
+                ```
+        - Install grub
             - GTP
-                - \# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+                ```
+                grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+                ```
             - MBR
-                - \# grub-install --target=i386-pc /dev/**[root_partition]** (if error try /dev/sda or your drive)
-        - \# grub-mkconfig -o /boot/grub/grub.cfg
-
-    - ### Install extras
-        - \# pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
-        - \# pacman -S xorg plasma-desktop dolphin dolphin-plugins ark konsole kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs ntfs gedit sudo
-        - \# pacman -S --needed base git 
-
-    - ### Create new user
-        - \# useradd -m -u 1000 -G wheel,audio,kvm,input,storage **[name]**
-        - \# passwd **[name]**
-        - \# vim /etc/sudoers
+                ```
+                grub-install --target=i386-pc /dev/[root_partition]
+                ```
+                - (if an error occurs, try /dev/[Target Drive])
+        - Generate the grub.cfg file
+            ```
+            grub-mkconfig -o /boot/grub/grub.cfg
+            ```
+            
+    - #### Install some more extras
+        ```
+        pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
+        ```
+        ```
+        pacman -S xorg plasma-desktop dolphin dolphin-plugins ark konsole kitty gwenview plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluez bluedevil kscreen kinfocenter plasma-systemmonitor ffmpegthumbs ntfs gedit sudo
+        ```
+        ```
+        pacman -S --needed base git 
+        ```
+        
+    - #### Create new user
+        - Create user
+            ```
+            useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name]
+            ```
+        - Create user password
+            ```
+            passwd [name]
+            ```
+        - Add user to sudoers
+            ```
+            vim /etc/sudoers
+            ```
             - Remove comment in the **first** wheel 
 
-    - ### Enable sddm and nm
-        - \# systemctl enable sddm
-        - \# systemctl enable NetworkManager
-
+    - #### Enable sddm and nm
+        ```
+        systemctl enable sddm
+        ```
+        ```
+        systemctl enable NetworkManager
+        ```
+        
     - ### Finish up
         - Exit Chroot
             - \# exit   
