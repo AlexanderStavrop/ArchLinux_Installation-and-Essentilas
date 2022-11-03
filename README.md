@@ -304,6 +304,10 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - Select **Alt + Shift**
 
 ## Core
+- Connect to Wifi
+- ### Kde Wallet
+    - When prompted select **Classic, blowfish encrypted file**
+    
 - ### Pacman configuration
   ```
   sudo vim /etc/pacman.conf
