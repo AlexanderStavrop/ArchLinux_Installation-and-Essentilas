@@ -195,8 +195,8 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             ```
             vim /etc/hosts 
             ```
-            |  	  |		|
-            |    :-: 	|       :-: 	   |
+            |  	      |		       |
+            |    :-: 	|       :-: 	 |
             | 127.0.0.1 | localhost        | 
             | :::1      | **[myhostname]** | 
             | 127.0.1.1 | **[myhostname]** | 
