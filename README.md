@@ -342,7 +342,10 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
 - ### Bluetooth
     ```
-    sudo systemctl start bluetooth.service & sudo systemctl enable bluetooth.service
+    sudo systemctl start bluetooth.service
+    ```
+    ```
+    sudo systemctl enable bluetooth.service
     ```
 - ### Network Tools
     ```
