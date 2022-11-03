@@ -19,7 +19,7 @@ A guide for installing arch linux and the programs in need most.
 ls /sys/firmware/efi/efivars
 ```
   - If the command is executed without errors continue.
-
+ mouse 
 ### Connect to the internet
 - Establish connection
     ```
@@ -111,7 +111,7 @@ timedatectl set-ntp true
 ### Format the partitions
 - If an Efi Partition has been created
     ```
-    mkfs.fat -F 32 /dev/[efi Partition] 
+    mkfs.fat -F 32 /dev/[efi Partition]  mouse 
     ```
 ```
 mkfs.ext4 /dev/[linux filesystem partition]
@@ -279,25 +279,29 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 <br></br>
 # ArchLinux - Essentials
 
-## Fix the damn mouse navigation and keyboard layouts
-- Touchpad
-    - Navigate to **System Settings -> Input Devices** and Enable
+## Fix the damn mouse navigation, keyboard layouts and dark theme
+- Open **System Settings**
+    - Theme
+        - Select **Breeze Dark**
+    - Clicking flies or folders
+        - Select **Selects them**   
+- Navigate to **Input Devices**
+    - Touchpad
         - Tapping
-            - **Tap-to-click**
-            - **Tap-and-drag**      
+            - Enable **Tap-to-click**
+            - Enable **Tap-and-drag**      
         - Scrolling
-            - **Invert scroll direction (Natural scrolling)**
+            - Enable **Invert scroll direction (Natural scrolling)**
         - Right-click           
-           - **Press anywhere with two fingers**
-- Keyboard
-    - Navigate to **Layouts**
-        - Enable **Configure Layouts**
-        - Add layout **Greek**
-    - Navigate to **Advanced**
-        - Expand **Switching to another layout**
-        - Select **Alt + Shift**
-
-
+           - Enable **Press anywhere with two fingers**
+    - Keyboard
+        - Navigate to **Layouts**
+            - Enable **Configure Layouts**
+            - Add layout **Greek**
+        - Navigate to **Advanced**
+            - Enable **Configure keyboard options** 
+            - Expand **Switching to another layout**
+            - Select **Alt + Shift**
 
 ## Core
 - ### Pacman configuration
