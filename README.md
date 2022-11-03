@@ -465,7 +465,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 | Anydesk         | \# paru anydesk                                                                                                   |
 | Discord         | \# paru discord                                                                                                   |
 | Firefox         | \# paru firefox <br />                                                                                                                                     Inside Firefox search for **about:config** -> Accept the risk -> Change **ui.key.menuAccessKeyFocuses** to false  |
-| Notepadqq       | \# paru motepadqq                                                                                                 |
+| Notepadqq       | \# paru notepadqq                                                                                                 |
 | Obs             | \# paru obs-studio                                                                                                |
 | Psensor         | \# paru psensor                                                                                                   |
 | qbittorrent     | \# paru qbittorrent                                                                                               |
