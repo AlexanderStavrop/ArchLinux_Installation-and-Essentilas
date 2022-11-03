@@ -306,7 +306,9 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 ## Core
 - Connect to Wifi
 - ### Kde Wallet
-    - When prompted select **Classic, blowfish encrypted file**
+    - When prompted select **Classic, blowfish encrypted file** and press **Finish**
+    - Leave **password** and **verify** empty and press **ok**
+    - On the popup window press **yes** 
     
 - ### Pacman configuration
   ```
