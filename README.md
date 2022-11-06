@@ -362,7 +362,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         ```
     - Find windows
         ```
-        os-prober
+        sudo os-prober
         ```      
     - Edit Grub menu entries
         ``` 
