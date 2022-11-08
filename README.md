@@ -476,8 +476,13 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 
 ## General Configuration
 - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
-- Desktop Entyties.
 
 - Make kitty pretty
-  - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
-  - \# notepadqq .bashrc
+    - Edit bashrc
+        - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
+        ```
+        sudo vim .bashrc
+        ```
+    - Edit kitty config
+        - Copy the content of []
+        - Edit kitty config
