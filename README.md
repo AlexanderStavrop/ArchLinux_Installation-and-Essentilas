@@ -480,9 +480,9 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 - Make kitty pretty
     - Edit bashrc
         - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
-        ```
-        sudo vim .bashrc
-        ```
+            ```
+            sudo vim .bashrc
+            ```
     - Edit kitty config
         - Copy the content of []
         - Edit kitty config
