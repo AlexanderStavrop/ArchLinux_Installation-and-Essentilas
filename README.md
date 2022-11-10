@@ -475,7 +475,13 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 | Steam           | \# sudo vim /etc/pacman.conf<br />                                                                                                                         Uncomment multilib and Include<br />                                                                                                                       \# paru steam<br />                                                                                                                                         \# paru arial<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                           If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                          |
 
 ## General Configuration
-- <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
+
+- ### Change wallpaper
+    - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
+
+- ### Change login screen
+    - Navigate to **System settings -> Startup and Shutdown -> Login screen(SDDM)** and press **Get New SDDM themes**
+    - Search for **ChromeOS** and download the theme
 
 - Make kitty pretty
     - Edit bashrc
