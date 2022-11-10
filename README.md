@@ -480,6 +480,9 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 
 - ### Change login screen and start up behavior
+    - Navigate to **System settings -> Appearance -> Splace screen**
+        - Press **Get New Splace screens**
+        - Sort by **Rating** and select one
     - Navigate to **System settings -> Startup and Shutdown**
     - Login screen(SDDM)
         - Press **Get New SDDM themes** 
