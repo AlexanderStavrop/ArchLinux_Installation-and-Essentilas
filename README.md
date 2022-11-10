@@ -479,9 +479,25 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 - ### Change wallpaper
     - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 
-- ### Change login screen
-    - Navigate to **System settings -> Startup and Shutdown -> Login screen(SDDM)** and press **Get New SDDM themes**
-    - Search for **ChromeOS** and download the theme
+- ### Change login screen and start up behavior
+    - Navigate to **System settings -> Startup and Shutdown**
+    - Login screen(SDDM)
+        - Press **Get New SDDM themes** 
+        - Search for **ChromeOS** and download the theme
+    - Desktop session 
+        - General 
+            - Uncheck **Confirm logout**
+            - Uncheck **Offer shutdown options**
+        - When loggin in
+            - Select **Start with an empty session**
+        
+- ### Change screen dimming timout
+    - Navigate to **System settings -> Power management -> Energy saving**
+        - On Battery
+            - Change **Dim screen** after **5 min**
+            - Change **Screen Energy Saving** Switch off after **10 min**
+        - On Low Battery
+            - Change **Screen brightness** level to **10** 
 
 - Make kitty pretty
     - Edit bashrc
