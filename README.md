@@ -317,6 +317,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     - Uncomment 
         - **ParallelDownloads=5**
         - **color**
+
 - ### Paru
     ```
     sudo pacman -S rustup base-devel
@@ -340,6 +341,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
     paru reflector
     ```
+
 - ### Bluetooth
     ```
     sudo systemctl start bluetooth.service
@@ -347,10 +349,12 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
     sudo systemctl enable bluetooth.service
     ```
+
 - ### Network Tools
     ```
     paru net-tools
     ```
+
 - ### Find windows on different disk in grub
     - Create mount point 
         ```
@@ -363,11 +367,29 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     - Find windows
         ```
         sudo os-prober
-        ```      
-    - Edit Grub menu entries
-        ``` 
-        Grub-Customizer !?
         ```
+    - Update grub
+        ```
+        grub-mkconfig -o /boot/grub/grub.cfg
+        ```
+
+- ### Edit Grub menu entries
+    - Back up grub.cfg
+      ```
+      sudo cp /boot/grub/grub.cfg ~/Desktop/
+      ```
+    - Edit the grub.cfg
+      ``` 
+      sudo vim /boot/grub/grub.cfg
+      ```
+        - Search for "menuentry"
+            ```
+            /menuentry
+            ```
+            - If the menuentry looks like ```sudo vim /boot/grub/grub.cfg```, you are good to go
+        - comment (or delete) any entries you don't want to see in your grub boot menu
+        - Save and exit
+        
 - ### Formating and automounting disks
     - #### Formating 
         - List the available disks
@@ -410,8 +432,6 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 ```
                 UUID=[UUID] \t /media/[dir name] \t ext4 \t defaults \t 0 \t 0
                 ```
- 
- 
 
 - ### Special characters
     - Emoji
