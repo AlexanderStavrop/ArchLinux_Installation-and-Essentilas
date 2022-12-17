@@ -300,7 +300,32 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - Select **Alt + Shift**
 
 ## Core
-- Connect to Wifi
+- ### Connect to Wifi
+    - Change to Cloudflare
+        - Click on the internet icon (Wifi or Ethernet) and press configure
+            - Select IPV4
+                - Change **Method** to **Automatic (Only Addresses)
+                - Paste in the **DNS Servers** field
+                    ```
+                    1.1.1.1
+                    ```
+                - Paste in the **Search Domains** field
+                    ```
+                    1.0.0.1
+                    ```
+            - Select IPV6
+                - Change **Method** to **Automatic (Only Addresses)
+                - Paste in the **DNS Servers** field
+                    ```
+                    ::1.1.1.1
+                    ```
+                - Paste in the **Search Domains** field
+                    ```
+                    ::1.0.0.1
+                    ```
+        - Logout and login back again
+        - <a href="https://1.1.1.1/help">Check if you are using Cloudflare</a>
+
 - ### Kde Wallet
     - When prompted select **Classic, blowfish encrypted file** and press **Finish**
     - Leave **password** and **verify** empty and press **ok**
@@ -438,31 +463,6 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         ```
         paru noto-fonts-cjk
         ```
-- ### Change to Cloudflare
-    - Click on the internet icon (Wifi or Ethernet) and press configure
-        - Select IPV4
-            - Change **Method** to **Automatic (Only Addresses)
-            - Paste in the **DNS Servers** field
-                ```
-                1.1.1.1
-                ```
-            - Paste in the **Search Domains** field
-                ```
-                1.0.0.1
-                ```
-        - Select IPV6
-            - Change **Method** to **Automatic (Only Addresses)
-            - Paste in the **DNS Servers** field
-                ```
-                ::1.1.1.1
-                ```
-            - Paste in the **Search Domains** field
-                ```
-                ::1.0.0.1
-                ```
-    - Logout and login back again
-    - <a href="https://1.1.1.1/help">Check if you are using Cloudflare</a>
-
 <!--- 
 - Aliases
   - \# vim ~/.bash_aliases
