@@ -535,13 +535,20 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - Select **Start with an empty session**
         
 - ### Change screen dimming timout
-    - Navigate to **System settings -> Power management -> Energy saving**
+    - Navigate to **System settings -> Power Management -> Energy Saving**
         - On Battery
             - Change **Dim screen** after **5 min**
             - Change **Screen Energy Saving** Switch off after **10 min**
         - On Low Battery
             - Change **Screen brightness** level to **10** 
 
+- ### Change alt-tab look
+   - Navigate to **System settings -> Window Management -> Task Switcher**
+      - Choose **Thubnail Grid** in the **Visualization** section.
+  
+  
+  
+  
 - Make kitty pretty
     - Edit bashrc
         - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
