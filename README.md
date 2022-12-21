@@ -533,9 +533,6 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - Uncheck **Offer shutdown options**
         - When loggin in
             - Select **Start with an empty session**
- 
-- ### Fingerprint Unlock
-    - fprint sucks
     
 - ### Change screen dimming timout
     - Navigate to **System settings -> Power Management -> Energy Saving**
@@ -549,7 +546,10 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
    - Navigate to **System settings -> Window Management -> Task Switcher**
       - Choose **Thubnail Grid** in the **Visualization** section.
   
-  
+- ### Configure Dolphin
+    - Open dolphin and click on the top right corner 
+        - Enable **Show Hidden Files**
+        - Select **configure**
   
   
 - Make kitty pretty
