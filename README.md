@@ -533,7 +533,10 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - Uncheck **Offer shutdown options**
         - When loggin in
             - Select **Start with an empty session**
-        
+ 
+- ### Fingerprint Unlock
+    - fprint sucks
+    
 - ### Change screen dimming timout
     - Navigate to **System settings -> Power Management -> Energy Saving**
         - On Battery
