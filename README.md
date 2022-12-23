@@ -549,6 +549,11 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 - ### Configure Dolphin
     - Open dolphin and click on the top right corner 
         - Enable **Show Hidden Files**
+        - Hover over **Show Additional Information**
+            - Enable **Size**
+        - Hover over **Show panel** 
+            - Enable **Places**
+            - Enable **Terminal**
         - Select **configure**
   
   
