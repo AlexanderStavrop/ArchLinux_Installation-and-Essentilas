@@ -561,8 +561,14 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 - **Stash**
             - Add
                 - **Home** after **forward**  
-  
-  
+        - Hover over **configure** and select **Configure Toolbars**
+            - In the **General** section
+                - In the **Behavior** tab    
+                    - In **Sorting mode** change to **Alphabetical, case sensitive**  
+                - In the **Startup** tab
+                    - In **Show on startup** change path to ***~/Documents***
+                    - In **General** tick **Show full path inside location bar**
+            
 - Make kitty pretty
     - Edit bashrc
         - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
