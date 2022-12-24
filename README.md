@@ -301,9 +301,9 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 
 ## Core
 - ### Connect to Wifi
-    - Change to Cloudflare
+    - #### Change to Cloudflare
         - Click on the internet icon (Wifi or Ethernet) and press configure
-            - Select IPV4
+            - In the **IPV4**
                 - Change **Method** to **Automatic (Only Addresses)
                 - Paste in the **DNS Servers** field
                     ```
@@ -313,7 +313,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                     ```
                     1.0.0.1
                     ```
-            - Select IPV6
+            - In the **IPV6**
                 - Change **Method** to **Automatic (Only Addresses)
                 - Paste in the **DNS Servers** field
                     ```
@@ -455,11 +455,11 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 ```
 
 - ### Special characters
-    - Emoji
+    - #### Emoji
         ```
         paru noto-fonts-emoji
         ```
-    - Chinese characters
+    - #### Chinese characters
         ```
         paru noto-fonts-cjk
         ```
@@ -520,22 +520,24 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 
 - ### Change login screen and start up behavior
-    - Navigate to **System settings -> Appearance -> Splace screen**
-        - Press **Get New Splace screens**
-        - Sort by **Rating** and select one
-    - Navigate to **System settings -> Startup and Shutdown**
-    - Login screen(SDDM)
-        - Press **Get New SDDM themes** 
-        - Search for **ChromeOS** and download the theme
-    - Desktop session 
-        - General 
-            - Uncheck **Confirm logout**
-            - Uncheck **Offer shutdown options**
-        - When loggin in
-            - Select **Start with an empty session**
+    - Open **System settings**
+        - In the **Appearance** section
+            - Splace screen
+                - Press **Get New Splace screens**
+                - Sort by **Rating** and select one
+        - In the **Startup and Shutdown** section
+            - Login screen(SDDM)
+                - Press **Get New SDDM themes** 
+                - Search for **ChromeOS** and download the theme
+            - Desktop session 
+                - General 
+                    - Uncheck **Confirm logout**
+                    - Uncheck **Offer shutdown options**
+                - When loggin in
+                    - Select **Start with an empty session**
     
 - ### Change screen dimming timout
-    - Navigate to **System settings -> Power Management -> Energy Saving**
+    - Open **System settings -> Power Management -> Energy Saving**
         - On Battery
             - Change **Dim screen** after **5 min**
             - Change **Screen Energy Saving** Switch off after **10 min**
@@ -553,14 +555,14 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         - Hover over **Show panel** and enable **Places**
         - Hover over **configure** and select **Configure Toolbars** 
             - Remove
-                - "Separator"  
-                - "Icons"
-                - "Compact"
-                - "Details"
-                - "Splits"
-                - "Stash"
+                - **Separator**  
+                - **Icons**
+                - **Compact**
+                - **Details**
+                - **Splits**
+                - **Stash**
             - Add
-                - "Home" after **forward**  
+                - **Home** button after **forward** button
         - Hover over **configure** and select **Configure Toolbars**
             - In the **General** section
                 - In the **Behavior** tab    
@@ -575,18 +577,18 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                     - In **Label width** change to **small**
             - In the **Context Menu** section
                 - Uncheck
-                    - "Add to places"
-                    - "View modes"
-                    - "Duplicate Here"
-                    - "Forget items from Recent Documents and Recent Locations"
-                    - "Install.."
-                    - "Link Files to Activities"
-                    - "Start a Slideshow"
-                    - "Tags"
+                    - **Add to places**
+                    - **View modes**
+                    - **Duplicate Here**
+                    - **Forget items from Recent Documents and Recent Locations**
+                    - **Install..**
+                    - **Link Files to Activities**
+                    - **Start a Slideshow**
+                    - **Tags**
             - In the **Trash** section
                 - In **Cleanup** 
                     - Enable **Delete files older than** 
-                    - Set the days equal to "15"
+                    - Set the days equal to **15**
                     
                     
                     
