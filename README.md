@@ -553,14 +553,14 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         - Hover over **Show panel** and enable **Places**
         - Hover over **configure** and select **Configure Toolbars** 
             - Remove
-                - **Separator**  
-                - **Icons**
-                - **Compact**
-                - **Details**
-                - **Splits**
-                - **Stash**
+                - "Separator"  
+                - "Icons"
+                - "Compact"
+                - "Details"
+                - "Splits"
+                - "Stash"
             - Add
-                - **Home** after **forward**  
+                - "Home" after **forward**  
         - Hover over **configure** and select **Configure Toolbars**
             - In the **General** section
                 - In the **Behavior** tab    
