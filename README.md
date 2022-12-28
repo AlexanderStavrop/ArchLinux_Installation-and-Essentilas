@@ -549,47 +549,59 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
       - Choose **Thubnail Grid** in the **Visualization** section.
   
 - ### Configure Dolphin
-    - Open dolphin and click on the top right corner 
-        - Enable **Show Hidden Files**
-        - Hover over **Show Additional Information** and enable **Size**
-        - Hover over **Show panel** and enable **Places**
-        - Hover over **configure** and select **Configure Toolbars** 
-            - Remove
-                - **Separator**  
-                - **Icons**
-                - **Compact**
-                - **Details**
-                - **Splits**
-                - **Stash**
-            - Add
-                - **Home** button after **forward** button
-        - Hover over **configure** and select **Configure Toolbars**
-            - In the **General** section
-                - In the **Behavior** tab    
-                    - In **Sorting mode** change to **Alphabetical, case sensitive**  
-                - In the **confirmation** tab
-                    - In **Ask for confimation in Dolphin when:** uncheck **Closing windows with multiple tabs**
-            - In the **Startup** section 
-                - In **Show on startup** change path to ***~/Documents***
-                - In **General** tick **Show full path inside location bar**
-            - In **View Modes** section
-                - In **Icons** tab        
-                    - In **Label width** change to **small**
-            - In the **Context Menu** section
-                - Uncheck
-                    - **Add to places**
-                    - **View modes**
-                    - **Duplicate Here**
-                    - **Forget items from Recent Documents and Recent Locations**
-                    - **Install..**
-                    - **Link Files to Activities**
-                    - **Start a Slideshow**
-                    - **Tags**
-            - In the **Trash** section
-                - In **Cleanup** 
-                    - Enable **Delete files older than** 
-                    - Set the days equal to **15**
-                    
+    - #### Edit entries on the left
+        - In **places** leave only
+            - **Home**
+            - **Desktop**
+            - **Documents**
+            - **Downloads**
+            - **Trash**
+        - Hide 
+            - **Remote**
+            - **Recent**
+            - **Search for**
+    - #### Settings
+        - Click on the top right corner 
+            - Enable **Show Hidden Files**
+            - Hover over **Show Additional Information** and enable **Size**
+            - Hover over **Show panel** and enable **Places**
+            - Hover over **configure** and select **Configure Toolbars** 
+                - Remove
+                    - **Separator**  
+                    - **Icons**
+                    - **Compact**
+                    - **Details**
+                    - **Splits**
+                    - **Stash**
+                - Add
+                    - **Home** button after **forward** button
+            - Hover over **configure** and select **Configure Toolbars**
+                - In the **General** section
+                    - In the **Behavior** tab    
+                        - In **Sorting mode** change to **Alphabetical, case sensitive**  
+                    - In the **confirmation** tab
+                        - In **Ask for confimation in Dolphin when:** uncheck **Closing windows with multiple tabs**
+                - In the **Startup** section 
+                    - In **Show on startup** change path to ***~/Documents***
+                    - In **General** tick **Show full path inside location bar**
+                - In **View Modes** section
+                    - In **Icons** tab        
+                        - In **Label width** change to **small**
+                - In the **Context Menu** section
+                    - Uncheck
+                        - **Add to places**
+                        - **View modes**
+                        - **Duplicate Here**
+                        - **Forget items from Recent Documents and Recent Locations**
+                        - **Install..**
+                        - **Link Files to Activities**
+                        - **Start a Slideshow**
+                        - **Tags**
+                - In the **Trash** section
+                    - In **Cleanup** 
+                        - Enable **Delete files older than** 
+                        - Set the days equal to **15**
+
                     
 - ### File Association        
     - Open **System settings -> Applications -> File Associations**
