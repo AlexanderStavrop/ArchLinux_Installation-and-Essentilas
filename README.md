@@ -584,7 +584,6 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                         - In **Ask for confimation in Dolphin when:** uncheck **Closing windows with multiple tabs**
                 - In the **Startup** section 
                     - In **Show on startup** change path to ***~/Documents***
-                    - In **General** tick **Show full path inside location bar**
                 - In **View Modes** section
                     - In **Icons** tab        
                         - In **Label width** change to **small**
