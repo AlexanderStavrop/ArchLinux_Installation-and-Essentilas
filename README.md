@@ -8,6 +8,18 @@
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#install-base-system-and-some-extras">Install base system and some extras</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#configure-the-system">Configure the system</a>
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#fix-the-damn-mouse-navigation-keyboard-layouts-and-dark-theme">Fix the damn mouse navigation, keyboard layouts and dark theme</a>
+
+
+
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
 A guide for installing arch linux and the programs in need most.
 
 # Before you start
