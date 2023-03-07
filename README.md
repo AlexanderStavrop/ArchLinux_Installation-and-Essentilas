@@ -3,19 +3,26 @@
 A guide for installing arch linux and the programs in need most.
 
 ## Before you start
-- Donwload the latest version of arch linux from <a href="https://archlinux.org/download/">this</a> link´
-- Create a bootable usb (recomend using <a href="https://rufus.ie/en/">rufus</a>)
+- Donwload the latest version of arch linux from <a href="https://archlinux.org/download/">this</a> link
+- Check if you need an MBR or GPT usb
+- Create a bootable usb 
+    - ***Windows*** <a href="https://rufus.ie/en/">rufus</a>
+    - ***Linux*** 
+        - Install pv
+        ```
+        sudo dd if=[arch installer file] | pv | sudo dd of=/dev/[usb device name]
+        ```
 - Boot into the usb and follow the guide
-  - MBR for desktop
-  - GTP for laptop  
+    - MBR for desktop
+    - GTP for laptop  
 ## Installation
 
 ### Verify you are in efi
 ```
 ls /sys/firmware/efi/efivars
 ```
-  - If the command is executed without errors continue.
- mouse 
+- If the command is executed without errors continue.
+    
 ### Connect to the internet
 - Establish connection
     ```
