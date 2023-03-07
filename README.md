@@ -291,7 +291,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 <br></br>
 # ArchLinux - Essentials
 
-## Fix the damn mouse navigation, keyboard file:///home/alex/Downloads/copyq.conflayouts and dark theme
+## Fix the damn mouse navigation, keyboard layouts and dark theme
 - Open **System Settings**
     - Theme
         - Select "Breeze Dark"
