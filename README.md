@@ -10,9 +10,9 @@ A guide for installing arch linux and the programs in need most.
         - Check if you need an MBR or GPT usb
     - ***Linux*** 
         - Install pv
-            ```
-            sudo dd if=[arch installer file] | pv | sudo dd of=/dev/[usb device name]
-            ```
+        ```
+        sudo dd if=[arch installer file] | pv | sudo dd of=/dev/[usb device name]
+        ```
 - Boot into the usb and follow the guide
     - MBR for desktop
     - GTP for laptop  
