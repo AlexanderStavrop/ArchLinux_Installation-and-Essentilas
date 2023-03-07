@@ -3,11 +3,8 @@
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#installation">Installation</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#verify-you-are-in-efi">Verify you are in EFI</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#connect-to-the-internet">Connect to the Internet</a>
-    
-    
-    
-    <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
-<a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#update-the-system-clock">Update the system clock</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#partition-the-disks">Partition the disks</a>
 <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
 <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
 <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
