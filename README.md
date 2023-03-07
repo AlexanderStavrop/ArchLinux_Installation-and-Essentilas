@@ -95,7 +95,7 @@ timedatectl set-ntp true
       <td align="center"> n </td> <td> Root partition       </td> <td align="center"> -1G </td>
     </tr>  
     <tr>
-      <td align="center"> t </td> <td> (p) - Linux root x86-64 - (83) </td> <td align="center"> - </td>
+      <td align="center"> t </td> <td> (p) - Linux - (83) </td> <td align="center"> - </td>
       <td> </td>
       <td align="center"> t </td> <td> Linux root x86-64 - (23)       </td> <td align="center"> - </td>
     </tr>
