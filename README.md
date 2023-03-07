@@ -10,9 +10,9 @@
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#fix-the-damn-mouse-navigation-keyboard-layouts-and-dark-theme">Fix the damn mouse navigation, keyboard layouts and dark theme</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#core">Core</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#programs">Programs</a>
 
 
-- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
@@ -498,7 +498,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
   - \# vim ~/.bashrc
     - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
 -->
-## Programms
+## Programs
 
 ### Tools
 |     App Name    |                                                  Command                                                          | .conf file |
