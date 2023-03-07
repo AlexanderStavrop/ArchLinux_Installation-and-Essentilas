@@ -347,6 +347,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     - Uncomment 
         - **color**
         - **ParallelDownloads=5**
+        - Multilib
         
 - ### Paru
     ```
