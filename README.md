@@ -217,7 +217,8 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             ```
             vim /etc/default/grub
             ```
-            - Add lines/uncomment
+            - Change **GRUB_TIMEOUT** to 2 
+            - Uncomment
                 ```
                 GRUB_DISABLE_OS_PROBER=false
                 ```
