@@ -199,13 +199,13 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             ```
             vim /etc/hosts 
             ```
-            |  	      |		       |
-            |    :-: 	|       :-: 	 |
+            |  	        |		           |
+            |    :-: 	|        :-: 	   |
             | 127.0.0.1 | localhost        | 
             | :::1      | **[myhostname]** | 
             | 127.0.1.1 | **[myhostname]** | 
-            | ff02::1   | ip6-allnodes     | 
-            | ff02::2   | ip6-allrouters   | 	 
+            | ff02::1    | ip6-allnodes     | 
+            | ff02::2    | ip6-allrouters   | 	 
     
     - #### Create a password
         ```
@@ -239,7 +239,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             
     - #### Install some more extras
         ```
-        pacman -S xf86-video-amdgpu/intel(for laptop) nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
+        pacman -S (for laptop)xf86-video-amdgpu/intel nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
         ```
         ```
         pacman -S xorg plasma-desktop plasma-systemmonitor plasma-nm plasma-pa dolphin dolphin-plugins kscreen kinfocenter kdeplasma-addons kde-gtk-config ark konsole kitty gwenview firefox powerdevil sddm sddm-kcm bluez bluedevil ffmpegthumbs ntfs-3g gedit sudo
