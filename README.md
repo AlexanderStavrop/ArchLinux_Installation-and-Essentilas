@@ -345,9 +345,9 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
   sudo vim /etc/pacman.conf
   ```
     - Uncomment 
-        - **ParallelDownloads=5**
         - **color**
-
+        - **ParallelDownloads=5**
+        
 - ### Paru
     ```
     sudo pacman -S rustup base-devel
@@ -367,7 +367,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
     sudo vim /etc/paru.conf 
     ```
-    - Enable **BottomUp**
+        - Enable **BottomUp**
     ```
     paru reflector
     ```
