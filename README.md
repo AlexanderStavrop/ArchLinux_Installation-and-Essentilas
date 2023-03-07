@@ -5,12 +5,12 @@
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#connect-to-the-internet">Connect to the Internet</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#update-the-system-clock">Update the system clock</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#partition-the-disks">Partition the disks</a>
-<a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
-<a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
-<a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#before-you-start">Before you start</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#install-base-system-and-some-extras">Install base system and some extras</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#configure-the-system">Configure the system</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/edit/master/README.md#archlinux---essentials">Archlinux - Essentials</a>
 A guide for installing arch linux and the programs in need most.
 
-## Before you start
+# Before you start
 - Donwload the latest version of arch linux from <a href="https://archlinux.org/download/">this</a> link
 - Create a bootable usb 
     - ***Windows*** 
@@ -24,15 +24,15 @@ A guide for installing arch linux and the programs in need most.
 - Boot into the usb and follow the guide
     - MBR for desktop
     - GTP for laptop  
-## Installation
+# Installation
 
-### Verify you are in efi
+## Verify you are in efi
 ```
 ls /sys/firmware/efi/efivars
 ```
 - If the command is executed without errors continue.
     
-### Connect to the internet
+## Connect to the internet
 - Establish connection
     ```
     iwctl
@@ -58,12 +58,12 @@ ls /sys/firmware/efi/efivars
     ping archlinux.org
     ```
 
-### Update the system clock
+## Update the system clock
 ```
 timedatectl set-ntp true
 ```
 
-### Partition the disks
+## Partition the disks
 - List disks and choose the correct drive
     ```
     fdisk -l
@@ -120,7 +120,7 @@ timedatectl set-ntp true
 </table>
  - Verify all your partitions are ok and exit (w)
 
-### Format the partitions
+## Format the partitions
 - If an Efi Partition has been created
     ```
     mkfs.fat -F 32 /dev/[efi Partition]  mouse 
@@ -132,7 +132,7 @@ mkfs.ext4 /dev/[linux filesystem partition]
 mkswap /dev/[swap partition]
 ```
 
-### Mount the file systems
+## Mount the file systems
 - Create a mounting point for Efi Partition (**Only GTP**)
     ```
     mkdir /mnt/efi 
@@ -149,13 +149,12 @@ mkswap /dev/[swap partition]
     ```
     swapon /dev/[Swap Partition]
     ```
-ake screenshot
-### Install base system and some extras
+## Install base system and some extras
 ```
 pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr os-prober dhcpcd amd-ucode/intel-ucode
 ```
 
-### Configure the system
+## Configure the system
 - Generate the fstab file
     ```
     genfstab -U /mnt >> /mnt/etc/fstab
@@ -164,7 +163,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
     arch-chroot /mnt
     ```
-    - #### Time and time-zone configuration
+    - ### Time and time-zone configuration
         ```
         ln -sf /usr/share/zoneinfo/Europe/Athens /etc/localtime
         ```
@@ -172,7 +171,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         hwclock --systohc
         ```
     
-    - #### Locale configuration
+    - ### Locale configuration
         - Edit the locale.gen file
             ```
             vim /etc/locale.gen 
@@ -194,7 +193,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 LC_TIME=el_GR.UTF-8
                 ```
    
-    - #### Network configuration
+    - ### Network configuration
         - Edit the hostname 
             ```
             vim /etc/hostname
@@ -215,12 +214,12 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             | ff02::1    | ip6-allnodes     | 
             | ff02::2    | ip6-allrouters   | 	 
     
-    - #### Create a password
+    - ### Create a password
         ```
         passwd
         ```
         
-    - #### Install bootloader
+    - ### Install bootloader
         - Edit the grub file
             ```
             vim /etc/default/grub
@@ -245,7 +244,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             grub-mkconfig -o /boot/grub/grub.cfg
             ```
             
-    - #### Install some more extras
+    - ### Install some more extras
         ```
         pacman -S (for laptop)xf86-video-amdgpu/intel nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth alsa-utils alsa-firmware 
         ```
@@ -256,7 +255,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         pacman -S --needed base git 
         ```
         
-    - #### Create new user
+    - ### Create new user
         - Create user
             ```
             useradd -m -u 1000 -G wheel,audio,kvm,input,storage [name]
@@ -271,7 +270,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             ```
             - Remove comment in the **first** wheel 
 
-    - #### Enable sddm and nm
+    - ### Enable sddm and nm
         ```
         systemctl enable sddm
         ```
@@ -279,7 +278,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         systemctl enable NetworkManager
         ```
               
-   - #### Exit Chroot    
+   - ### Exit Chroot    
       ```
       exit
       ```
