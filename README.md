@@ -660,7 +660,8 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                             - Change everything from freedom units to normal ones  
                 - If the clock takes too much space move it to the left
         - Re arrange the icons unlil the task bar looks like this:
-        
+          ![image](https://user-images.githubusercontent.com/56675566/223732448-51e39389-0e46-4ffa-b6be-e235cb0c78c4.png)
+
     
 <!---
 - ### Make kitty pretty
