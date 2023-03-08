@@ -11,6 +11,7 @@
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#fix-the-damn-mouse-navigation-keyboard-layouts-and-dark-theme">Fix the damn mouse navigation, keyboard layouts and dark theme</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#core">Core</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#programs">Programs</a>
+- <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#general-configuration">General Configuration</a>
 
 
 # Before you start
