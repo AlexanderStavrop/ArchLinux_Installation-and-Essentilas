@@ -628,6 +628,12 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 - In **Application Preference Order** set **Vim**, **Notepadqq**, **Gedit**
 
 - ### Task Bar
+    - Right click the task bar and select **Add widgets**
+        - Add
+            - **Individual Core Usage**
+            - **Memory Usage**
+            - **Network Usage**
+            - **Keyboard layoyt**
     - Right click the task bar and select **Enter edit mode**
         - Change the panel width to **34**
         - Hover over system tray icons and select **Configure**
@@ -653,7 +659,8 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                         - In **Units** section
                             - Change everything from freedom units to normal ones  
                 - If the clock takes too much space move it to the left
-                    
+        - Re arrange the icons unlil the task bar looks like this:
+        
     
 <!---
 - ### Make kitty pretty
