@@ -294,7 +294,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
   ```
 
 <br></br>
-# ArchLinux - Essentials
+# ArchLinux - Configuration
 
 ## Fix the damn mouse navigation, keyboard layouts and dark theme
 - Open **System Settings**
@@ -494,7 +494,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 -->
 ## Programs
 
-### Tools
+- ### Tools
 |     App Name    |                                                  Command                                                          |  .conf file  |
 |:----------------|:------------------------------------------------------------------------------------------------------------------|:-----------:|
 | CopyQ           | ***Download***<br />                                                                                                                                                 \# paru copyq<br />                                                                                                                                                 ***Configuration File***<br />                                                                                                                                       Add the config file in the **~/.cofig/copyq/** directory<br />                                                                                                         ***Shortcut***<br />                                                                                                                                                 Open copyQ and navigate to **File -> Preferences -> Shortcuts**<br />                                                                                               Add **ctrl + `** as **show/hide main menu**                                                                        |[copyq.conf](https://github.com/AlexanderStavrop/Arch-Essentials/files/8457083/copyq.txt)                                                                        |
@@ -525,7 +525,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 | Matlab          | ***Download***<br />                                                                                                                                                 <a href="https://www.mathworks.com/downloads/web_downloads/">Download</a><br />                                                                                     ***Installation***<br />                                                                                                                                             \# sudo unzip -X -K "matlab.zip" -d ~/Downloads/matlab<br />                                                                                                         \# ./install<br />                                                                                                                                                   ***In case the installer fails to open***<br />                                                                                                                     \# sudo rm ./bin/glnxa64/libfreetype.so*<br />                                                                                                                       \# export LD_PRELOAD=/lib64/libfreetype.so<br />                                                                                                                     \# ./install<br />                                                                                                                                                   \# Select to download **every** products that has **MATLAB** in and also every other necessary<br />                                                                 ***If matlab cannot create new Script***<br />                                                                                                                       \# cd "matlab"/bin/glnxa64/<br />                                                                                                                                   \# mv libfreetype.so.6 libfreetype.so.6.old<br />                                                                                                                   ***Change Matlab commands to normal ones***<br />                                                                                                                   Navigate to **HOME -> Preferences -> Keyboard -> Shortcuts**<br />                                                                                                   Change **Active Settings** to **Windows Default Set**                                                             |
 | TexStudio       | ***Download***<br />                                                                                                                                                 \# paru texstudio<br />                                                                                                                                             \# paru texlive-science (19)<br />                                                                                                                                   \# paru texlive-pictures (16)<br />                                                                                                                                 \# paru texlive-latexextra (14)<br />                                                                                                                               \# paru texlive-langgreek (11)<br />                                                                                                                                 \# paru texlive-core (3)<br />                                                                                                                                       \# paru texlive-bin (2)<br />                                                                                                                                       \# paru texlive-bibtexextra (1)<br />                                                                                                                               ***Greek Dictionary*** <br />                                                                                                                                       Download the <a href="https://extensions.libreoffice.org/en/extensions/show/orthos-greek-speller-dictionary-and-thesaurus">dictionary</a> and save the file as .zip<br />                                                                                                                                                                   \# sudo mkdir ~/Documents/"Latex dic"<br />                                                                                                                         \# sudo unzip ~/Downloads/orthos-el_GR-0.4.0-87.zip -d ~/Documents/"Latex dic"/ <br />                                                                               Navigate to **Options -> Configure TexStudio -> Language Checking**<br />                                                                                             Change the directory of **Spelling Dictionary Directories** to **Latex dic**<br />                                                                                   Restart TexStudio<br />                                                                                                                                             Navigate again to **Language Checking** and change **Default Languages** to **el_GR**<br />                                                                         **Font Size**<br />                                                                                                                                                 Navigate to **Options -> Configure TexStudio -> Editor** and change the **Font size** to 11                        |  
 
-### Other
+- ### Other
 |     App Name    |                                                  Command                                                               |
 |:----------------|:-----------------------------------------------------------------------------------------------------------------------|
 | Anydesk         | ***Download***<br />                                                                                                                                                 \# paru anydesk                                                                                                        |
@@ -538,12 +538,12 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 | Spotify         | ***Download***<br />                                                                                                                                                 \# paru Spotify                                                                                                        |
 | Steam           | ***Enable Multilib (if not enabled***<br />                                                                                                                         \# sudo vim /etc/pacman.conf<br />                                                                                                                                   Uncomment multilib and Include<br />                                                                                                                                 ***Download***<br />                                                                                                                                                 \# paru steam<br />                                                                                                                                                 \# paru arial<br />                                                                                                                                                 ***Enabling Proton***<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                     If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |     
 
-# General Configuration
+## General Configuration
 
-- ## Change wallpaper
+- ### Change wallpaper
     - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 
-- ## Change login screen and start up behavior
+- ### Change login screen and start up behavior
     - Open **System settings**
         - In the **Appearance** section
             - Splace screen
@@ -560,7 +560,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 - When loggin in
                     - Select **Start with an empty session**
     
-- ## Change screen dimming timout
+- ### Change screen dimming timout
     - Open **System settings -> Power Management -> Energy Saving**
         - On Battery
             - Change **Dim screen** after **5 min**
@@ -568,12 +568,12 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         - On Low Battery
             - Change **Screen brightness** level to **10** 
 
-- ## Change alt-tab look
+- ### Change alt-tab look
    - Navigate to **System settings -> Window Management -> Task Switcher**
       - Choose **Thubnail Grid** in the **Visualization** section.
   
-- ## Configure Dolphin
-    - ### Edit entries on the left
+- ### Configure Dolphin
+    - #### Edit entries on the left
         - In **places** leave only
             - **Home**
             - **Desktop**
@@ -584,7 +584,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - **Remote**
             - **Recent**
             - **Search for**
-    - ### Settings
+    - #### Settings
         - Click on the top right corner 
             - Enable **Show Hidden Files**
             - Hover over **Show Additional Information** and enable **Size**
@@ -626,14 +626,14 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                         - Set the days equal to **15**
 
                     
-- ## File Association        
+- ### File Association        
     - Open **System settings -> Applications -> File Associations**
         - In the search bar search for:
             - **text**
                 - Expand it and select **plain**
                 - In **Application Preference Order** set **Vim**, **Notepadqq**, **Gedit**
             
-- ## Make kitty pretty
+- ### Make kitty pretty
     - Edit bashrc
         - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
             ```
