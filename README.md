@@ -626,7 +626,25 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - **text**
                 - Expand it and select **plain**
                 - In **Application Preference Order** set **Vim**, **Notepadqq**, **Gedit**
- 
+
+- ### Task Bar
+    - Right click the task bar and select **Enter edit mode**
+        - Change the panel width to **38**
+        - Hover over system tray icons and select **Configure**
+            - In the **Entries** tab
+                - Change to **Always Shown** and everything else to **disabled**
+                    - **CopyQ**
+                    - **Flameshot**
+                    - **Audio Volume**
+                    - **Battery and Brightness**
+                    - **Bluetooth**
+                    - **Disk and Devices**
+                    - **Networks**
+                    - **Night color**
+                    - **Notifications**
+                    - **Weather
+                  
+    
 <!---
 - ### Make kitty pretty
     - Edit bashrc
