@@ -550,13 +550,9 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 - Press **Get New Splace screens**
                 - Sort by **Rating** and select one
         - In the **Startup and Shutdown** section
-            - Login screen(SDDM)
-                - Press **Get New SDDM themes** 
-                - Search for **ChromeOS** and download the theme
             - Desktop session 
-                - General 
-                    - Uncheck **Confirm logout**
-                    - Uncheck **Offer shutdown options**
+                - Logout Screen 
+                    - Uncheck **Show**
                 - When loggin in
                     - Select **Start with an empty session**
     
@@ -583,12 +579,10 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         - Hide 
             - **Remote**
             - **Recent**
-            - **Search for**
     - #### Settings
         - Click on the top right corner 
             - Enable **Show Hidden Files**
             - Hover over **Show Additional Information** and enable **Size**
-            - Hover over **Show panel** and enable **Places**
             - Hover over **configure** and select **Configure Toolbars** 
                 - Remove
                     - **Separator**  
@@ -613,13 +607,13 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 - In the **Context Menu** section
                     - Uncheck
                         - **Add to places**
-                        - **View modes**
                         - **Duplicate Here**
                         - **Forget items from Recent Documents and Recent Locations**
                         - **Install..**
                         - **Link Files to Activities**
                         - **Start a Slideshow**
                         - **Tags**
+                        - **View modes**
                 - In the **Trash** section
                     - In **Cleanup** 
                         - Enable **Delete files older than** 
