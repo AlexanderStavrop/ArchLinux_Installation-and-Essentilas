@@ -532,17 +532,17 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 | Firefox         | ***Download***<br />                                                                                                                                                 \# paru firefox<br />                                                                                                                                                 ***Compact Look***<br />                                                                                                                                             Inside Firefox search for **about:config -> browser.compactmode.show** and change to **true**<br />                                                                   Right click on toolbar, select **Customize Toolbar** and in the bottom choose **compact** for **Density**<br />                                                     ***Toolbar***<br />                                                                                                                                                 Right click on the top left firefox icon and select **Remove from Toolbar**<br />                                                                                     Click on the **tile** icon and pin the nessesary extensions<br />                                                                                                   Right click on toolbar and select **Customize Toolbar**<br />                                                                                                       On the bottom left corner untick **Titla bar**<br />                                                                                                                 Remove and items until the task bask bar looks like this :<br />                                                                                                     ![image](https://user-images.githubusercontent.com/56675566/208410781-cee56941-3b5a-4180-8062-8431ba8d2cf0.png)<br />                                               Click the **Downloads** icon and uncheck the **Hide when empty**<br />                                                                                               ***Alt Autism***<br />                                                                                                                                               Inside Firefox search for **about:config -> ui.key.menuAccessKeyFocuses** and change to false<br />                                                                   ***Theme***<br />                                                                                                                                                   Press the **gear icon** and in the bottome left press **Extensions and Themes**<br />                                                                               On the top left select **Themes** and enable **DarkMagic** theme<br />                                                                                               ***Touchpad Gestures***<br />                                                                                                                                       \# sudo vim /etc/enviroment<br />                                                                                                                                   Add "MOZ_USE_XINPUT2=1"<br />                                                                                                                                       ***Enhanced Youtube***<br />                                                                                                                                         Open a video in youtube, press the gear button unber the video player and copy paste the [settings](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/9945970/Enhanced-Yt.txt) in the import section.                                                | 
 | Notepadqq       | ***Download***<br />                                                                                                                                                 \# paru notepadqq<br />                                                                                                                                             ***Overall Look***<br />                                                                                                                                             Navigate to **settings -> Preferences -> Appearance** and change the **Color scheme** to **base-16-dark**<br />                                                     ***Disable Indentation Messages***<br />                                                                                                                             Navigate to **settings -> Preferences -> General** and untick **Warn when the indentation doesn't match the settings** |
 | Obs             | ***Download***<br />                                                                                                                                                 \# paru obs-studio<br />                                                                                                                                             ***Basic Configuration***<br />                                                                                                                                       Open the application and choose **Optimize just for recording** and hit next<br />                                                                                   Select **30** in the **Fps** section and hit next<br />                                                                                                             Navigate to **File -> Settings -> Output** and change the **Recording Path**<br />                                                                                   ***Canvas Resolution***<br />                                                                                                                                       Navigate to **File -> Settings -> Video** and change the **Base (canvas) Resolution** to max resolution<br />          |
-| Psensor         | ***Download***<br />                                                                                                                                                 \# paru psensor                                                                                                   |
-| Signal          | ***Download***<br />                                                                                                                                                 \# paru signal-desktop<br />                                                                                                                               Open the app and navigate to **File -> Preferences -> Appearance** and select **Dark** in **Theme**               |
-| Spotify         | \# paru Spotify                                                                                                   |
-| Steam           | \# sudo vim /etc/pacman.conf<br />                                                                                                                         Uncomment multilib and Include<br />                                                                                                                       \# paru steam<br />                                                                                                                                         \# paru arial<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                           If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                          |
+| Psensor         | ***Download***<br />                                                                                                                                                 \# paru psensor                                                                                                        |
+| Signal          | ***Download***<br />                                                                                                                                                 \# paru signal-desktop<br />                                                                                                                                         ***Appearance***<br />                                                                                                                                               Open the app and navigate to **File -> Preferences -> Appearance** and select **Dark** in **Theme**                    |
+| Spotify         | ***Download***<br />                                                                                                                                                 \# paru Spotify                                                                                                        |
+| Steam           | ***Enable Multilib (if not enabled***<br />                                                                                                                         \# sudo vim /etc/pacman.conf<br />                                                                                                                                   Uncomment multilib and Include<br />                                                                                                                                 ***Download***<br />                                                                                                                                                 \# paru steam<br />                                                                                                                                                 \# paru arial<br />                                                                                                                                                 ***Enabling Proton***<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                     If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |     
 
-## General Configuration
+# General Configuration
 
-- ### Change wallpaper
+- ## Change wallpaper
     - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
 
-- ### Change login screen and start up behavior
+- ## Change login screen and start up behavior
     - Open **System settings**
         - In the **Appearance** section
             - Splace screen
@@ -559,7 +559,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 - When loggin in
                     - Select **Start with an empty session**
     
-- ### Change screen dimming timout
+- ## Change screen dimming timout
     - Open **System settings -> Power Management -> Energy Saving**
         - On Battery
             - Change **Dim screen** after **5 min**
@@ -567,12 +567,12 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         - On Low Battery
             - Change **Screen brightness** level to **10** 
 
-- ### Change alt-tab look
+- ## Change alt-tab look
    - Navigate to **System settings -> Window Management -> Task Switcher**
       - Choose **Thubnail Grid** in the **Visualization** section.
   
-- ### Configure Dolphin
-    - #### Edit entries on the left
+- ## Configure Dolphin
+    - ### Edit entries on the left
         - In **places** leave only
             - **Home**
             - **Desktop**
@@ -583,7 +583,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - **Remote**
             - **Recent**
             - **Search for**
-    - #### Settings
+    - ### Settings
         - Click on the top right corner 
             - Enable **Show Hidden Files**
             - Hover over **Show Additional Information** and enable **Size**
@@ -625,14 +625,14 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                         - Set the days equal to **15**
 
                     
-- ### File Association        
+- ## File Association        
     - Open **System settings -> Applications -> File Associations**
         - In the search bar search for:
             - **text**
                 - Expand it and select **plain**
                 - In **Application Preference Order** set **Vim**, **Notepadqq**, **Gedit**
             
-- Make kitty pretty
+- ## Make kitty pretty
     - Edit bashrc
         - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
             ```
