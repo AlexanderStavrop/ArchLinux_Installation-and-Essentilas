@@ -629,7 +629,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 
 - ### Task Bar
     - Right click the task bar and select **Enter edit mode**
-        - Change the panel width to **38**
+        - Change the panel width to **34**
         - Hover over system tray icons and select **Configure**
             - In the **Entries** tab
                 - Change to **Always Shown** and everything else to **disabled**
@@ -641,9 +641,19 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                     - **Disk and Devices**
                     - **Networks**
                     - **Night color**
+                        - set **Switching Time** to **Always on**
+                        - Set **Nigth color temperature** to **4500K** 
                     - **Notifications**
                     - **Weather
-                  
+                        - In the **Weather Station** section
+                            - Add your current city
+                        - In the **Appearance** section
+                            - In **Show in tooltip**
+                                - Enable everything
+                        - In **Units** section
+                            - Change everything from freedom units to normal ones  
+                - If the clock takes too much space move it to the left
+                    
     
 <!---
 - ### Make kitty pretty
