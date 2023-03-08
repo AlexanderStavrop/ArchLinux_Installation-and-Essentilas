@@ -626,7 +626,8 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - **text**
                 - Expand it and select **plain**
                 - In **Application Preference Order** set **Vim**, **Notepadqq**, **Gedit**
-            
+ 
+<!---
 - ### Make kitty pretty
     - Edit bashrc
         - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
@@ -636,3 +637,4 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     - Edit kitty config
         - Copy the content of []
         - Edit kitty config
+-->
