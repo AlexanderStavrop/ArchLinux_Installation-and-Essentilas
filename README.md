@@ -413,7 +413,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         ```
     - Update grub
         ```
-        grub-mkconfig -o /boot/grub/grub.cfg
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
         ```
 
 - ### Edit Grub menu entries
