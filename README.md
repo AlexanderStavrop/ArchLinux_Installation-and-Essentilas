@@ -647,8 +647,11 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                     - **Disk and Devices**
                     - **Networks**
                     - **Night color**
-                        - set **Switching Time** to **Always on**
-                        - Set **Nigth color temperature** to **4500K** 
+                        - set **Switching Time** to **Custom times**
+                        - Set **Nigth color temperature** to **4500K**
+                        - Set **Begin night color at** to **06:00**
+                        - Set **Begin day color at** to **06:02**
+                        - Set **Transition duration** to **2 minutes** 
                     - **Notifications**
                     - **Weather
                         - In the **Weather Station** section
