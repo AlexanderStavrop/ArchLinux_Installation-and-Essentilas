@@ -596,7 +596,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - Hover over **configure** and select **Configure Toolbars**
                 - In the **General** section
                     - In the **Behavior** tab    
-                        - In **Sorting mode** change to **Alphabetical, case sensitive**  
+                        - In **Sorting mode** change to **Alphabetical, case insensitive**  
                     - In the **confirmation** tab
                         - In **Ask for confimation in Dolphin when:** uncheck **Closing windows with multiple tabs**
                 - In the **Startup** section 
