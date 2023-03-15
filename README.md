@@ -296,7 +296,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 <br></br>
 # ArchLinux - Configuration
 
-## Fix the damn mouse navigation, keyboard layouts and dark theme
+## System Settings configuration
 Open **System Settings**
 - ***Quick Settings***
     - In **Quick Settings** section
@@ -308,6 +308,10 @@ Open **System Settings**
         - In **Splace screen** tab
             - Press "Get New Splace screens"
             - Search for "QuarksSplashDarker"
+- ***Change alt-tab look***
+    - In the **Window Management** section
+        - In the **Task Switcher** tab
+            - *Visualization* &rarr; "Thubnail Grid"
 - ***Login Screen and logout behavior***
     - In the **Startup and Shutdown** section
         - In **Login Screen (SDDM)** tab
@@ -330,57 +334,57 @@ Open **System Settings**
                 - Enable **Tap-and-drag**      
             - *Scrolling* &rarr; Enable "Invert scroll direction (Natural scrolling)"
             - *Right-click* &rarr; Enable "Press anywhere with two fingers"
-    - Keyboard
-        - Navigate to **Layouts**
-            - Enable **Configure Layouts**
-            - Add layout **Greek**
-        - Navigate to **Advanced**
-            - Enable **Configure keyboard options** 
-            - Expand **Switching to another layout**
-            - Select **Alt + Shift**
+- ***File Association***
+    - In the **Applications** section
+        - In the **File Associations** tab
+        - *text (Plain)* 
+            - *Application Preference Order* &rarr; "Vim", "Notepadqq", "Gedit"
+- ***Screen dimming***
+    - In the **Power Management** section
+        - In the **Energy Saving** tab
+            - *Battery*
+                - *Dim screen* &rarr; "5 min"
+                - *Screen Energy Saving* &rarr; "10 min"
+            - *Low Battery*
+                - *Screen brightness* &rarr; "10 min" 
 
-## Core
-- ### Connect to Wifi
-    - #### Change to Cloudflare
-        - Click on the internet icon (Wifi or Ethernet) and press configure
-            - In the **IPV4**
-                - Change **Method** to **Automatic (Only Addresses)
-                - Paste in the **DNS Servers** field
-                    ```
-                    1.1.1.1
-                    ```
-                - Paste in the **Search Domains** field
-                    ```
-                    1.0.0.1
-                    ```
-            - In the **IPV6**
-                - Change **Method** to **Automatic (Only Addresses)
-                - Paste in the **DNS Servers** field
-                    ```
-                    ::1.1.1.1
-                    ```
-                - Paste in the **Search Domains** field
-                    ```
-                    ::1.0.0.1
-                    ```
+## Configure Wifi and Bluetooth settings
+- ***Change to Cloudflare***
+    - Click on the **internet icon** (Wifi or Ethernet) and press **configure**
+        - In the *IPV4*
+            - *Method* &rarr; "Automatic (Only Addresses)"
+            - *DNS Servers* &rarr; ```1.1.1.1```
+            - *Search Domains* &rarr; ```1.0.0.1```
+        - In the *IPV6*
+            - *Method* &rarr; "Automatic (Only Addresses)"
+            - *DNS Servers* &rarr; ```::1.1.1.1```
+            - *Search Domains* &rarr; ```::1.0.0.1```
         - Logout and login back again
         - <a href="https://1.1.1.1/help">Check if you are using Cloudflare</a>
+- ***Network Tools***
+    ```
+    paru net-tools
+- ***Bluetooth***
+    ```
+    sudo systemctl start bluetooth.service
+    ```
+    ```
+    sudo systemctl enable bluetooth.service
+    ```
 
-- ### Kde Wallet
-    - When prompted select **Classic, blowfish encrypted file** and press **Finish**
-    - Leave **password** and **verify** empty and press **ok**
-    - On the popup window press **yes** 
-    
-- ### Pacman configuration
-  ```
-  sudo vim /etc/pacman.conf
-  ```
-    - Uncomment 
-        - **color**
-        - **ParallelDownloads=5**
-        - **Multilib**
-        
-- ### Paru
+
+
+## Pacman and Paru configuration
+- ***Pacman***
+    ```
+    sudo vim /etc/pacman.conf
+    ```
+    - *Uncomment* 
+        - "color"
+        - "ParallelDownloads=5"
+        - "Multilib"
+
+- ***Paru***
     ```
     sudo pacman -S rustup base-devel
     ```
@@ -399,25 +403,13 @@ Open **System Settings**
     ```
     sudo vim /etc/paru.conf 
     ```
-    - Enable **BottomUp**
+    - Enable "BottomUp"
     ```
     paru reflector
     ```
 
-- ### Bluetooth
-    ```
-    sudo systemctl start bluetooth.service
-    ```
-    ```
-    sudo systemctl enable bluetooth.service
-    ```
-
-- ### Network Tools
-    ```
-    paru net-tools
-    ```
-
-- ### Find windows on different disk in grub
+## Grub Configuration
+- ***Find windows on different disk in grub***
     - Create mount point 
         ```
         sudo mkdir /mnt/windows
@@ -435,82 +427,66 @@ Open **System Settings**
         sudo grub-mkconfig -o /boot/grub/grub.cfg
         ```
 
-- ### Edit Grub menu entries
-    - Back up grub.cfg
-      ```
-      sudo cp /boot/grub/grub.cfg ~/Desktop/
-      ```
+- ***Grub menu entries***
+    - Backup grub.cfg
+        ```
+        sudo cp /boot/grub/grub.cfg ~/Desktop/
+        ```
     - Edit the grub.cfg
-      ``` 
-      sudo vim /boot/grub/grub.cfg
-      ```
+        ``` 
+        sudo vim /boot/grub/grub.cfg
+        ```
         - Search for "menuentry"
             ```
             /menuentry
             ```
-            - If the menuentry looks like ```sudo vim /boot/grub/grub.cfg```, you are good to go
+            - If the menuentry looks like ????????```sudo vim /boot/grub/grub.cfg```, you are good to go
         - comment (or delete) any entries you don't want to see in your grub boot menu
         - Save and exit
         
-- ### Formating and automounting disks
-    - #### Formating 
-        - List the available disks
-            ```
-            sudo fdisk -l
-            ```
-        - Format the disk (if needed)
-            ```
-            sudo fdisk /dev/[Target Disk]
-            ```
-            - Delete old partition (d)
-            - Create new partition (n)
-            - Write the partition  (w)
-        - Create the filesystem
-            ```
-            sudo mkfs.ext4 /dev/[Target Partition]
-            ```
-        - Add disk label
-            ```
-            sudo e2label /dev/[Target Partition] [label]
-            ```
+## Formating and automounting disks
+- ***Formating*** 
+    - List the available disks
+        ```
+        sudo fdisk -l
+        ```
+    - Format the disk (if needed)
+        ```
+        sudo fdisk /dev/[Target Disk]
+        ```
+        - Delete old partition (d)
+        - Create new partition (n)
+        - Write the partition  (w)
+    - Create the filesystem
+        ```
+        sudo mkfs.ext4 /dev/[Target Partition]
+        ```
+    - Add disk label
+        ```
+        sudo e2label /dev/[Target Partition] [label]
+        ```
 
-    - #### Automounting
-        - Make mount directoty
-            ```
-            sudo mkdir /media/[dir name]
-            ```
-            ```
-            sudo chown -R [usr] /media/[dir name]
-            ```
-        - Copy the UUID
-            ```
-            sudo blkid /dev/[Target Partition]  
-            ```
-        - Edit the fstab file !!!
-             ```
-            sudo vim /etc/fstab
-            ```
-            - Add line
-                ```
-                UUID=[UUID] \t /media/[dir name] \t ext4 \t defaults \t 0 \t 0
-                ```
-
-- ### Special characters
-    - #### Emoji
+- ***Automounting***
+    - Make mount directoty
         ```
-        paru noto-fonts-emoji
+        sudo mkdir /media/[dir name]
         ```
-    - #### Chinese characters
         ```
-        paru noto-fonts-cjk
+        sudo chown -R [usr] /media/[dir name]
         ```
-<!--- 
-- Aliases
-  - \# vim ~/.bash_aliases
-    - Add "command='command'"
-  - \# vim ~/.bashrc
-    - if [ -f ~/.bash_aliases ]; then \\. ~/.bash_aliases \\ fi
--->
+    - Copy the UUID
+        ```
+        sudo blkid /dev/[Target Partition]  
+        ```
+    - Edit the fstab file !!!
+         ```
+        sudo vim /etc/fstab
+        ```
+        - Add line
+            ```
+            UUID=[UUID] \t /media/[dir name] \t ext4 \t defaults \t 0 \t 0
+            ```
+            
 ## Programs
 
 - ### Tools
@@ -555,40 +531,20 @@ Open **System Settings**
 | Psensor         | ***Download***<br />                                                                                                                                                 \# paru psensor                                                                                                        |
 | Signal          | ***Download***<br />                                                                                                                                                 \# paru signal-desktop<br />                                                                                                                                         ***Appearance***<br />                                                                                                                                               Open the app and navigate to **File -> Preferences -> Appearance** and select **Dark** in **Theme**                    |
 | Spotify         | ***Download***<br />                                                                                                                                                 \# paru Spotify                                                                                                        |
-| Steam           | ***Enable Multilib (if not enabled***<br />                                                                                                                         \# sudo vim /etc/pacman.conf<br />                                                                                                                                   Uncomment multilib and Include<br />                                                                                                                                 ***Download***<br />                                                                                                                                                 \# paru steam<br />                                                                                                                                                 \# paru arial<br />                                                                                                                                                 ***Enabling Proton***<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                     If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |     
+| Steam           | ***Enable Multilib (if not enabled***<br />                                                                                                                         \# sudo vim /etc/pacman.conf<br />                                                                                                                                   Uncomment multilib and Include<br />                                                                                                                                 ***Download***<br />                                                                                                                                                 \# paru steam<br />                                                                                                                                                 \# paru arial<br />                                                                                                                                                 ***Enabling Proton***<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                     If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |       
 
-## General Configuration
 
-- ### Change wallpaper
-    - <a href="https://www.reddit.com/r/wallpaper/top/?t=all">Wallpaper</a>
-
-- ### Change login screen and start up behavior
-    - Open **System settings**
-        - In the **Appearance** section
-            - In Splace screen
-                - Press **Get New Splace screens**
-                - Sort by **Rating** and select one
-        - In the **Startup and Shutdown** section
-            - In **Login Screen (SDDM)**
-                - Select **Breeze**
-            - In **Desktop session** 
-                - Logout Screen 
-                    - Uncheck **Show**
-                - When loggin in
-                    - Select **Start with an empty session**
-    
-- ### Change screen dimming timout
-    - Open **System settings -> Power Management -> Energy Saving**
-        - On Battery
-            - Change **Dim screen** after **5 min**
-            - Change **Screen Energy Saving** Switch off after **10 min**
-        - On Low Battery
-            - Change **Screen brightness** level to **10** 
-
-- ### Change alt-tab look
-   - Navigate to **System settings -> Window Management -> Task Switcher**
-      - Choose **Thubnail Grid** in the **Visualization** section.
-  
+- ### Special characters
+    - #### Emoji
+        ```
+        paru noto-fonts-emoji
+        ```
+    - #### Chinese characters
+        ```
+        paru noto-fonts-cjk
+        ```
+        
+        
 - ### Configure Dolphin
     - #### Edit entries on the left
         - In **places** leave only
@@ -641,12 +597,8 @@ Open **System Settings**
                         - Set the days equal to **15**
 
                     
-- ### File Association        
-    - Open **System settings -> Applications -> File Associations**
-        - In the search bar search for:
-            - **text**
-                - Expand it and select **plain**
-                - In **Application Preference Order** set **Vim**, **Notepadqq**, **Gedit**
+
+
 
 - ### Task Bar
     - Right click the task bar and select **Add widgets**
