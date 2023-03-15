@@ -297,20 +297,39 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 # ArchLinux - Configuration
 
 ## Fix the damn mouse navigation, keyboard layouts and dark theme
-- Open **System Settings**
-    - Theme
-        - Select "Breeze Dark"
-    - Clicking flies or folders
-        - Select **Selects them**   
-- Navigate to **Input Devices**
-    - Touchpad
-        - Tapping
-            - Enable **Tap-to-click**
-            - Enable **Tap-and-drag**      
-        - Scrolling
-            - Enable **Invert scroll direction (Natural scrolling)**
-        - Right-click           
-           - Enable **Press anywhere with two fingers**
+Open **System Settings**
+- ***Quick Settings***
+    - In **Quick Settings** section
+        - *Theme* &rarr; Select "Breeze Dark"
+        - *Animation speed* &rarr; Select the option that is the second to last
+        - *Clicking flies or folders* &rarr; Select "Selects them"   
+- ***Splash Screen***
+    - In the **Appearance** section
+        - In **Splace screen** tab
+            - Press "Get New Splace screens"
+            - Search for "QuarksSplashDarker"
+- ***Login Screen and logout behavior***
+    - In the **Startup and Shutdown** section
+        - In **Login Screen (SDDM)** tab
+            - Select "Breeze"  
+        - In **Desktop session** tab 
+            - *Show* &rarr; Uncheck
+            - *On login* &rarr; Select "Start with an empty session"
+- ***Touchpad and keyboard settings***            
+    - In the **Input Devices** section
+        - In the **Keyboard** tab
+            - Navigate to **Layouts**
+                - Enable "Configure Layouts"
+                - Press add layout and add "Greek"
+            - Navigate to **Advanced**
+                - Enable "Configure keyboard options"
+                - Expand "Switching to another layout" &rarr; Select "Alt + Shift"
+        - In the **Touchpad** tab
+            - *Tapping*
+                - Enable **Tap-to-click**
+                - Enable **Tap-and-drag**      
+            - *Scrolling* &rarr; Enable "Invert scroll direction (Natural scrolling)"
+            - *Right-click* &rarr; Enable "Press anywhere with two fingers"
     - Keyboard
         - Navigate to **Layouts**
             - Enable **Configure Layouts**
