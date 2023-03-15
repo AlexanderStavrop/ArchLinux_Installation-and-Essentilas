@@ -8,10 +8,14 @@
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#install-base-system-and-some-extras">Install base system and some extras</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#configure-the-system">Configure the system</a>
 - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#archlinux---configuration">Archlinux - Configuration</a>
-    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#system-settings-configuration">system settings - Configuration</a>
-    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#dolphin-configuration">Dolphin - Configuration</a>
-    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#configure-wifi-and-bluetooth-settings">Wifi and Bluetooth - Configuration</a>
-    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#general-configuration">General Configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#system-settings-configuration">system settings configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#dolphin-configuration">Dolphin configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#wifi-and-bluetooth-configuration">Wifi and Bluetooth configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#pacman-and-paru-configuration">Pacman and Paru configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#grub-configuration">Grub configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#formating-and-automounting-disks">Formanting and automounting disks</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#programs">Programs</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#configure-task-bar">Task bar configuration</a>
 
 
 # Before you start
@@ -589,10 +593,9 @@ Open **System Settings**
 | Special characters | ***Download Emoji***<br />                                                                                                                                          \# paru noto-fonts-emoji                                                                                                                                            ***Download Chinise characters***<br />                                                                                                                              \# paru noto-fonts-cjk                                                                                                  |
 | Steam              | ***Enable Multilib (if not enabled***<br />                                                                                                                          \# sudo vim /etc/pacman.conf<br />                                                                                                                                  Uncomment multilib and Include<br />                                                                                                                                ***Download***<br />                                                                                                                                                \# paru steam<br />                                                                                                                                                  \# paru arial<br />                                                                                                                                                  ***Enabling Proton***<br />                                                                                                                                          steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                    If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |       
 
-## Configure Task Bar
+## Task bar configuration
 
 Right click the **task bar** and select "Enter edit mode"    
-
 - ***System tray icons***
     - Right click the task bar and select "Add widgets"
         - *Add*
