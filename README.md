@@ -15,7 +15,7 @@
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#grub-configuration">Grub configuration</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#formating-and-automounting-disks">Formanting and automounting disks</a>
     - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#programs">Programs</a>
-    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#configure-task-bar">Task bar configuration</a>
+    - <a href="https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/blob/master/README.md#task-bar-configuration">Task bar configuration</a>
 
 
 # Before you start
