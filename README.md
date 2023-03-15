@@ -296,7 +296,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 <br></br>
 # ArchLinux - Configuration
 
-## Dolphin - Configuration
+## System settings configuration
 Open **System Settings**
 - ***Quick Settings***
     - In **Quick Settings** section
@@ -353,7 +353,7 @@ Open **System Settings**
             - *Low Battery*
                 - *Screen brightness* &rarr; "10 min" 
 
-## Configure Dolphin
+## Dolphin configuration
 - ***Edit entries on the left***
     - In **places** 
         - *leave only*
@@ -404,7 +404,7 @@ Open **System Settings**
                 - *Cleanup* 
                     - *Delete files older than* &rarr; "15"
        
-## Configure Wifi and Bluetooth settings
+## Wifi and Bluetooth configuration
 - ***Change to Cloudflare***
     - Click on the **internet icon** (Wifi or Ethernet) and press **configure**
         - In the *IPV4*
@@ -544,7 +544,6 @@ Open **System Settings**
             ```
             
 ## Programs
-
 ### Tools
 |     App Name    |                                                  Command                                                          |  .conf file  |
 |:----------------|:------------------------------------------------------------------------------------------------------------------|:-----------:|
