@@ -152,7 +152,7 @@ mkswap /dev/[swap partition]
 - Set the Swapon Partition
     ```
     swapon /dev/[Swap Partition]
-    ```do not tra
+    ```
     
 ## Install base system and some extras
 ```
