@@ -546,11 +546,13 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
 - ### Change login screen and start up behavior
     - Open **System settings**
         - In the **Appearance** section
-            - Splace screen
+            - In Splace screen
                 - Press **Get New Splace screens**
                 - Sort by **Rating** and select one
         - In the **Startup and Shutdown** section
-            - Desktop session 
+            - In **Login Screen (SDDM)**
+                - Select **Breeze**
+            - In **Desktop session** 
                 - Logout Screen 
                     - Uncheck **Show**
                 - When loggin in
@@ -668,7 +670,4 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             - In **Behavior** section
                 - In **Mouse wheel** uncheck **Cycles through tasks**
         - Re arrange the icons unlil the task bar looks like this:
-          ![image](https://user-images.githubusercontent.com/56675566/224395097-f0d9b573-666b-4151-a27b-8e2f14173b71.png)
-            - Icons only task manager
-                
-          
+          ![image](https://user-images.githubusercontent.com/56675566/224395097-f0d9b573-666b-4151-a27b-8e2f14173b71.png)         
