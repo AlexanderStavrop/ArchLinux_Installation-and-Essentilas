@@ -662,19 +662,13 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                         - In **Units** section
                             - Change everything from freedom units to normal ones  
                 - If the clock takes too much space move it to the left
+        - Hover over the applications icons and select **Configure**
+            - In **Appearance** section
+                - In **General** uncheck **Mark applications that play audio**
+            - In **Behavior** section
+                - In **Mouse wheel** uncheck **Cycles through tasks**
         - Re arrange the icons unlil the task bar looks like this:
           ![image](https://user-images.githubusercontent.com/56675566/224395097-f0d9b573-666b-4151-a27b-8e2f14173b71.png)
-
-
-    
-<!---
-- ### Make kitty pretty
-    - Edit bashrc
-        - Copy content of [bashrc.txt](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/8854679/bashrc.txt)
-            ```
-            sudo vim .bashrc
-            ```
-    - Edit kitty config
-        - Copy the content of []
-        - Edit kitty config
--->
+            - Icons only task manager
+                
+          
