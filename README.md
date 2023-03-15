@@ -319,6 +319,11 @@ Open **System Settings**
         - In **Desktop session** tab 
             - *Show* &rarr; Uncheck
             - *On login* &rarr; Select "Start with an empty session"
+- ***File Association***
+    - In the **Applications** section
+        - In the **File Associations** tab
+        - *text (Plain)* 
+            - *Application Preference Order* &rarr; "Vim", "Notepadqq", "Gedit"
 - ***Touchpad and keyboard settings***            
     - In the **Input Devices** section
         - In the **Keyboard** tab
@@ -334,11 +339,11 @@ Open **System Settings**
                 - Enable **Tap-and-drag**      
             - *Scrolling* &rarr; Enable "Invert scroll direction (Natural scrolling)"
             - *Right-click* &rarr; Enable "Press anywhere with two fingers"
-- ***File Association***
-    - In the **Applications** section
-        - In the **File Associations** tab
-        - *text (Plain)* 
-            - *Application Preference Order* &rarr; "Vim", "Notepadqq", "Gedit"
+- ***Night color***            
+    - In the **Display and Monitor** section
+        - In the **Night color** tab
+            - *Switching Time* &rarr; "Sunset and sunrise at current location"
+            - *Nigth color temperature* &rarr; "4500K"
 - ***Screen dimming***
     - In the **Power Management** section
         - In the **Energy Saving** tab
@@ -348,6 +353,57 @@ Open **System Settings**
             - *Low Battery*
                 - *Screen brightness* &rarr; "10 min" 
 
+## Configure Dolphin
+- ***Edit entries on the left***
+    - In **places** 
+        - *leave only*
+            - "Home"
+            - "Desktop"
+            - "Documents"
+            - "Downloads"
+            - "Trash"
+        - *Hide*
+            - "Remote"
+            - "Recent"
+- ***Settings***
+    - Click on the **Burget Menu** on the top right corner 
+        - Enable "Show Hidden Files"
+        - Hover over **Show Additional Information** and enable "Size"
+        - Hover over **configure** and select "Configure Toolbars" 
+            - *Remove*
+                - "Separator"  
+                - "Icons"
+                - "Compact"
+                - "Details"
+                - "Splits"
+                - "Stash"
+            - *Add*
+                - "Home" after "forward"
+        - Hover over **configure** and select "Configure Toolbars"
+            - In the **General** section
+                - In the **Behavior** tab    
+                    - *Sorting mode* &rarr; "Alphabetical, case insensitive"
+                - In the **confirmation** tab
+                    - *Ask for confimation in Dolphin when* &rarr; uncheck "Closing windows with multiple tabs"
+            - In the **Startup** section 
+                - *Show on startup* &rarr; Change path to ***~/Documents***
+            - In **View Modes** section
+                - In **Icons** tab        
+                    - *Label width* &rarr; "small"
+            - In the **Context Menu** section
+                - *Uncheck*
+                    - "Add to places"
+                    - "Duplicate Here"
+                    - "Forget items from Recent Documents and Recent Locations"
+                    - "Install.."
+                    - "Link Files to Activities"
+                    - "Start a Slideshow"
+                    - "Tags"
+                    - "View modes"
+            - In the **Trash** section
+                - *Cleanup* 
+                    - *Delete files older than* &rarr; "15"
+       
 ## Configure Wifi and Bluetooth settings
 - ***Change to Cloudflare***
     - Click on the **internet icon** (Wifi or Ethernet) and press **configure**
@@ -521,124 +577,60 @@ Open **System Settings**
 | TexStudio       | ***Download***<br />                                                                                                                                                 \# paru texstudio<br />                                                                                                                                             \# paru texlive-science (19)<br />                                                                                                                                   \# paru texlive-pictures (16)<br />                                                                                                                                 \# paru texlive-latexextra (14)<br />                                                                                                                               \# paru texlive-langgreek (11)<br />                                                                                                                                 \# paru texlive-core (3)<br />                                                                                                                                       \# paru texlive-bin (2)<br />                                                                                                                                       \# paru texlive-bibtexextra (1)<br />                                                                                                                               ***Greek Dictionary*** <br />                                                                                                                                       Download the <a href="https://extensions.libreoffice.org/en/extensions/show/orthos-greek-speller-dictionary-and-thesaurus">dictionary</a> and save the file as .zip<br />                                                                                                                                                                   \# sudo mkdir ~/Documents/"Latex dic"<br />                                                                                                                         \# sudo unzip ~/Downloads/orthos-el_GR-0.4.0-87.zip -d ~/Documents/"Latex dic"/ <br />                                                                               Navigate to **Options -> Configure TexStudio -> Language Checking**<br />                                                                                             Change the directory of **Spelling Dictionary Directories** to **Latex dic**<br />                                                                                   Restart TexStudio<br />                                                                                                                                             Navigate again to **Language Checking** and change **Default Languages** to **el_GR**<br />                                                                         **Font Size**<br />                                                                                                                                                 Navigate to **Options -> Configure TexStudio -> Editor** and change the **Font size** to 11                               |  
 
 - ### Other
-|     App Name    |                                                  Command                                                               |
-|:----------------|:-----------------------------------------------------------------------------------------------------------------------|
-| Anydesk         | ***Download***<br />                                                                                                                                                 \# paru anydesk                                                                                                        |
-| Discord         | ***Download***<br />                                                                                                                                                 \# paru discord<br />                                                                                                                                               ***Better Discord***<br />                                                                                                                                           \# paru betterdiscord-installer-bin<br />                                                                                                                           \# betterdiscord-installer<br />                                                                                                                                     Complete the installtion<br />                                                                                                                                       ***BetterDiscord PluginRepp***<br />                                                                                                                                 <a href="https://betterdiscord.app/plugin/PluginRepo">PluginRepo</a><br />                                                                                           Required library for PluginRepo (<a href="https://betterdiscord.app/plugin/BDFDB">BDFDB</a>)<br />                                                                   Open discord and navigate to **Settings -> Plugins** and press **Open Plugins Folder** and add the previously downloaded files<br />                                 ***Other Plugsins***<br />                                                                                                                                           Open discord and navigate to **Settings -> Plugin Repo**<br />                                                                                                       Sort by **Favorite** and download all the favorite plugsins:<br />                                                                                                   1) BetterMediaPlayer<br />                                                                                                                                           2) BetterVolume<br />                                                                                                                                               3) CallTimeCounter<br />                                                                                                                                             4) Do not track<br />                                                                                                                                               5) Double Click to Edit<br />                                                                                                                                       6) FileViewer<br />                                                                                                                                                 7) HideDisabledEmojis<br />                                                                                                                                         8) SplitLargeMessage<br />                                                                                                                                           9) SpotifyControls<br />                                                                                                                                             10) TypingUsersAvatars                                                                                                 |
-| Firefox         | ***Download***<br />                                                                                                                                                 \# paru firefox<br />                                                                                                                                                 ***Compact Look***<br />                                                                                                                                             Inside Firefox search for **about:config -> browser.compactmode.show** and change to **true**<br />                                                                   Right click on toolbar, select **Customize Toolbar** and in the bottom choose **compact** for **Density**<br />                                                     ***Toolbar***<br />                                                                                                                                                 Right click on the top left firefox icon and select **Remove from Toolbar**<br />                                                                                     Click on the **tile** icon and pin the nessesary extensions<br />                                                                                                   Right click on toolbar and select **Customize Toolbar**<br />                                                                                                       On the bottom left corner untick **Titla bar**<br />                                                                                                                 Remove and items until the task bask bar looks like this :<br />                                                                                                     ![image](https://user-images.githubusercontent.com/56675566/208410781-cee56941-3b5a-4180-8062-8431ba8d2cf0.png)<br />                                               Click the **Downloads** icon and uncheck the **Hide when empty**<br />                                                                                               ***Alt Autism***<br />                                                                                                                                               Inside Firefox search for **about:config -> ui.key.menuAccessKeyFocuses** and change to false<br />                                                                   ***Theme***<br />                                                                                                                                                   Press the **gear icon** and in the bottome left press **Extensions and Themes**<br />                                                                               On the top left select **Themes** and enable **DarkMagic** theme<br />                                                                                               ***Touchpad Gestures***<br />                                                                                                                                       \# sudo vim /etc/enviroment<br />                                                                                                                                   Add "MOZ_USE_XINPUT2=1"<br />                                                                                                                                       ***Enhanced Youtube***<br />                                                                                                                                         Open a video in youtube, press the gear button unber the video player and copy paste the [settings](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/9945970/Enhanced-Yt.txt) in the import section.                                                | 
-| Notepadqq       | ***Download***<br />                                                                                                                                                 \# paru notepadqq<br />                                                                                                                                             ***Overall Look***<br />                                                                                                                                             Navigate to **settings -> Preferences -> Appearance** and change the **Color scheme** to **base-16-dark**<br />                                                     ***Disable Indentation Messages***<br />                                                                                                                             Navigate to **settings -> Preferences -> General** and untick **Warn when the indentation doesn't match the settings** |
-| Obs             | ***Download***<br />                                                                                                                                                 \# paru obs-studio<br />                                                                                                                                             ***Basic Configuration***<br />                                                                                                                                       Open the application and choose **Optimize just for recording** and hit next<br />                                                                                   Select **30** in the **Fps** section and hit next<br />                                                                                                             Navigate to **File -> Settings -> Output** and change the **Recording Path**<br />                                                                                   ***Canvas Resolution***<br />                                                                                                                                       Navigate to **File -> Settings -> Video** and change the **Base (canvas) Resolution** to max resolution<br />          |
-| Psensor         | ***Download***<br />                                                                                                                                                 \# paru psensor                                                                                                        |
-| Signal          | ***Download***<br />                                                                                                                                                 \# paru signal-desktop<br />                                                                                                                                         ***Appearance***<br />                                                                                                                                               Open the app and navigate to **File -> Preferences -> Appearance** and select **Dark** in **Theme**                    |
-| Spotify         | ***Download***<br />                                                                                                                                                 \# paru Spotify                                                                                                        |
-| Steam           | ***Enable Multilib (if not enabled***<br />                                                                                                                         \# sudo vim /etc/pacman.conf<br />                                                                                                                                   Uncomment multilib and Include<br />                                                                                                                                 ***Download***<br />                                                                                                                                                 \# paru steam<br />                                                                                                                                                 \# paru arial<br />                                                                                                                                                 ***Enabling Proton***<br />                                                                                                                                         steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                     If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |       
+|     App Name    |                                                  Command                                                                   |
+|:----------------|:---------------------------------------------------------------------------------------------------------------------------|
+| Anydesk            | ***Download***<br />                                                                                                                                                \# paru anydesk                                                                                                         |
+| Discord            | ***Download***<br />                                                                                                                                                \# paru discord<br />                                                                                                                                                ***Better Discord***<br />                                                                                                                                          \# paru betterdiscord-installer-bin<br />                                                                                                                            \# betterdiscord-installer<br />                                                                                                                                    Complete the installtion<br />                                                                                                                                      ***BetterDiscord PluginRepp***<br />                                                                                                                                <a href="https://betterdiscord.app/plugin/PluginRepo">PluginRepo</a><br />                                                                                          Required library for PluginRepo (<a href="https://betterdiscord.app/plugin/BDFDB">BDFDB</a>)<br />                                                                  Open discord and navigate to **Settings -> Plugins** and press **Open Plugins Folder** and add the previously downloaded files<br />                                  ***Other Plugsins***<br />                                                                                                                                          Open discord and navigate to **Settings -> Plugin Repo**<br />                                                                                                      Sort by **Favorite** and download all the favorite plugsins:<br />                                                                                                  1) BetterMediaPlayer<br />                                                                                                                                          2) BetterVolume<br />                                                                                                                                                3) CallTimeCounter<br />                                                                                                                                            4) Do not track<br />                                                                                                                                                5) Double Click to Edit<br />                                                                                                                                        6) FileViewer<br />                                                                                                                                                  7) HideDisabledEmojis<br />                                                                                                                                          8) SplitLargeMessage<br />                                                                                                                                          9) SpotifyControls                                                                                                      |
+| Firefox            | ***Download***<br />                                                                                                                                                \# paru firefox<br />                                                                                                                                                ***Compact Look***<br />                                                                                                                                            Inside Firefox search for **about:config -> browser.compactmode.show** and change to **true**<br />                                                                  Right click on toolbar, select **Customize Toolbar** and in the bottom choose **compact** for **Density**<br />                                                      ***Toolbar***<br />                                                                                                                                                  Right click on the top left firefox icon and select **Remove from Toolbar**<br />                                                                                    Click on the **tile** icon and pin the nessesary extensions<br />                                                                                                    Right click on toolbar and select **Customize Toolbar**<br />                                                                                                        On the bottom left corner untick **Titla bar**<br />                                                                                                                Remove and items until the task bask bar looks like this :<br />                                                                                                    ![image](https://user-images.githubusercontent.com/56675566/208410781-cee56941-3b5a-4180-8062-8431ba8d2cf0.png)<br />                                                Click the **Downloads** icon and uncheck the **Hide when empty**<br />                                                                                              ***Alt Autism***<br />                                                                                                                                              Inside Firefox search for **about:config -> ui.key.menuAccessKeyFocuses** and change to false<br />                                                                  ***Theme***<br />                                                                                                                                                    Press the **gear icon** and in the bottome left press **Extensions and Themes**<br />                                                                                On the top left select **Themes** and enable **DarkMagic** theme<br />                                                                                              ***Touchpad Gestures***<br />                                                                                                                                        \# sudo vim /etc/enviroment<br />                                                                                                                                    Add "MOZ_USE_XINPUT2=1"<br />                                                                                                                                        ***Enhanced Youtube***<br />                                                                                                                                        Open a video in youtube, press the gear button unber the video player and copy paste the [settings](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/files/9945970/Enhanced-Yt.txt) in the import section.                                                    | 
+| Notepadqq          | ***Download***<br />                                                                                                                                                \# paru notepadqq<br />                                                                                                                                              ***Overall Look***<br />                                                                                                                                            Navigate to **settings -> Preferences -> Appearance** and change the **Color scheme** to **base-16-dark**<br />                                                      ***Disable Indentation Messages***<br />                                                                                                                            Navigate to **settings -> Preferences -> General** and untick **Warn when the indentation doesn't match the settings**  |
+| Obs                | ***Download***<br />                                                                                                                                                \# paru obs-studio<br />                                                                                                                                            ***Basic Configuration***<br />                                                                                                                                      Open the application and choose **Optimize just for recording** and hit next<br />                                                                                  Select **30** in the **Fps** section and hit next<br />                                                                                                              Navigate to **File -> Settings -> Output** and change the **Recording Path**<br />                                                                                  ***Canvas Resolution***<br />                                                                                                                                        Navigate to **File -> Settings -> Video** and change the **Base (canvas) Resolution** to max resolution<br />           |
+| Psensor            | ***Download***<br />                                                                                                                                                \# paru psensor                                                                                                         |
+| Signal             | ***Download***<br />                                                                                                                                                \# paru signal-desktop<br />                                                                                                                                        ***Appearance***<br />                                                                                                                                              Open the app and navigate to **File -> Preferences -> Appearance** and select **Dark** in **Theme**                     |
+| Spotify            | ***Download***<br />                                                                                                                                                \# paru Spotify                                                                                                         |
+| Special characters | ***Download Emoji***<br />                                                                                                                                          \# paru noto-fonts-emoji                                                                                                                                            ***Download Chinise characters***<br />                                                                                                                              \# paru noto-fonts-cjk                                                                                                  |
+| Steam              | ***Enable Multilib (if not enabled***<br />                                                                                                                          \# sudo vim /etc/pacman.conf<br />                                                                                                                                  Uncomment multilib and Include<br />                                                                                                                                ***Download***<br />                                                                                                                                                \# paru steam<br />                                                                                                                                                  \# paru arial<br />                                                                                                                                                  ***Enabling Proton***<br />                                                                                                                                          steam -> settings -> steam play -> Enable steam play, select latest proton<br />                                                                                    If games don't start -> \# paru -Rsn amdvlk && \# paru -Rsn lib32-amdvlk                                                |       
 
+## Configure Task Bar
 
-- ### Special characters
-    - #### Emoji
-        ```
-        paru noto-fonts-emoji
-        ```
-    - #### Chinese characters
-        ```
-        paru noto-fonts-cjk
-        ```
-        
-        
-- ### Configure Dolphin
-    - #### Edit entries on the left
-        - In **places** leave only
-            - **Home**
-            - **Desktop**
-            - **Documents**
-            - **Downloads**
-            - **Trash**
-        - Hide 
-            - **Remote**
-            - **Recent**
-    - #### Settings
-        - Click on the top right corner 
-            - Enable **Show Hidden Files**
-            - Hover over **Show Additional Information** and enable **Size**
-            - Hover over **configure** and select **Configure Toolbars** 
-                - Remove
-                    - **Separator**  
-                    - **Icons**
-                    - **Compact**
-                    - **Details**
-                    - **Splits**
-                    - **Stash**
-                - Add
-                    - **Home** button after **forward** button
-            - Hover over **configure** and select **Configure Toolbars**
-                - In the **General** section
-                    - In the **Behavior** tab    
-                        - In **Sorting mode** change to **Alphabetical, case insensitive**  
-                    - In the **confirmation** tab
-                        - In **Ask for confimation in Dolphin when:** uncheck **Closing windows with multiple tabs**
-                - In the **Startup** section 
-                    - In **Show on startup** change path to ***~/Documents***
-                - In **View Modes** section
-                    - In **Icons** tab        
-                        - In **Label width** change to **small**
-                - In the **Context Menu** section
-                    - Uncheck
-                        - **Add to places**
-                        - **Duplicate Here**
-                        - **Forget items from Recent Documents and Recent Locations**
-                        - **Install..**
-                        - **Link Files to Activities**
-                        - **Start a Slideshow**
-                        - **Tags**
-                        - **View modes**
-                - In the **Trash** section
-                    - In **Cleanup** 
-                        - Enable **Delete files older than** 
-                        - Set the days equal to **15**
+Right click the **task bar** and select "Enter edit mode"    
 
-                    
-
-
-
-- ### Task Bar
-    - Right click the task bar and select **Add widgets**
-        - Add
-            - **Individual Core Usage**
-            - **Memory Usage**
-            - **Network Usage**
-            - **Keyboard layoyt**
-    - Right click the task bar and select **Enter edit mode**
-        - Change the panel width to **34**
-        - Hover over system tray icons and select **Configure**
-            - In the **Entries** tab
-                - Change to **Always Shown** and everything else to **disabled**
-                    - **CopyQ**
-                    - **Flameshot**
-                    - **Audio Volume**
-                    - **Battery and Brightness**
-                    - **Bluetooth**
-                    - **Disk and Devices**
-                    - **Networks**
-                    - **Night color**
-                        - set **Switching Time** to **Custom times**
-                        - Set **Nigth color temperature** to **4500K**
-                        - Set **Begin night color at** to **06:00**
-                        - Set **Begin day color at** to **06:02**
-                        - Set **Transition duration** to **2 minutes** 
-                    - **Notifications**
-                    - **Weather
-                        - In the **Weather Station** section
-                            - Add your current city
-                        - In the **Appearance** section
-                            - In **Show in tooltip**
-                                - Enable everything
-                        - In **Units** section
-                            - Change everything from freedom units to normal ones  
-                - If the clock takes too much space move it to the left
-        - Hover over the applications icons and select **Configure**
-            - In **Appearance** section
-                - In **General** uncheck **Mark applications that play audio**
-            - In **Behavior** section
-                - In **Mouse wheel** uncheck **Cycles through tasks**
-        - Re arrange the icons unlil the task bar looks like this:
-          ![image](https://user-images.githubusercontent.com/56675566/224395097-f0d9b573-666b-4151-a27b-8e2f14173b71.png)         
+- ***System tray icons***
+    - Right click the task bar and select "Add widgets"
+        - *Add*
+            - "Individual Core Usage"
+            - "Memory Usage"
+            - "Network Usage"
+            - "Keyboard layoyt"
+    - Hover over system tray icons and select "Configure"
+        - In the **Entries** tab
+            - *Always Shown*
+                - "CopyQ"
+                - "Flameshot"
+                - "Audio Volume"
+                - "Battery and Brightness"
+                - "Bluetooth"
+                - "Disk and Devices"
+                - "Networks"
+                - "Night color"
+                - "Notifications"
+                - "Weather"
+                    - In the **Weather Station** section
+                        - Add your current city
+                    - In the **Appearance** section
+                        - *Show in tooltip* &rarr; Enable everything
+                    - In **Units** section
+                        - Change everything from freedom units to normal ones
+            - *Disable*
+                - Everything else
+            - If the clock takes too much space move it a little to the left
+- ***Application shortcuts***
+    - Hover over the applications icons and select "Configure"
+        - In **Appearance** section
+            - *General* &rarr; Uncheck "Mark applications that play audio"
+        - In **Behavior** section
+            - *Mouse wheel* &rarr; uncheck "Cycles through tasks"
+- ***Task bar size***
+    - *Panel width* &rarr; "34"
+- **Overall look***
+    - Re arrange the icons unlil the task bar looks like this:
+      ![image](https://user-images.githubusercontent.com/56675566/224395097-f0d9b573-666b-4151-a27b-8e2f14173b71.png)         
