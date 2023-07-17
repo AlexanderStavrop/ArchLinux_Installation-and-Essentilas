@@ -24,7 +24,11 @@
     - ***Windows*** 
         - <a href="https://rufus.ie/en/">rufus</a>
         - Check if you need an MBR or GPT usb
-    - ***Linux*** 
+    - ***Linux***
+        - Find the usb device name
+        ```
+        sudo fdisk -l
+        ```     
         - Install pv
         ```
         sudo dd if=[arch installer file] | pv | sudo dd of=/dev/[usb device name]
