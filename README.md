@@ -28,8 +28,9 @@
         - Find the usb device name
         ```
         sudo fdisk -l
-        ```     
+        ```
         - Install pv
+        - Burn the usb
         ```
         sudo dd if=[arch installer file] | pv | sudo dd of=/dev/[usb device name]
         ```
