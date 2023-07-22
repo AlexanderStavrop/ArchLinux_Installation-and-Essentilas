@@ -90,7 +90,9 @@ timedatectl set-ntp true
     <tr>
         <th colspan=3 align="center"> For MBR (My PC) </th> <th> </th> <th colspan=3 align="center"> For GTP (My Laptop) </th>
     </tr>
-    <tr>
+    <tr>Uncomment
+
+
       <td align="center"> Key </td> <td align="center"> Type </td> <td align="center"> Size 
       </td> <td>
       <td align="center"> Key </td> <td align="center"> Type </td> <td align="center"> Size     
@@ -142,6 +144,9 @@ timedatectl set-ntp true
 mkfs.ext4 /dev/[linux filesystem partition]
 ```
 ```
+Uncomment
+
+
 mkswap /dev/[swap partition]
 ```
 
@@ -314,9 +319,8 @@ Open **System Settings**
 - ***Quick Settings***
     - In **Quick Settings** section
         - *Theme* &rarr; Select "Breeze Dark"
-        - *Animation speed* &rarr; ![image](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/assets/56675566/29b1f725-db65-4d81-a1bf-c6baf3582095)
-Select the option that is the second to last
-        - *Clicking flies or folders* &rarr; Select "Selects them"   
+        - *Clicking flies or folders* &rarr; Select "Selects them"
+        - ![image](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/assets/56675566/7ccf51c8-c312-460c-9138-ee43ab58b010)
 - ***Splash Screen***
     - In the **Appearance** section
         - In **Splace screen** tab
