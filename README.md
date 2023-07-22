@@ -331,7 +331,7 @@ Open **System Settings**
     - In the **Appearance** section
         - In **Splace screen** tab
             - Press "Get New Splace screens"
-            - Search for "QuarksSplashDarker"
+            - Search for "WatchDogsBootSplash"
 - ***Change alt-tab look***
     - In the **Window Management** section
         - In the **Task Switcher** tab
