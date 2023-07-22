@@ -136,7 +136,7 @@ timedatectl set-ntp true
 ## Format the partitions
 - If an Efi Partition has been created
     ```
-    mkfs.fat -F 32 /dev/[efi Partition]  mouse 
+    mkfs.fat -F 32 /dev/[efi Partition] 
     ```
 ```
 mkfs.ext4 /dev/[linux filesystem partition]
