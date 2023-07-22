@@ -104,7 +104,7 @@ timedatectl set-ntp true
     </tr>
     <tr>
       <td align="center"> - </td> <td align="center"> - </td> <td align="center">  -  </td>
-      <td> </td>
+      <td> </td>Behavior
       <td align="center"> n </td> <td> Efi partition    </td> <td align="center"> +1G </td>
     </tr>
     <tr>
@@ -123,7 +123,7 @@ timedatectl set-ntp true
       <td align="center"> t </td> <td> Linux root x86-64 - (23)       </td> <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center"> n </td> <td> (p) - Swap partition </td> <td align="center"> +1G </td>
+      <td align="center"> n </td> <td> (p) - Swap partition </td> <td align="center"> +1G </td>Behavior
       <td> </td>
       <td align="center"> n </td> <td> Swap partition       </td> <td align="center"> +1G </td>
     </tr>  
@@ -256,7 +256,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 ```
             - MBR
                 ```
-                grub-install --target=i386-pc /dev/[root_partition]
+                grub-install --target=i386-pc /dev/[root_partition]Behavior
                 ```
                 - (if an error occurs, try /dev/[Target Drive])
         - Generate the grub.cfg file
@@ -307,7 +307,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
       ```
       
 - Reboot and remove the usb
-  ```
+  ```Behavior
   reboot
   ```
 
@@ -404,7 +404,8 @@ Open **System Settings**
                 - "Home" after "forward"
         - Hover over **configure** and select "Configure Dolphin"
             - In the **General** section
-                - In the **Behavior** tab    
+                - In the **Behavior** tab
+                    - *View* &rarr; "Remember display style for each folder"
                     - *Sorting mode* &rarr; "Alphabetical, case insensitive"
                 - In the **confirmation** tab
                     - *Ask for confimation in Dolphin when* &rarr; uncheck "Closing windows with multiple tabs"
