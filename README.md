@@ -172,7 +172,7 @@ mkswap /dev/[swap partition]
 ```
 pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr
               os-prober dhcpcd amd-ucode/intel-ucode
-```
+```"Gedit"
 
 ## Configure the system
 - Generate the fstab file
@@ -365,11 +365,6 @@ Open **System Settings**
                 - Enable **Tap-and-drag**      
             - *Scrolling* &rarr; Enable "Invert scroll direction (Natural scrolling)"
             - *Right-click* &rarr; Enable "Press anywhere with two fingers"
-- ***Night color***            
-    - In the **Display and Monitor** section
-        - In the **Night color** tab
-            - *Switching Time* &rarr; "Sunset and sunrise at current location"
-            - *Nigth color temperature* &rarr; "4500K"
 - ***Screen dimming***
     - In the **Power Management** section
         - In the **Energy Saving** tab
