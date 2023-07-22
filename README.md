@@ -321,6 +321,12 @@ Open **System Settings**
         - *Theme* &rarr; Select "Breeze Dark"
         - *Clicking flies or folders* &rarr; Select "Selects them"
         - ![image](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/assets/56675566/7ccf51c8-c312-460c-9138-ee43ab58b010)
+- ***Window Decorations***
+    - In the **Appearance** section
+        - In **Window Decorations**
+            - In the **Titlebar Buttons** tab
+                - Remove "Pin icon"
+                - Remove "Question mark"
 - ***Splash Screen***
     - In the **Appearance** section
         - In **Splace screen** tab
