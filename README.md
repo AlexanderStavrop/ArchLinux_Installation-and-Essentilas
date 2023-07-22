@@ -529,7 +529,6 @@ Open **System Settings**
             ```
             /menuentry
             ```
-            - If the menuentry looks like ????????```sudo vim /boot/grub/grub.cfg```, you are good to go
         - comment (or delete) any entries you don't want to see in your grub boot menu
         - Save and exit
         
