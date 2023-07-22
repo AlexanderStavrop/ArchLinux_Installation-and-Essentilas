@@ -346,8 +346,8 @@ Open **System Settings**
 - ***File Association***
     - In the **Applications** section
         - In the **File Associations** tab
-        - *text (Plain)* 
-            - *Application Preference Order* &rarr; "Vim", "Notepadqq", "Gedit"
+            - *text (Plain)* 
+                - *Application Preference Order* &rarr; "Gedit", "Vim", "Notepadqq" 
 - ***Touchpad and keyboard settings***            
     - In the **Input Devices** section
         - In the **Keyboard** tab
