@@ -314,7 +314,8 @@ Open **System Settings**
 - ***Quick Settings***
     - In **Quick Settings** section
         - *Theme* &rarr; Select "Breeze Dark"
-        - *Animation speed* &rarr; Select the option that is the second to last
+        - *Animation speed* &rarr; ![image](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/assets/56675566/29b1f725-db65-4d81-a1bf-c6baf3582095)
+Select the option that is the second to last
         - *Clicking flies or folders* &rarr; Select "Selects them"   
 - ***Splash Screen***
     - In the **Appearance** section
