@@ -423,6 +423,7 @@ Open **System Settings**
                 - *Cleanup* 
                     - *Delete files older than* &rarr; "15"
 
+
 ## Pacman and Paru configuration
 - ***Pacman***
     ```
@@ -460,6 +461,7 @@ Open **System Settings**
     paru reflector
     ```
 
+
 ## Wifi and Bluetooth configuration
 - ***Change to Cloudflare***
     - Click on the **internet icon** (Wifi or Ethernet) and press **configure**
@@ -473,9 +475,11 @@ Open **System Settings**
             - *Search Domains* &rarr; ```::1.0.0.1```
         - Logout and login back again
         - <a href="https://1.1.1.1/help">Check if you are using Cloudflare</a>
+
 - ***Network Tools***
     ```
     paru net-tools
+
 - ***Bluetooth***
     ```
     sudo systemctl start bluetooth.service
@@ -483,6 +487,7 @@ Open **System Settings**
     ```
     sudo systemctl enable bluetooth.service
     ```
+
 
 ## Grub Configuration
 - ***Find windows on different disk in grub***
@@ -495,6 +500,16 @@ Open **System Settings**
         sudo mount /dev/[Windows Partition] /mnt/windows/
         ```
     - Find windows
+        ```
+        sudo os-prober
+        ```
+    - Update grub
+        ```
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
+        ```
+        
+- ***Find another Linux installation in grub***
+    - Find the other distro
         ```
         sudo os-prober
         ```
