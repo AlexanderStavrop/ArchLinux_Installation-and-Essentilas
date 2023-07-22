@@ -231,10 +231,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     
     - ### Create a password
         ```
-        passwdpacman -S (for laptop)xf86-video-amdgpu/intel nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth
-           alsa-utils alsa-firmware xorg plasma-desktop plasma-systemmonitor plasma-nm plasma-pa dolphin
-           dolphin-plugins kscreen kinfocenter kdeplasma-addons kde-gtk-config ark konsole kitty gwenview
-           firefox powerdevil sddm sddm-kcm bluez bluedevil ffmpegthumbs ntfs-3g gedit sudo btop
+        passwd
         ```
         
     - ### Install bootloader
@@ -479,6 +476,7 @@ Open **System Settings**
 - ***Network Tools***
     ```
     paru net-tools
+    ```
 
 - ***Bluetooth***
     ```
