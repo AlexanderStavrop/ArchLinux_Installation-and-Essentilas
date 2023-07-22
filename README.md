@@ -386,8 +386,8 @@ Open **System Settings**
             - "Downloads"
             - "Trash"
         - *Hide*
-            - "Remote"
-            - "Recent"
+            - "Remote" section
+            - "Recent" section
 - ***Settings***
     - Click on the **Burget Menu** on the top right corner 
         - Enable "Show Hidden Files"
