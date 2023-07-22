@@ -130,7 +130,7 @@ timedatectl set-ntp true
     <tr>
       <td align="center"> t </td> <td> (p) - Linux swap - (82) </td> <td align="center"> - </td>
       <td> </td>
-      <td align="center"> t </td> <td> Linux swap - (19)       </td> <td align="center"> - </td>
+      <td align="center"> t </td> <td> Linux swap - (19)       </td> <td align="center"> - </td>"Gedit"
     </tr>
 </table>
  - Verify all your partitions are ok and exit (w)
@@ -358,7 +358,7 @@ Open **System Settings**
                 - Press add layout and add "Greek"
             - Navigate to **Advanced**
                 - Enable "Configure keyboard options"
-                - Expand "Switching to another layout" &rarr; Select "Alt + Shift"
+                - Expand "Switching to another layout" &rarr; Select "Win + Space"
         - In the **Touchpad** tab
             - *Tapping*
                 - Enable **Tap-to-click**
