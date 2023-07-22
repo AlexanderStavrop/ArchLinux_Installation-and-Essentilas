@@ -347,7 +347,9 @@ Open **System Settings**
     - In the **Applications** section
         - In the **File Associations** tab
             - *text (Plain)* 
-                - *Application Preference Order* &rarr; "Gedit", "Vim", "Notepadqq" 
+                - *Application Preference Order* &rarr; "Gedit", "Vim", "Notepadqq"
+        - In **Default Applications**
+            - Change "Terminal emulator" to "kitty"
 - ***Touchpad and keyboard settings***            
     - In the **Input Devices** section
         - In the **Keyboard** tab
