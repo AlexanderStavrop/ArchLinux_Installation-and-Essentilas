@@ -90,9 +90,7 @@ timedatectl set-ntp true
     <tr>
         <th colspan=3 align="center"> For MBR (My PC) </th> <th> </th> <th colspan=3 align="center"> For GTP (My Laptop) </th>
     </tr>
-    <tr>Uncomment
-
-
+    <tr>
       <td align="center"> Key </td> <td align="center"> Type </td> <td align="center"> Size 
       </td> <td>
       <td align="center"> Key </td> <td align="center"> Type </td> <td align="center"> Size     
@@ -100,11 +98,11 @@ timedatectl set-ntp true
     <tr>
       <td align="center"> o </td> <td> Create a Dos table?!   </td> <td align="center"> - </td> 
       <td> </td>
-      <td align="center"> g </td> <td> Create Partition table </td> <td align="center"> - </td>section
+      <td align="center"> g </td> <td> Create Partition table </td> <td align="center"> - </td>
     </tr>
     <tr>
       <td align="center"> - </td> <td align="center"> - </td> <td align="center">  -  </td>
-      <td> </td>Behavior
+      <td> </td>
       <td align="center"> n </td> <td> Efi partition    </td> <td align="center"> +1G </td>
     </tr>
     <tr>
@@ -123,14 +121,14 @@ timedatectl set-ntp true
       <td align="center"> t </td> <td> Linux root x86-64 - (23)       </td> <td align="center"> - </td>
     </tr>
     <tr>
-      <td align="center"> n </td> <td> (p) - Swap partition </td> <td align="center"> +1G </td>Behavior
+      <td align="center"> n </td> <td> (p) - Swap partition </td> <td align="center"> +1G </td>
       <td> </td>
       <td align="center"> n </td> <td> Swap partition       </td> <td align="center"> +1G </td>
     </tr>  
     <tr>
       <td align="center"> t </td> <td> (p) - Linux swap - (82) </td> <td align="center"> - </td>
       <td> </td>
-      <td align="center"> t </td> <td> Linux swap - (19)       </td> <td align="center"> - </td>"Gedit"
+      <td align="center"> t </td> <td> Linux swap - (19)       </td> <td align="center"> - </td>
     </tr>
 </table>
  - Verify all your partitions are ok and exit (w)
