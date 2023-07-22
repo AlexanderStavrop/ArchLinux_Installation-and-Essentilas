@@ -425,32 +425,6 @@ Open **System Settings**
             - In the **Trash** section
                 - *Cleanup* 
                     - *Delete files older than* &rarr; "15"
-       
-## Wifi and Bluetooth configuration
-- ***Change to Cloudflare***
-    - Click on the **internet icon** (Wifi or Ethernet) and press **configure**
-        - In the *IPV4*
-            - *Method* &rarr; "Automatic (Only Addresses)"
-            - *DNS Servers* &rarr; ```1.1.1.1```
-            - *Search Domains* &rarr; ```1.0.0.1```
-        - In the *IPV6*
-            - *Method* &rarr; "Automatic (Only Addresses)"
-            - *DNS Servers* &rarr; ```::1.1.1.1```
-            - *Search Domains* &rarr; ```::1.0.0.1```
-        - Logout and login back again
-        - <a href="https://1.1.1.1/help">Check if you are using Cloudflare</a>
-- ***Network Tools***
-    ```
-    paru net-tools
-- ***Bluetooth***
-    ```
-    sudo systemctl start bluetooth.service
-    ```
-    ```
-    sudo systemctl enable bluetooth.service
-    ```
-
-
 
 ## Pacman and Paru configuration
 - ***Pacman***
@@ -484,6 +458,30 @@ Open **System Settings**
     - Enable "BottomUp"
     ```
     paru reflector
+    ```
+
+## Wifi and Bluetooth configuration
+- ***Change to Cloudflare***
+    - Click on the **internet icon** (Wifi or Ethernet) and press **configure**
+        - In the *IPV4*
+            - *Method* &rarr; "Automatic (Only Addresses)"
+            - *DNS Servers* &rarr; ```1.1.1.1```
+            - *Search Domains* &rarr; ```1.0.0.1```
+        - In the *IPV6*
+            - *Method* &rarr; "Automatic (Only Addresses)"
+            - *DNS Servers* &rarr; ```::1.1.1.1```
+            - *Search Domains* &rarr; ```::1.0.0.1```
+        - Logout and login back again
+        - <a href="https://1.1.1.1/help">Check if you are using Cloudflare</a>
+- ***Network Tools***
+    ```
+    paru net-tools
+- ***Bluetooth***
+    ```
+    sudo systemctl start bluetooth.service
+    ```
+    ```
+    sudo systemctl enable bluetooth.service
     ```
 
 ## Grub Configuration
