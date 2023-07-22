@@ -368,11 +368,13 @@ Open **System Settings**
 - ***Screen dimming***
     - In the **Power Management** section
         - In the **Energy Saving** tab
-            - *Battery*
+            - *On Battery*
                 - *Dim screen* &rarr; "5 min"
                 - *Screen Energy Saving* &rarr; "10 min"
-            - *Low Battery*
-                - *Screen brightness* &rarr; "10 min" 
+            - *On Low Battery*
+                - Uncheck "Screen brightness" 
+                - *Dim screen* &rarr; "2 min"
+                - *Screen brightness* &rarr; "5 min" 
 
 ## Dolphin configuration
 - ***Edit entries on the left***
