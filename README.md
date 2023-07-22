@@ -100,7 +100,7 @@ timedatectl set-ntp true
     <tr>
       <td align="center"> o </td> <td> Create a Dos table?!   </td> <td align="center"> - </td> 
       <td> </td>
-      <td align="center"> g </td> <td> Create Partition table </td> <td align="center"> - </td>
+      <td align="center"> g </td> <td> Create Partition table </td> <td align="center"> - </td>section
     </tr>
     <tr>
       <td align="center"> - </td> <td align="center"> - </td> <td align="center">  -  </td>
@@ -156,7 +156,7 @@ mkswap /dev/[swap partition]
     mkdir /mnt/efi 
     ```
     - Mount the Efi Partition
-        ```
+        ```section
         mount /dev/[efi filesystem Partition] /mnt/efi
         ```
 - Mount the Root Partition
@@ -230,7 +230,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
             |    :-: 	|        :-: 	   |
             | 127.0.0.1 | localhost        | 
             | :::1      | **[myhostname]** | 
-            | 127.0.1.1 | **[myhostname]** | 
+            | 127.0.1.1 | **[myhostname]** | section
             | ff02::1    | ip6-allnodes     | 
             | ff02::2    | ip6-allrouters   | 	 
     
@@ -402,7 +402,7 @@ Open **System Settings**
                 - "Stash"
             - *Add*
                 - "Home" after "forward"
-        - Hover over **configure** and select "Configure Toolbars"
+        - Hover over **configure** and select "Configure Dolphin"
             - In the **General** section
                 - In the **Behavior** tab    
                     - *Sorting mode* &rarr; "Alphabetical, case insensitive"
