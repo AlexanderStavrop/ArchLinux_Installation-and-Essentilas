@@ -142,9 +142,6 @@ timedatectl set-ntp true
 mkfs.ext4 /dev/[linux filesystem partition]
 ```
 ```
-Uncomment
-
-
 mkswap /dev/[swap partition]
 ```
 
