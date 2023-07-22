@@ -68,7 +68,7 @@ ls /sys/firmware/efi/efivars
         ```
 - Check is connected
     ```
-    ping archlinux.org
+    ping 8.8.8.8
     ```
 
 ## Update the system clock
