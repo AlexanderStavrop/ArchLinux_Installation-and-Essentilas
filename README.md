@@ -172,7 +172,7 @@ mkswap /dev/[swap partition]
 ```
 pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages texinfo grub efibootmgr
               os-prober dhcpcd amd-ucode/intel-ucode
-```"Gedit"
+```
 
 ## Configure the system
 - Generate the fstab file
