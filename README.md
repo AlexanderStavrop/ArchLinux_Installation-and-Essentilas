@@ -340,6 +340,10 @@ Open **System Settings**
         - In the **File Associations** tab
             - *text (Plain)* 
                 - *Application Preference Order* &rarr; "Gedit", "Vim", "Notepadqq"
+            - *mp3*
+                - *Application Preference Order* &rarr; "mpv Media Player"
+            - *mp4*
+                - *Application Preference Order* &rarr; "mpv Media Player"
         - In **Default Applications**
             - Change "Terminal emulator" to "kitty"
 - ***Touchpad and keyboard settings***            
