@@ -633,6 +633,10 @@ Right click the **task bar** and select "Enter edit mode"
             - "Memory usage"
             - "Network speed"
             - "Keyboard layout"
+        - *Win 7 show desktop*
+            - On the top right corner, press "Get new widgets"
+            - Search for "Win 7 show desktop"
+            - Add it to the task bar on the far right corner
     - Right click the task bar and select "Enter edit mode". then hover over system tray icons and select "Configure"
         - In the **Entries** tab
             - *Always Shown*
@@ -657,6 +661,7 @@ Right click the **task bar** and select "Enter edit mode"
             - *Disable*
                 - Everything else
             - If the clock takes too much space move it a little to the left
+    - 
 - ***Application shortcuts***
     - Hover over the applications icons and select "Configure"
         - In **Appearance** section
