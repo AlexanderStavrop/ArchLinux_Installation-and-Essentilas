@@ -633,7 +633,7 @@ Right click the **task bar** and select "Enter edit mode"
             - "Memory usage"
             - "Network speed"
             - "Keyboard layout"
-    - Hover over system tray icons and select "Configure"
+    - Right click the task bar and select "Enter edit mode". then hover over system tray icons and select "Configure"
         - In the **Entries** tab
             - *Always Shown*
                 - "CopyQ"
