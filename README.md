@@ -643,7 +643,6 @@ Right click the **task bar** and select "Enter edit mode"
                 - "Bluetooth"
                 - "Disk and Devices"
                 - "Networks"
-                - "Night color"
                 - "Notifications"
                 - "Weather"
                     - In the **Weather Station** section
@@ -652,6 +651,9 @@ Right click the **task bar** and select "Enter edit mode"
                         - *Show in tooltip* &rarr; Enable everything
                     - In **Units** section
                         - Change everything from freedom units to normal ones
+            - *Shown when relevant*
+                - "Display configuration"
+                - "KDE Connect"
             - *Disable*
                 - Everything else
             - If the clock takes too much space move it a little to the left
