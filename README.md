@@ -629,10 +629,10 @@ Right click the **task bar** and select "Enter edit mode"
 - ***System tray icons***
     - Right click the task bar and select "Add widgets"
         - *Add*
-            - "Individual Core Usage"
-            - "Memory Usage"
-            - "Network Usage"
-            - "Keyboard layoyt"
+            - "Individual core usage"
+            - "Memory usage"
+            - "Network speed"
+            - "Keyboard layout"
     - Hover over system tray icons and select "Configure"
         - In the **Entries** tab
             - *Always Shown*
