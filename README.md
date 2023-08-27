@@ -302,7 +302,6 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
   ```Behavior
   reboot
   ```
-ctrl + `
 <br></br>
 # ArchLinux - Configuration
 
