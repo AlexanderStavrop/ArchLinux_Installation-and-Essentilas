@@ -264,7 +264,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
         pacman -S (for laptop)xf86-video-amdgpu/intel nvidia nvidia-utils pulseaudio-alsa pulseaudio-bluetooth
                    alsa-utils alsa-firmware xorg plasma-desktop plasma-systemmonitor plasma-nm plasma-pa dolphin
                    dolphin-plugins kscreen kinfocenter kdeplasma-addons kde-gtk-config ark konsole kitty gwenview
-                   firefox powerdevil sddm sddm-kcm bluez bluedevil ffmpegthumbs ntfs-3g gedit sudo btop
+                   powerdevil sddm sddm-kcm bluez bluedevil ffmpegthumbs ntfs-3g gedit sudo btop
         ```
         ```
         pacman -S --needed base git 
