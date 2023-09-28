@@ -251,7 +251,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
                 ```
             - MBR
                 ```
-                grub-install --target=i386-pc /dev/[root_partition]Behavior
+                grub-install --target=i386-pc /dev/[root_partition]
                 ```
                 - (if an error occurs, try /dev/[Target Drive])
         - Generate the grub.cfg file
