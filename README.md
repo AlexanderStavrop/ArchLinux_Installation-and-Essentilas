@@ -664,8 +664,7 @@ Right click the **task bar** and select "Enter edit mode"
                 - "KDE Connect"
             - *Disable*
                 - Everything else
-            - If the clock takes too much space move it a little to the left
-    - 
+            - If the clock takes too much space move it a little to the left 
 - ***Application shortcuts***
     - Hover over the applications icons and select "Configure"
         - In **Appearance** section
