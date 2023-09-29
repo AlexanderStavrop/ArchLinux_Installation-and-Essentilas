@@ -310,8 +310,8 @@ Open **System Settings**
 - ***Quick Settings***
     - In **Quick Settings** section
         - *Theme* &rarr; Select "Breeze Dark"
-        - *Clicking flies or folders* &rarr; Select "Selects them"
         - ![image](https://github.com/AlexanderStavrop/ArchLinux_Installation-and-Essentilas/assets/56675566/7ccf51c8-c312-460c-9138-ee43ab58b010)
+        - *Clicking flies or folders* &rarr; Select "Selects them"
 - ***Window Decorations***
     - In the **Appearance** section
         - In **Window Decorations**
