@@ -338,11 +338,13 @@ Open **System Settings**
     - In the **Applications** section
         - In the **File Associations** tab
             - *text (Plain)* 
-                - *Application Preference Order* &rarr; "Gedit", "Vim", "Notepadqq"
+                - *Application Preference Order* &rarr; "Gedit", "Notepadqq", "Vim"
             - *mp3*
-                - *Application Preference Order* &rarr; "mpv Media Player"
+                - *Application Preference Order* &rarr; "mpv Media Player", "Vlc"
             - *mp4*
-                - *Application Preference Order* &rarr; "mpv Media Player"
+                - *Application Preference Order* &rarr; "mpv Media Player", "Vlc"
+            - *mkv*
+                - *Application Preference Order* &rarr; "mpv Media Player", "Vlc" 
         - In **Default Applications**
             - Change "Terminal emulator" to "kitty"
 - ***Touchpad and keyboard settings***            
