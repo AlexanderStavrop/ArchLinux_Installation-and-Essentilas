@@ -356,7 +356,7 @@ Open **System Settings**
                 - Press add layout and add "Greek"
             - Navigate to **Advanced**
                 - Enable "Configure keyboard options"
-                - Expand "Switching to another layout" &rarr; Select "Win + Space"
+                - Expand "Switching to another layout" &rarr; Select "alt + shift" and "Win + Space"
         - In the **Touchpad** tab
             - *Tapping*
                 - Enable **Tap-to-click**
