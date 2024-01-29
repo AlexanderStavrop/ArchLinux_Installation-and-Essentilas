@@ -175,7 +175,7 @@ pacstrap /mnt base linux linux-firmware networkmanager gvim man-db man-pages tex
     ```
     genfstab -U /mnt >> /mnt/etc/fstab
     ```
-- Enter root file:///home/alex/Downloads/copyq.conf
+- Enter root
     ```
     arch-chroot /mnt
     ```
